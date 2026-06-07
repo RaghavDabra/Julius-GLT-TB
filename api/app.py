@@ -1340,5 +1340,12 @@ def llm_endpoint():
         return jsonify({'error': str(e)}), 500
 
 
+@app.route('/api/health', methods=['GET'])
+def health_endpoint():
+    return jsonify({"status": "ok"})
+
+
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+    host = os.environ.get("HOST", "127.0.0.1")
+    port = int(os.environ.get("PORT", "8080"))
+    app.run(debug=True, host=host, port=port)
