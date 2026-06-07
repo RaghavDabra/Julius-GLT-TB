@@ -55,6 +55,8 @@ const FinancialReconciliation: React.FC<FinancialReconciliationProps> = ({
     amount: '',
     debit: '',
     credit: '',
+    transaction_date: '',
+    description: '',
   });
   const [mappingTb, setMappingTb] = useState({
     account_code: '',
@@ -63,6 +65,11 @@ const FinancialReconciliation: React.FC<FinancialReconciliationProps> = ({
   const [tolerance, setTolerance] = useState<string>('0.01');
 
   const [result, setResult] = useState<any>(null);
+  const [validation, setValidation] = useState<any>(null);
+  const [validationLoading, setValidationLoading] = useState<boolean>(false);
+  const [pdfFile, setPdfFile] = useState<File | null>(null);
+  const [pdfLoading, setPdfLoading] = useState<boolean>(false);
+  const [pdfAnalyses, setPdfAnalyses] = useState<any[]>([]);
 
   const glColumns = glIngest?.summary?.columns || [];
   const tbColumns = tbIngest?.summary?.columns || [];
@@ -85,7 +92,7 @@ const FinancialReconciliation: React.FC<FinancialReconciliationProps> = ({
         const glFd = new FormData();
         glFd.append('file', glFile);
         glFd.append('dataset_type', 'gl');
-        const glResp = await axios.post<IngestResponse>('http://localhost:8080/api/ingest', glFd);
+        const glResp = await axios.post<IngestResponse>('/api/ingest', glFd);
         setRunId(glResp.data.run_id);
         setGlIngest(glResp.data);
 
@@ -93,22 +100,31 @@ const FinancialReconciliation: React.FC<FinancialReconciliationProps> = ({
         tbFd.append('file', tbFile);
         tbFd.append('dataset_type', 'tb');
         tbFd.append('run_id', glResp.data.run_id);
-        const tbResp = await axios.post<IngestResponse>('http://localhost:8080/api/ingest', tbFd);
+        const tbResp = await axios.post<IngestResponse>('/api/ingest', tbFd);
         setTbIngest(tbResp.data);
 
-        const glMapResp = await axios.post<SuggestMappingResponse>('http://localhost:8080/api/suggest-mapping', {
+        const glMapResp = await axios.post<SuggestMappingResponse>('/api/suggest-mapping', {
           run_id: glResp.data.run_id,
           dataset_type: 'gl',
         });
-        setMappingGl((prev) => ({ ...prev, ...glMapResp.data.proposed_mapping }));
+        setMappingGl((prev) => ({
+          ...prev,
+          ...glMapResp.data.proposed_mapping,
+          transaction_date: (glMapResp.data.proposed_mapping as any).posting_date || '',
+        }));
 
-        const tbMapResp = await axios.post<SuggestMappingResponse>('http://localhost:8080/api/suggest-mapping', {
+        const tbMapResp = await axios.post<SuggestMappingResponse>('/api/suggest-mapping', {
           run_id: glResp.data.run_id,
           dataset_type: 'tb',
         });
         setMappingTb((prev) => ({ ...prev, ...tbMapResp.data.proposed_mapping }));
       } catch (e: any) {
-        setError(e?.response?.data?.error || e?.message || 'Ingestion failed.');
+        const msg = e?.response?.data?.error || e?.message || 'Ingestion failed.';
+        if (msg === 'Network Error') {
+          setError('Network Error: backend not reachable. Start the API (python3 api/app.py) on port 8080.');
+        } else {
+          setError(msg);
+        }
       } finally {
         setLoading(false);
       }
@@ -121,7 +137,7 @@ const FinancialReconciliation: React.FC<FinancialReconciliationProps> = ({
     setError('');
     setLoading(true);
     try {
-      const resp = await axios.post('http://localhost:8080/api/reconcile', {
+      const resp = await axios.post('/api/reconcile', {
         run_id: runId,
         mapping_gl: mappingGl,
         mapping_tb: mappingTb,
@@ -152,10 +168,48 @@ const FinancialReconciliation: React.FC<FinancialReconciliationProps> = ({
     }
   };
 
+  const handleValidate = async () => {
+    setError('');
+    setValidationLoading(true);
+    try {
+      const resp = await axios.post('/api/validate', {
+        run_id: runId,
+        dataset_type: 'gl',
+        mapping_gl: mappingGl,
+        normalize_account_codes: true,
+      });
+      setValidation(resp.data);
+    } catch (e: any) {
+      setError(e?.response?.data?.error || e?.message || 'Validation failed.');
+    } finally {
+      setValidationLoading(false);
+    }
+  };
+
+  const handleUploadAndAnalyzePdf = async () => {
+    setError('');
+    if (!runId || !pdfFile) return;
+    setPdfLoading(true);
+    try {
+      const fd = new FormData();
+      fd.append('file', pdfFile);
+      fd.append('run_id', runId);
+      const uploadResp = await axios.post('/api/pdf/upload', fd);
+      const pdfId = uploadResp.data?.pdf_id;
+      const analysisResp = await axios.post('/api/pdf/analyze', { run_id: runId, pdf_id: pdfId });
+      setPdfAnalyses((prev) => [analysisResp.data?.result, ...prev].filter(Boolean));
+      setPdfFile(null);
+    } catch (e: any) {
+      setError(e?.response?.data?.error || e?.message || 'PDF analysis failed.');
+    } finally {
+      setPdfLoading(false);
+    }
+  };
+
   const handleDownloadExceptionsCsv = async () => {
     setError('');
     try {
-      const url = `http://localhost:8080/api/reconcile/export?run_id=${encodeURIComponent(
+      const url = `/api/reconcile/export?run_id=${encodeURIComponent(
         runId
       )}&dataset=exceptions`;
       const resp = await axios.get(url, { responseType: 'blob' });
@@ -173,6 +227,8 @@ const FinancialReconciliation: React.FC<FinancialReconciliationProps> = ({
   };
 
   const exceptions = result?.exceptions || [];
+  const validationReport = validation?.report;
+  const duplicateRecords = validation?.duplicate_records || [];
 
   return (
     <Box>
@@ -228,6 +284,42 @@ const FinancialReconciliation: React.FC<FinancialReconciliationProps> = ({
               value={mappingGl.amount}
               label="Signed Amount (optional)"
               onChange={(e) => setMappingGl((p) => ({ ...p, amount: e.target.value as string }))}
+            >
+              <MenuItem value="">(not used)</MenuItem>
+              {glColumns.map((c) => (
+                <MenuItem key={c} value={c}>
+                  {c}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+
+          <FormControl fullWidth sx={{ mb: 2 }}>
+            <InputLabel>Date (for validation/duplicates)</InputLabel>
+            <Select
+              value={mappingGl.transaction_date}
+              label="Date (for validation/duplicates)"
+              onChange={(e) =>
+                setMappingGl((p) => ({ ...p, transaction_date: e.target.value as string }))
+              }
+            >
+              <MenuItem value="">(not used)</MenuItem>
+              {glColumns.map((c) => (
+                <MenuItem key={c} value={c}>
+                  {c}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+
+          <FormControl fullWidth sx={{ mb: 2 }}>
+            <InputLabel>Description (for duplicates)</InputLabel>
+            <Select
+              value={mappingGl.description}
+              label="Description (for duplicates)"
+              onChange={(e) =>
+                setMappingGl((p) => ({ ...p, description: e.target.value as string }))
+              }
             >
               <MenuItem value="">(not used)</MenuItem>
               {glColumns.map((c) => (
@@ -321,6 +413,61 @@ const FinancialReconciliation: React.FC<FinancialReconciliationProps> = ({
         </Paper>
       </Box>
 
+      <Box sx={{ mt: 3 }}>
+        <Typography variant="subtitle1" gutterBottom>
+          Journal PDF Analysis
+        </Typography>
+        <Paper sx={{ p: 2 }}>
+          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, alignItems: 'center' }}>
+            <Button
+              variant="outlined"
+              component="label"
+              sx={{ borderColor: '#00AF40', color: '#00AF40' }}
+            >
+              Choose PDF
+              <input
+                type="file"
+                accept="application/pdf"
+                hidden
+                onChange={(e) => setPdfFile(e.target.files?.[0] || null)}
+              />
+            </Button>
+            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              {pdfFile ? pdfFile.name : 'No PDF selected'}
+            </Typography>
+            <Button
+              variant="contained"
+              disabled={!runId || !pdfFile || pdfLoading}
+              onClick={handleUploadAndAnalyzePdf}
+              sx={{ backgroundColor: '#00AF40', '&:hover': { backgroundColor: '#009836' } }}
+            >
+              {pdfLoading ? 'Analyzing…' : 'Upload & Analyze'}
+            </Button>
+          </Box>
+
+          {pdfAnalyses.length > 0 && (
+            <Box sx={{ mt: 2, display: 'flex', flexDirection: 'column', gap: 2 }}>
+              {pdfAnalyses.slice(0, 5).map((a: any, idx: number) => (
+                <Paper key={idx} sx={{ p: 2, backgroundColor: '#f7fdf9' }} variant="outlined">
+                  <Typography variant="body2" sx={{ fontWeight: 600 }}>
+                    Journal Reference: {a?.journalReference || 'N/A'}
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                    Prepared By: {a?.preparedBy || 'N/A'} | Approved By: {a?.approvedBy || 'N/A'}
+                  </Typography>
+                  <Typography variant="body2" sx={{ mt: 1 }}>
+                    Summary: {a?.summary || 'N/A'}
+                  </Typography>
+                  <Typography variant="body2" sx={{ mt: 1 }}>
+                    Possible Issues: {Array.isArray(a?.possibleIssues) ? a.possibleIssues.join(', ') : a?.possibleIssues || 'N/A'}
+                  </Typography>
+                </Paper>
+              ))}
+            </Box>
+          )}
+        </Paper>
+      </Box>
+
       <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 2, gap: 2 }}>
         <Button
           variant="outlined"
@@ -329,6 +476,14 @@ const FinancialReconciliation: React.FC<FinancialReconciliationProps> = ({
           sx={{ borderColor: '#00AF40', color: '#00AF40' }}
         >
           Download Exceptions CSV
+        </Button>
+        <Button
+          variant="outlined"
+          disabled={!runId || validationLoading}
+          onClick={handleValidate}
+          sx={{ borderColor: '#00AF40', color: '#00AF40' }}
+        >
+          {validationLoading ? 'Validating…' : 'Run Validation'}
         </Button>
         <Button
           variant="contained"
@@ -342,6 +497,63 @@ const FinancialReconciliation: React.FC<FinancialReconciliationProps> = ({
           {loading ? 'Working…' : 'Run Reconciliation'}
         </Button>
       </Box>
+
+      {validationReport && (
+        <Box sx={{ mt: 3 }}>
+          <Typography variant="subtitle1" gutterBottom>
+            Validation Report
+          </Typography>
+          <Paper sx={{ p: 2, mb: 2 }}>
+            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              Validation Score: {Number(validationReport.validation_score_pct || 0).toFixed(2)}%
+            </Typography>
+            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              Double Entry: {validationReport.double_entry?.status} (Diff: {validationReport.double_entry?.difference ?? 'N/A'})
+            </Typography>
+            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              Duplicate Count: {validationReport.duplicate_count}
+            </Typography>
+            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              Missing Values: account={validationReport.missing_values?.missing_account_codes}, date={validationReport.missing_values?.missing_dates}, amount={validationReport.missing_values?.missing_amounts}
+            </Typography>
+            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              Invalid Records: account={validationReport.invalid_records?.invalid_account_codes}, date={validationReport.invalid_records?.invalid_dates}, amount={validationReport.invalid_records?.invalid_amounts}
+            </Typography>
+          </Paper>
+
+          {duplicateRecords.length > 0 && (
+            <Box sx={{ mt: 2 }}>
+              <Typography variant="subtitle2" gutterBottom>
+                Duplicate Records (sample)
+              </Typography>
+              <Paper sx={{ overflowX: 'auto' }}>
+                <Table size="small">
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>duplicate_hash</TableCell>
+                      <TableCell>account_code</TableCell>
+                      <TableCell>date</TableCell>
+                      <TableCell>amount</TableCell>
+                      <TableCell>description</TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    {duplicateRecords.slice(0, 20).map((row: any, idx: number) => (
+                      <TableRow key={`${row.duplicate_hash}-${idx}`}>
+                        <TableCell>{row.duplicate_hash}</TableCell>
+                        <TableCell>{mappingGl.account_code ? row[mappingGl.account_code] : ''}</TableCell>
+                        <TableCell>{mappingGl.transaction_date ? row[mappingGl.transaction_date] : ''}</TableCell>
+                        <TableCell>{mappingGl.amount ? row[mappingGl.amount] : ''}</TableCell>
+                        <TableCell>{mappingGl.description ? row[mappingGl.description] : ''}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </Paper>
+            </Box>
+          )}
+        </Box>
+      )}
 
       {result && (
         <Box sx={{ mt: 3 }}>

@@ -31,6 +31,31 @@ RUNS = {}
 def _now_iso():
     return datetime.datetime.now(datetime.timezone.utc).isoformat()
 
+def _ensure_run(run_id: str):
+    run = RUNS.get(run_id)
+    if not run:
+        run = {"run_id": run_id, "created_at": _now_iso(), "audit_log": [], "audit_events": []}
+        RUNS[run_id] = run
+    if "audit_events" not in run:
+        run["audit_events"] = []
+    if "audit_log" not in run:
+        run["audit_log"] = []
+    return run
+
+def _append_audit_event(run_id: str, event_type: str, step: str, details: dict):
+    run = _ensure_run(run_id)
+    event = {
+        "id": str(uuid.uuid4()),
+        "timestamp": _now_iso(),
+        "eventType": event_type,
+        "step": step,
+        "details": details or {},
+        "runId": run_id,
+    }
+    run["audit_events"].append(event)
+    run["audit_log"].append({"ts": event["timestamp"], "event": event_type, "step": step})
+    return event
+
 def _sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
@@ -44,6 +69,13 @@ def _read_csv_from_filestorage(file_storage):
     except Exception:
         df = pd.read_csv(io.BytesIO(data), encoding_errors="replace")
     return df, checksum
+
+def _read_pdf_bytes_from_filestorage(file_storage):
+    data = file_storage.read()
+    if not data:
+        raise ValueError("Empty PDF file.")
+    checksum = _sha256_bytes(data)
+    return data, checksum
 
 # -----------------------------------------------------------------------------
 # Utility: Convert numpy/pandas types to native Python types.
@@ -358,6 +390,17 @@ def _standardize_tb(df: pd.DataFrame, mapping: dict, normalize_options: dict | N
     out = out[out["AccountCode"] != ""]
     return out
 
+def _coerce_numeric(series: pd.Series) -> pd.Series:
+    return pd.to_numeric(series, errors="coerce")
+
+def _parse_dates(series: pd.Series) -> pd.Series:
+    return pd.to_datetime(series, errors="coerce", utc=True)
+
+def _hash_duplicate_key(account_code: str, date_iso: str, amount: float | None, description: str) -> str:
+    amt = "" if amount is None or (isinstance(amount, float) and math.isnan(amount)) else f"{float(amount):.6f}"
+    raw = f"{account_code}|{date_iso}|{amt}|{description.strip().lower()}"
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
+
 @app.route('/api/ingest', methods=['POST'])
 def ingest_endpoint():
     try:
@@ -374,7 +417,7 @@ def ingest_endpoint():
         run_id = (request.form.get("run_id") or "").strip() or str(uuid.uuid4())
         df, checksum = _read_csv_from_filestorage(file)
 
-        run = RUNS.get(run_id, {"run_id": run_id, "created_at": _now_iso(), "audit_log": []})
+        run = _ensure_run(run_id)
         run[dataset_type] = {
             "filename": file.filename,
             "checksum_sha256": checksum,
@@ -383,7 +426,12 @@ def ingest_endpoint():
             "columns": _canonicalize_columns(df),
             "dataframe": df,
         }
-        run["audit_log"].append({"ts": _now_iso(), "event": "ingest", "dataset_type": dataset_type, "checksum": checksum})
+        _append_audit_event(
+            run_id,
+            "UPLOAD_RECEIVED",
+            "Data Ingestion",
+            {"dataset_type": dataset_type, "filename": file.filename, "checksum_sha256": checksum, "rows": int(df.shape[0])},
+        )
         RUNS[run_id] = run
 
         response = {
@@ -393,7 +441,7 @@ def ingest_endpoint():
             "checksum_sha256": checksum,
             "summary": {"shape": df.shape, "columns": df.columns.tolist()},
             "sample_rows": df.head(3).to_dict(orient="records"),
-            "audit_log": run["audit_log"][-10:],
+            "audit_events": run["audit_events"][-50:],
         }
         return jsonify(convert_types(response))
     except Exception as e:
@@ -416,8 +464,164 @@ def suggest_mapping_endpoint():
 
         df = run[dataset_type]["dataframe"]
         result = _suggest_mapping(df, dataset_type)
-        run["audit_log"].append({"ts": _now_iso(), "event": "suggest_mapping", "dataset_type": dataset_type})
-        return jsonify(convert_types({"run_id": run_id, **result}))
+        _append_audit_event(
+            run_id,
+            "SCHEMA_MAPPING_COMPLETED",
+            "AI Schema Mapping",
+            {"dataset_type": dataset_type, "proposed_mapping": result.get("proposed_mapping", {}), "suggestions": result.get("suggestions", {})},
+        )
+        return jsonify(convert_types({"run_id": run_id, **result, "audit_events": run["audit_events"][-50:]}))
+    except Exception as e:
+        traceback.print_exc()
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/validate', methods=['POST'])
+def validate_endpoint():
+    try:
+        data = request.get_json() or {}
+        run_id = (data.get("run_id") or "").strip()
+        if not run_id or run_id not in RUNS:
+            return jsonify({"error": "Invalid run_id."}), 400
+
+        dataset_type = (data.get("dataset_type") or "gl").strip().lower()
+        if dataset_type != "gl":
+            return jsonify({"error": "Only GL validation is supported in this prototype (dataset_type='gl')."}), 400
+
+        mapping = data.get("mapping_gl") or data.get("mapping") or {}
+        normalize_account_codes = bool(data.get("normalize_account_codes", True))
+        normalize_options = data.get("normalize_options") or {}
+        if normalize_account_codes:
+            normalize_options = {
+                "upper": True if normalize_options.get("upper") is None else bool(normalize_options.get("upper")),
+                "strip_non_alnum": True if normalize_options.get("strip_non_alnum") is None else bool(normalize_options.get("strip_non_alnum")),
+                "drop_leading_zeros": True if normalize_options.get("drop_leading_zeros") is None else bool(normalize_options.get("drop_leading_zeros")),
+            }
+        else:
+            normalize_options = None
+
+        run = RUNS[run_id]
+        if "gl" not in run or "dataframe" not in run["gl"]:
+            return jsonify({"error": "No GL dataset ingested for this run."}), 400
+
+        gl_df = run["gl"]["dataframe"]
+        row_count = int(gl_df.shape[0])
+
+        account_col = mapping.get("account_code") or ""
+        amount_col = mapping.get("amount") or ""
+        debit_col = mapping.get("debit") or ""
+        credit_col = mapping.get("credit") or ""
+        date_col = mapping.get("transaction_date") or mapping.get("posting_date") or ""
+        desc_col = mapping.get("description") or ""
+
+        if not account_col or account_col not in gl_df.columns:
+            return jsonify({"error": "Validation requires a valid 'account_code' mapping."}), 400
+
+        account_raw = gl_df[account_col].astype(str)
+        if normalize_options:
+            account_norm = account_raw.map(lambda x: _normalize_account_code(x, normalize_options))
+        else:
+            account_norm = account_raw.str.strip()
+        invalid_account_mask = account_norm.isna() | (account_norm.astype(str).str.strip() == "") | (account_norm.astype(str).str.lower() == "nan")
+
+        amount_series = None
+        if amount_col and amount_col in gl_df.columns:
+            amount_series = _coerce_numeric(gl_df[amount_col])
+        elif debit_col in gl_df.columns and credit_col in gl_df.columns:
+            debit_series = _coerce_numeric(gl_df[debit_col]).fillna(0.0)
+            credit_series = _coerce_numeric(gl_df[credit_col]).fillna(0.0)
+            amount_series = debit_series - credit_series
+
+        invalid_amount_mask = pd.Series([True] * row_count)
+        if amount_series is not None:
+            invalid_amount_mask = amount_series.isna()
+
+        date_series = None
+        invalid_date_mask = pd.Series([False] * row_count)
+        missing_date_mask = pd.Series([True] * row_count)
+        if date_col and date_col in gl_df.columns:
+            date_series = _parse_dates(gl_df[date_col])
+            missing_date_mask = date_series.isna()
+            original_not_null = ~gl_df[date_col].isna()
+            invalid_date_mask = original_not_null & date_series.isna()
+
+        description_series = None
+        if desc_col and desc_col in gl_df.columns:
+            description_series = gl_df[desc_col].astype(str).fillna("")
+
+        double_entry = {"status": "not_available", "debits_sum": None, "credits_sum": None, "difference": None}
+        if debit_col in gl_df.columns and credit_col in gl_df.columns:
+            debits = _coerce_numeric(gl_df[debit_col]).fillna(0.0)
+            credits = _coerce_numeric(gl_df[credit_col]).fillna(0.0)
+            deb_sum = float(debits.sum())
+            cred_sum = float(credits.sum())
+            diff = deb_sum - cred_sum
+            status = "pass" if abs(diff) <= 0.01 else "fail"
+            double_entry = {"status": status, "debits_sum": deb_sum, "credits_sum": cred_sum, "difference": float(diff)}
+
+        duplicate_count = 0
+        duplicate_records = []
+        if amount_series is not None and date_series is not None and description_series is not None:
+            date_iso = date_series.dt.strftime("%Y-%m-%d").fillna("")
+            dup_keys = []
+            for i in range(row_count):
+                dup_keys.append(
+                    _hash_duplicate_key(
+                        str(account_norm.iloc[i] if i < len(account_norm) else ""),
+                        str(date_iso.iloc[i] if i < len(date_iso) else ""),
+                        None if amount_series is None else amount_series.iloc[i],
+                        str(description_series.iloc[i] if i < len(description_series) else ""),
+                    )
+                )
+            key_series = pd.Series(dup_keys)
+            dup_mask = key_series.duplicated(keep=False)
+            duplicate_count = int(dup_mask.sum())
+            if duplicate_count:
+                sample_df = gl_df.loc[dup_mask].copy()
+                sample_df["duplicate_hash"] = key_series.loc[dup_mask].values
+                duplicate_records = sample_df.head(50).to_dict(orient="records")
+        else:
+            dup_mask = pd.Series([False] * row_count)
+
+        missing_account_count = int(invalid_account_mask.sum())
+        missing_amount_count = int(invalid_amount_mask.sum()) if amount_series is not None else row_count
+        missing_date_count = int(missing_date_mask.sum()) if date_series is not None else row_count
+
+        invalid_account_count = int(invalid_account_mask.sum())
+        invalid_amount_count = int(invalid_amount_mask.sum()) if amount_series is not None else row_count
+        invalid_date_count = int(invalid_date_mask.sum()) if date_series is not None else row_count
+
+        issue_mask = invalid_account_mask | invalid_amount_mask | dup_mask
+        if date_series is not None:
+            issue_mask = issue_mask | invalid_date_mask
+        issue_rows = int(issue_mask.sum())
+        score = 100.0
+        if row_count > 0:
+            score = max(0.0, 100.0 * (1.0 - (issue_rows / row_count)))
+        if double_entry["status"] == "fail":
+            score = max(0.0, score - 10.0)
+
+        report = {
+            "validation_score_pct": score,
+            "row_count": row_count,
+            "double_entry": double_entry,
+            "duplicate_count": duplicate_count,
+            "missing_values": {
+                "missing_account_codes": missing_account_count,
+                "missing_dates": missing_date_count,
+                "missing_amounts": missing_amount_count,
+            },
+            "invalid_records": {
+                "invalid_account_codes": invalid_account_count,
+                "invalid_dates": invalid_date_count,
+                "invalid_amounts": invalid_amount_count,
+            },
+        }
+
+        run["validation"] = {"completed_at": _now_iso(), "report": report, "duplicate_records": duplicate_records}
+        _append_audit_event(run_id, "STANDARDISATION_COMPLETED", "Data Standardisation", {"normalize_account_codes": bool(normalize_options is not None)})
+        _append_audit_event(run_id, "VALIDATION_COMPLETED", "Data Quality Validation", report)
+
+        return jsonify(convert_types({"run_id": run_id, "report": report, "duplicate_records": duplicate_records, "audit_events": run["audit_events"][-50:]}))
     except Exception as e:
         traceback.print_exc()
         return jsonify({'error': str(e)}), 500
@@ -460,7 +664,7 @@ def quality_endpoint():
         missingness = df.isna().mean().to_dict()
         dup_count = int(df.duplicated().sum())
 
-        run["audit_log"].append({"ts": _now_iso(), "event": "quality_check", "dataset_type": dataset_type})
+        _append_audit_event(run_id, "STANDARDISATION_COMPLETED", "Data Standardisation", {"dataset_type": dataset_type})
         return jsonify(convert_types({
             "run_id": run_id,
             "dataset_type": dataset_type,
@@ -469,6 +673,7 @@ def quality_endpoint():
             "row_count": int(df.shape[0]),
             "duplicate_row_count": dup_count,
             "missingness_by_column": missingness,
+            "audit_events": run["audit_events"][-50:],
         }))
     except Exception as e:
         traceback.print_exc()
@@ -570,9 +775,17 @@ def reconcile_endpoint():
             "merged": merged,
             "exceptions": exceptions,
         }
-        run["audit_log"].append({"ts": _now_iso(), "event": "reconcile", "tolerance": tolerance})
+        _append_audit_event(run_id, "STANDARDISATION_COMPLETED", "Data Standardisation", {"normalize_account_codes": bool(normalize_options is not None), "normalize_options": normalize_options or {}})
+        _append_audit_event(run_id, "RECONCILIATION_COMPLETED", "Deterministic Reconciliation Engine", summary)
+        if int(exceptions.shape[0]) > 0:
+            _append_audit_event(
+                run_id,
+                "VARIANCE_DETECTED",
+                "Deterministic Reconciliation Engine",
+                {"exceptions_count": int(exceptions.shape[0]), "tolerance": tolerance},
+            )
 
-        return jsonify(convert_types({**result, "audit_log": run["audit_log"][-20:]}))
+        return jsonify(convert_types({**result, "audit_events": run["audit_events"][-50:]}))
     except Exception as e:
         traceback.print_exc()
         return jsonify({'error': str(e)}), 500
@@ -600,6 +813,200 @@ def reconcile_export_endpoint():
             "Content-Disposition": f'attachment; filename="{filename}"',
         }
         return Response(csv_text, headers=headers)
+    except Exception as e:
+        traceback.print_exc()
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/audit', methods=['GET'])
+def audit_events_endpoint():
+    try:
+        run_id = (request.args.get("run_id") or "").strip()
+        if not run_id or run_id not in RUNS:
+            return jsonify({"error": "Invalid run_id."}), 400
+        run = RUNS[run_id]
+        events = run.get("audit_events") or []
+        return jsonify(convert_types({"run_id": run_id, "events": events}))
+    except Exception as e:
+        traceback.print_exc()
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/audit/export', methods=['GET'])
+def audit_events_export_endpoint():
+    try:
+        run_id = (request.args.get("run_id") or "").strip()
+        if not run_id or run_id not in RUNS:
+            return jsonify({"error": "Invalid run_id."}), 400
+        run = RUNS[run_id]
+        payload = {"run_id": run_id, "events": run.get("audit_events") or []}
+        json_text = json.dumps(convert_types(payload), indent=2)
+        filename = f"{run_id}_audit_events.json"
+        headers = {
+            "Content-Type": "application/json; charset=utf-8",
+            "Content-Disposition": f'attachment; filename="{filename}"',
+        }
+        return Response(json_text, headers=headers)
+    except Exception as e:
+        traceback.print_exc()
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/pdf/upload', methods=['POST'])
+def pdf_upload_endpoint():
+    try:
+        if 'file' not in request.files:
+            return jsonify({'error': 'No file provided'}), 400
+        run_id = (request.form.get("run_id") or "").strip()
+        if not run_id:
+            return jsonify({'error': 'Missing run_id'}), 400
+        run = _ensure_run(run_id)
+
+        file = request.files['file']
+        if file.filename == '' or not file.filename.lower().endswith('.pdf'):
+            return jsonify({'error': 'Invalid file (PDF only)'}), 400
+
+        pdf_bytes, checksum = _read_pdf_bytes_from_filestorage(file)
+        pdf_id = str(uuid.uuid4())
+        record = {
+            "pdf_id": pdf_id,
+            "filename": file.filename,
+            "checksum_sha256": checksum,
+            "uploaded_at": _now_iso(),
+            "size_bytes": int(len(pdf_bytes)),
+            "raw_base64": base64.b64encode(pdf_bytes).decode("utf-8"),
+            "extracted_text": None,
+            "analysis": None,
+        }
+        pdfs = run.get("pdfs") or []
+        pdfs.append(record)
+        run["pdfs"] = pdfs
+
+        _append_audit_event(
+            run_id,
+            "UPLOAD_RECEIVED",
+            "PDF Ingestion",
+            {"pdf_id": pdf_id, "filename": file.filename, "checksum_sha256": checksum, "size_bytes": int(len(pdf_bytes))},
+        )
+
+        return jsonify(convert_types({"run_id": run_id, "pdf_id": pdf_id}))
+    except Exception as e:
+        traceback.print_exc()
+        return jsonify({'error': str(e)}), 500
+
+def _extract_text_from_pdf_bytes(pdf_bytes: bytes) -> str:
+    from PyPDF2 import PdfReader
+    reader = PdfReader(io.BytesIO(pdf_bytes))
+    parts = []
+    for page in reader.pages:
+        try:
+            t = page.extract_text() or ""
+        except Exception:
+            t = ""
+        if t:
+            parts.append(t)
+    return "\n\n".join(parts).strip()
+
+@app.route('/api/pdf/analyze', methods=['POST'])
+def pdf_analyze_endpoint():
+    try:
+        data = request.get_json() or {}
+        run_id = (data.get("run_id") or "").strip()
+        pdf_id = (data.get("pdf_id") or "").strip()
+        if not run_id or run_id not in RUNS:
+            return jsonify({"error": "Invalid run_id."}), 400
+        if not pdf_id:
+            return jsonify({"error": "Missing pdf_id."}), 400
+
+        run = _ensure_run(run_id)
+        pdfs = run.get("pdfs") or []
+        rec = next((p for p in pdfs if p.get("pdf_id") == pdf_id), None)
+        if not rec:
+            return jsonify({"error": "Unknown pdf_id for this run."}), 400
+
+        pdf_bytes = base64.b64decode(rec.get("raw_base64") or "")
+        extracted = rec.get("extracted_text")
+        if extracted is None:
+            extracted = _extract_text_from_pdf_bytes(pdf_bytes)
+            rec["extracted_text"] = extracted
+            _append_audit_event(
+                run_id,
+                "STANDARDISATION_COMPLETED",
+                "PDF Text Extraction",
+                {"pdf_id": pdf_id, "extracted_text_length": int(len(extracted or ""))},
+            )
+
+        exceptions = []
+        tables = run.get("reconciliation_tables") or {}
+        if "exceptions" in tables:
+            try:
+                exceptions = tables["exceptions"].head(50).to_dict(orient="records")
+            except Exception:
+                exceptions = []
+
+        prompt = (
+            "You are assisting an audit team. Extract structured information from the PDF text. "
+            "Do not compute or alter any financial figures. Only extract and summarize.\n\n"
+            "Return STRICT JSON with keys:\n"
+            "{\n"
+            '  "journalReference": string|null,\n'
+            '  "preparedBy": string|null,\n'
+            '  "approvedBy": string|null,\n'
+            '  "possibleIssues": string[] ,\n'
+            '  "summary": string\n'
+            "}\n\n"
+            f"PDF_TEXT:\n{extracted[:20000]}\n\n"
+            f"KNOWN_VARIANCES (account-level exceptions):\n{json.dumps(exceptions)[:20000]}\n"
+        )
+
+        _require_openai_api_key()
+        messages = [
+            {"role": "system", "content": "You extract audit evidence from documents and respond in strict JSON."},
+            {"role": "user", "content": prompt},
+        ]
+        response_obj = openai.ChatCompletion.create(model="gpt-4o", messages=messages)
+        content = response_obj.choices[0].message["content"]
+
+        result = None
+        try:
+            result = json.loads(content)
+        except Exception:
+            result = {
+                "journalReference": None,
+                "preparedBy": None,
+                "approvedBy": None,
+                "possibleIssues": [],
+                "summary": content,
+            }
+
+        links = []
+        if "exceptions" in tables:
+            try:
+                exc_df = tables["exceptions"]
+                text_upper = (extracted or "").upper()
+                for _, row in exc_df.iterrows():
+                    acct = str(row.get("AccountCode", "")).upper()
+                    if acct and acct in text_upper:
+                        links.append({"AccountCode": acct})
+            except Exception:
+                links = []
+
+        analysis_record = {
+            "pdf_id": pdf_id,
+            "filename": rec.get("filename"),
+            "checksum_sha256": rec.get("checksum_sha256"),
+            "extracted_text_length": int(len(extracted or "")),
+            "result": result,
+            "linked_variances": links,
+        }
+        rec["analysis"] = analysis_record
+        run["pdfs"] = pdfs
+
+        _append_audit_event(
+            run_id,
+            "AI_ANALYSIS_COMPLETED",
+            "PDF Analysis",
+            {"pdf_id": pdf_id, "linked_variances_count": int(len(links))},
+        )
+
+        return jsonify(convert_types({"run_id": run_id, "pdf_id": pdf_id, "result": analysis_record}))
     except Exception as e:
         traceback.print_exc()
         return jsonify({'error': str(e)}), 500
@@ -885,6 +1292,7 @@ def llm_endpoint():
         prompt = data.get("prompt", "")
         chat_history = data.get("chat_history", [])
         processed_summary = data.get("processed_summary", "")
+        run_id = (data.get("run_id") or "").strip()
         
         messages = [{
             "role": "system",
@@ -908,6 +1316,24 @@ def llm_endpoint():
         llm_response = response_obj.choices[0].message["content"]
         token_usage = response_obj.get("usage", {})
         print("LLM token usage for /api/llm:", token_usage)  # Print token usage to terminal
+        if run_id and run_id in RUNS:
+            run = _ensure_run(run_id)
+            analysis_id = str(uuid.uuid4())
+            analyses = run.get("ai_analyses") or []
+            analyses.append({
+                "id": analysis_id,
+                "timestamp": _now_iso(),
+                "prompt": prompt,
+                "response": llm_response,
+                "token_usage": token_usage,
+            })
+            run["ai_analyses"] = analyses
+            _append_audit_event(
+                run_id,
+                "AI_ANALYSIS_COMPLETED",
+                "AI Exception Analysis",
+                {"analysis_id": analysis_id, "token_usage": token_usage},
+            )
         return jsonify({"response": llm_response, "token_usage": token_usage})
     except Exception as e:
         traceback.print_exc()

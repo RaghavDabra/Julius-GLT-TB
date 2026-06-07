@@ -7,3 +7,4 @@ xgboost
 shap
 werkzeug
 openai==0.28
+PyPDF2

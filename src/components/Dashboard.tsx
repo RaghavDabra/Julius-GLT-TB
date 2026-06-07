@@ -3,18 +3,18 @@ import {
   FileUp as FileUpload,
   Settings,
   MessageSquare,
-  BrainCircuit,
 } from 'lucide-react';
 import FinancialDataUpload from './FinancialDataUpload';
 import FinancialReconciliation from './FinancialReconciliation';
 import LLMChat from './LLMChat';
+import AuditTrail from './AuditTrail';
 import { cn } from '../lib/Utils';
-import algoleapLogo from './algoleap.png';
 
 const steps = [
   { id: 'upload', title: 'Upload GL & TB', icon: FileUpload },
   { id: 'reconcile', title: 'Reconcile', icon: Settings },
   { id: 'chat', title: 'Insights', icon: MessageSquare },
+  { id: 'audit', title: 'Audit Trail', icon: Settings },
 ];
 
 const Dashboard: React.FC = () => {
@@ -22,6 +22,7 @@ const Dashboard: React.FC = () => {
   const [glFile, setGlFile] = useState<File | null>(null);
   const [tbFile, setTbFile] = useState<File | null>(null);
   const [processedSummary, setProcessedSummary] = useState<string>('');
+  const [runId, setRunId] = useState<string>('');
 
   // If you still want to control navigation programmatically:
   const handleNext = () => setActiveStep((prev) => prev + 1);
@@ -44,14 +45,18 @@ const Dashboard: React.FC = () => {
           <FinancialReconciliation
             glFile={glFile}
             tbFile={tbFile}
-            onComplete={({ processedSummary: nextSummary }) => {
+            onComplete={({ runId: nextRunId, processedSummary: nextSummary }) => {
+              setRunId(nextRunId);
               setProcessedSummary(nextSummary);
               handleNext();
             }}
           />
         );
       case 2:
-        return <LLMChat processedSummary={processedSummary} />;
+        return <LLMChat processedSummary={processedSummary} runId={runId} />;
+      case 3:
+        if (!runId) return <div>No run yet</div>;
+        return <AuditTrail runId={runId} />;
       default:
         return <div>Unknown Step</div>;
     }
@@ -63,23 +68,7 @@ const Dashboard: React.FC = () => {
       <nav className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
-            {/* Left section: App brand */}
-            <div className="flex">
-              <div className="flex-shrink-0 flex items-center">
-                <BrainCircuit className="h-8 w-8 text-green-600" />
-                <span className="ml-2 text-xl font-semibold text-gray-900">
-                  BISA.AI
-                </span>
-              </div>
-            </div>
-            {/* Right section: Company logo */}
-            <div className="flex items-center">
-              <img
-                src={algoleapLogo}
-                alt="Company Logo"
-                className="h-8 w-auto"
-              />
-            </div>
+            <div />
           </div>
         </div>
       </nav>
@@ -145,14 +134,6 @@ const Dashboard: React.FC = () => {
         */}
       </main>
 
-      {/* Footer */}
-      <footer className="bg-white border-t border-gray-200 mt-auto">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-sm text-gray-500">
-            Powered by Algoleap Technologies
-          </p>
-        </div>
-      </footer>
     </div>
   );
 };

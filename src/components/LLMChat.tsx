@@ -23,6 +23,7 @@ import remarkGfm from 'remark-gfm';
 
 interface LLMChatProps {
   processedSummary: string;
+  runId?: string;
 }
 
 interface ChatMessage {
@@ -30,16 +31,17 @@ interface ChatMessage {
   content: string;
 }
 
-const LLMChat: React.FC<LLMChatProps> = ({ processedSummary }) => {
+const LLMChat: React.FC<LLMChatProps> = ({ processedSummary, runId }) => {
   const [userQuery, setUserQuery] = useState('');
   const [chatHistory, setChatHistory] = useState<ChatMessage[]>([]);
 
   const llmMutation = useMutation(
     async () => {
-      const response = await axios.post('http://localhost:8080/api/llm', {
+      const response = await axios.post('/api/llm', {
         prompt: userQuery,
         chat_history: chatHistory,
         processed_summary: processedSummary,
+        run_id: runId,
       });
       return response.data;
     },
@@ -180,24 +182,32 @@ const LLMChat: React.FC<LLMChatProps> = ({ processedSummary }) => {
                         remarkPlugins={[remarkGfm]}
                         components={{
                           ...muiTableComponents,
-                          h1: ({ node, ...props }) => (
-                            <Typography variant="h5" sx={{ mt: 2 }} {...props} />
+                          h1: ({ children }) => (
+                            <Typography component="h1" variant="h5" sx={{ mt: 2 }}>
+                              {children}
+                            </Typography>
                           ),
-                          h2: ({ node, ...props }) => (
-                            <Typography variant="h6" sx={{ mt: 2 }} {...props} />
+                          h2: ({ children }) => (
+                            <Typography component="h2" variant="h6" sx={{ mt: 2 }}>
+                              {children}
+                            </Typography>
                           ),
-                          h3: ({ node, ...props }) => (
+                          h3: ({ children }) => (
                             <Typography
+                              component="h3"
                               variant="subtitle1"
                               sx={{ mt: 2 }}
-                              {...props}
-                            />
+                            >
+                              {children}
+                            </Typography>
                           ),
-                          p: ({ node, ...props }) => (
-                            <Typography variant="body1" paragraph {...props} />
+                          p: ({ children }) => (
+                            <Typography component="p" variant="body1" paragraph>
+                              {children}
+                            </Typography>
                           ),
-                          li: ({ node, ordered, ...props }) => (
-                            <li style={{ marginBottom: '0.5em' }} {...props} />
+                          li: ({ children }) => (
+                            <li style={{ marginBottom: '0.5em' }}>{children}</li>
                           ),
                         }}
                       >
@@ -231,24 +241,32 @@ const LLMChat: React.FC<LLMChatProps> = ({ processedSummary }) => {
                         remarkPlugins={[remarkGfm]}
                         components={{
                           ...muiTableComponents,
-                          h1: ({ node, ...props }) => (
-                            <Typography variant="h5" sx={{ mt: 2 }} {...props} />
+                          h1: ({ children }) => (
+                            <Typography component="h1" variant="h5" sx={{ mt: 2 }}>
+                              {children}
+                            </Typography>
                           ),
-                          h2: ({ node, ...props }) => (
-                            <Typography variant="h6" sx={{ mt: 2 }} {...props} />
+                          h2: ({ children }) => (
+                            <Typography component="h2" variant="h6" sx={{ mt: 2 }}>
+                              {children}
+                            </Typography>
                           ),
-                          h3: ({ node, ...props }) => (
+                          h3: ({ children }) => (
                             <Typography
+                              component="h3"
                               variant="subtitle1"
                               sx={{ mt: 2 }}
-                              {...props}
-                            />
+                            >
+                              {children}
+                            </Typography>
                           ),
-                          p: ({ node, ...props }) => (
-                            <Typography variant="body1" paragraph {...props} />
+                          p: ({ children }) => (
+                            <Typography component="p" variant="body1" paragraph>
+                              {children}
+                            </Typography>
                           ),
-                          li: ({ node, ordered, ...props }) => (
-                            <li style={{ marginBottom: '0.5em' }} {...props} />
+                          li: ({ children }) => (
+                            <li style={{ marginBottom: '0.5em' }}>{children}</li>
                           ),
                         }}
                       >
