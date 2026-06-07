@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(myenv/bin/python -c \"import flask, flask_cors, pandas, numpy, sklearn, matplotlib, seaborn, openai, shap; print\\('all backend deps OK'\\)\")",
+      "Bash(../myenv/bin/python app.py)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"backend \\(8080\\): %{http_code}\\\\n\" http://localhost:8080/api/llm -X POST)",
+      "Bash(curl -s -o /dev/null -w \"frontend \\(5173\\): %{http_code}\\\\n\" http://localhost:5173/)"
+    ]
+  }
+}
