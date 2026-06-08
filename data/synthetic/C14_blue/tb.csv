@@ -1,0 +1,14 @@
+gl_code,ledger_name,end_balance
+1000,Cash,-476109.04
+1010,Bank Current Account,110677.42
+1100,Accounts Receivable,-18912.12
+2000,Accounts Payable,148107.29
+2300,Tax Payable,-155139.83
+3000,Share Capital,-316143.53
+3100,Retained Earnings,66136.38
+4000,Sales Revenue,-90735.47
+4100,Service Revenue,-225036.06
+4200,Other Income,238387.50
+5100,Salaries Expense,378510.09
+5200,Rent Expense,256327.98
+5400,Office Expenses,44328.58

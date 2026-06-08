@@ -1,0 +1,85 @@
+transaction_id,trans_date,gl_code,account_name,dc,local_amount,details
+JE20-0001,01/25/2026,1010,Bank Current Account,DR,"$56,479.25",Customer receipt
+JE20-0001,01/25/2026,1100,Accounts Receivable,CR,"$56,479.25",Customer receipt
+JE20-0002,08/20/2026,1500,Fixed Assets,DR,"$58,598.56",Asset purchase
+JE20-0002,08/20/2026,1010,Bank Current Account,CR,"$58,598.56",Asset purchase
+JE20-0003,04/07/2026,2000,Accounts Payable,DR,"$87,811.62",Supplier payment
+JE20-0003,04/07/2026,1000,Cash,CR,"$87,811.62",Supplier payment
+JE20-0004,04/20/2026,1000,Cash,DR,"$70,299.32",Loan drawdown
+JE20-0004,04/20/2026,1100,Accounts Receivable,CR,"$70,299.32",Loan drawdown
+JE20-0005,02/10/2026,2000,Accounts Payable,DR,"$32,709.29",Supplier payment
+JE20-0005,02/10/2026,1000,Cash,CR,"$32,709.29",Supplier payment
+JE20-0006,12/18/2026,5100,,DR,"$31,628.51",Payroll run
+JE20-0006,12/18/2026,1000,Cash,CR,"$31,628.51",Payroll run
+JE20-0007,10/24/2026,1000,Cash,DR,"$52,203.69",Customer receipt
+JE20-0007,10/24/2026,1100,Accounts Receivable,CR,"$52,203.69",Customer receipt
+JE20-0008,11/17/2026,2000,Accounts Payable,DR,"$55,448.02",Supplier payment
+JE20-0008,11/17/2026,1010,Bank Current Account,CR,"$55,448.02",Supplier payment
+JE20-0009,04/26/2026,1010,Bank Current Account,DR,"$5,851.44",Sales invoice
+JE20-0009,04/26/2026,4000,Sales Revenue,CR,"$5,851.44",Sales invoice
+JE20-0010,01/03/2026,1500,Fixed Assets,DR,"$62,253.78",Asset purchase
+JE20-0010,01/03/2026,1010,Bank Current Account,CR,"$62,253.78",Asset purchase
+JE20-0011,01/10/2026,1010,Bank Current Account,DR,"$82,127.17",Capital contribution
+JE20-0011,01/10/2026,3000,Share Capital,CR,"$82,127.17",Capital contribution
+JE20-0012,12/04/2026,1000,Cash,DR,"$48,385.05",Capital contribution
+JE20-0012,12/04/2026,3000,Share Capital,CR,"$48,385.05",Capital contribution
+JE20-0013,08/18/2026,1000,Cash,DR,"$19,013.31",Loan drawdown
+JE20-0013,08/18/2026,3100,Retained Earnings,CR,"$19,013.31",Loan drawdown
+JE20-0014,05/11/2026,1000,Cash,DR,"$87,627.32",Sales invoice
+JE20-0014,05/11/2026,4000,Sales Revenue,CR,"$87,627.32",Sales invoice
+JE20-0015,11/12/2026,5100,Salaries Expense,DR,"$1,892.61",Payroll run
+JE20-0015,11/12/2026,1000,Cash,CR,"$1,892.61",Payroll run
+JE20-0016,09/09/2026,1010,Bank Current Account,DR,"$94,620.07",Loan drawdown
+JE20-0016,09/09/2026,5100,Salaries Expense,CR,"$94,620.07",Loan drawdown
+JE20-0017,01/18/2026,1100,Accounts Receivable,DR,"$83,492.54",Sales invoice
+JE20-0017,01/18/2026,4000,Sales Revenue,CR,"$83,492.54",Sales invoice
+JE20-0018,07/22/2026,1500,Fixed Assets,DR,"$32,568.42",Asset purchase
+JE20-0018,07/22/2026,1000,Cash,CR,"$32,568.42",Asset purchase
+JE20-0019,11/20/2026,2000,Accounts Payable,DR,"$49,540.09",Supplier payment
+JE20-0019,11/20/2026,1010,Bank Current Account,CR,"$49,540.09",Supplier payment
+JE20-0020,07/10/2026,1010,Bank Current Account,DR,"$54,489.43",Customer receipt
+JE20-0020,07/10/2026,1100,Accounts Receivable,CR,"$54,489.43",Customer receipt
+JE20-0021,10/18/2026,1000,Cash,DR,"$62,037.03",Loan drawdown
+JE20-0021,10/18/2026,3100,Retained Earnings,CR,"$62,037.03",Loan drawdown
+JE20-0022,09/05/2026,1000,Cash,DR,"$65,457.27",Customer receipt
+JE20-0022,09/05/2026,1100,Accounts Receivable,CR,"$65,457.27",Customer receipt
+JE20-0023,09/18/2026,1000,Cash,DR,"$30,264.52",Capital contribution
+JE20-0023,09/18/2026,3000,Share Capital,CR,"$30,264.52",Capital contribution
+JE20-0024,03/24/2026,5100,,DR,"$79,778.71",Operating expense
+JE20-0024,03/24/2026,1010,Bank Current Account,CR,"$79,778.71",Operating expense
+JE20-0025,05/15/2026,1010,Bank Current Account,DR,"$91,319.46",Sales invoice
+JE20-0025,,4000,Sales Revenue,CR,"$91,319.46",Sales invoice
+JE20-0026,03/01/2026,1500,Fixed Assets,DR,"$10,277.27",Asset purchase
+JE20-0026,03/01/2026,1000,Cash,CR,"$10,277.27",Asset purchase
+JE20-0027,11/01/2026,1500,Fixed Assets,DR,"$22,172.51",Asset purchase
+JE20-0027,11/01/2026,2000,Accounts Payable,CR,"$22,172.51",Asset purchase
+JE20-0028,08/23/2026,1010,Bank Current Account,DR,"$80,406.21",Loan drawdown
+JE20-0028,08/23/2026,5000,Cost of Goods Sold,CR,"$80,406.21",Loan drawdown
+JE20-0029,03/07/2026,1010,Bank Current Account,DR,"$45,094.38",Loan drawdown
+JE20-0029,03/07/2026,1100,Accounts Receivable,CR,"$45,094.38",
+JE20-0030,01/09/2026,1000,Cash,DR,"$72,666.51",Customer receipt
+JE20-0030,01/09/2026,1100,Accounts Receivable,CR,"$72,666.51",Customer receipt
+JE20-0031,02/06/2026,1000,Cash,DR,"$72,025.11",Capital contribution
+JE20-0031,02/06/2026,3000,Share Capital,CR,"$72,025.11",Capital contribution
+JE20-0032,04/14/2026,5100,Salaries Expense,DR,"$82,363.60",Payroll run
+JE20-0032,04/14/2026,1010,Bank Current Account,CR,"$82,363.60",Payroll run
+JE20-0033,07/20/2026,1000,Cash,DR,"$68,461.06",Capital contribution
+JE20-0033,,3000,Share Capital,CR,"$68,461.06",Capital contribution
+JE20-0034,01/08/2026,5600,Depreciation Expense,DR,"$42,985.17",Depreciation charge
+JE20-0034,01/08/2026,1500,,CR,"$42,985.17",Depreciation charge
+JE20-0035,09/25/2026,5600,Depreciation Expense,DR,"$53,047.94",Depreciation charge
+JE20-0035,09/25/2026,1500,Fixed Assets,CR,"$53,047.94",Depreciation charge
+JE20-0036,05/25/2026,1000,Cash,DR,"$41,841.69",Sales invoice
+JE20-0036,05/25/2026,4000,Sales Revenue,CR,"$41,841.69",Sales invoice
+JE20-0037,10/02/2026,1500,Fixed Assets,DR,"$40,220.54",Asset purchase
+JE20-0037,10/02/2026,1000,Cash,CR,"$40,220.54",Asset purchase
+JE20-0038,08/03/2026,5600,Depreciation Expense,DR,"$78,865.40",Depreciation charge
+JE20-0038,08/03/2026,1500,Fixed Assets,CR,"$78,865.40",Depreciation charge
+JE20-0039,12/18/2026,5600,Depreciation Expense,DR,"$74,012.65",Depreciation charge
+JE20-0039,12/18/2026,1500,Fixed Assets,CR,"$74,012.65",Depreciation charge
+JE20-0040,,2000,Accounts Payable,DR,"$30,830.27",Supplier payment
+JE20-0040,01/06/2026,1010,Bank Current Account,CR,"$30,830.27",Supplier payment
+JE20-0041,06/23/2026,5100,Salaries Expense,DR,"$8,703.54",Payroll run
+JE20-0041,06/23/2026,1010,Bank Current Account,CR,"$8,703.54",Payroll run
+JE20-0006,12/18/2026,5100,Salaries Expense,DR,"$31,628.51",Payroll run
+JE20-0006,12/18/2026,1000,Cash,CR,"$31,628.51",Payroll run

@@ -1,0 +1,11 @@
+acct_code,accountdesc,tb_balance
+1000,Cash,-168712.62
+1010,Bank Current Account,5668.82
+1100,Accounts Receivable,-136263.04
+2000,Accounts Payable,410398.39
+3000,Share Capital,-99491.70
+4000,Sales Revenue,-27233.41
+4100,Service Revenue,-239020.65
+5100,Salaries Expense,194328.07
+5200,Rent Expense,25229.07
+5500,Marketing Expense,29731.29

@@ -1,0 +1,12 @@
+ledger_account,gl_name,balance
+1010,Bank Current Account,71052.17
+1100,Accounts Receivable,-156181.78
+1500,Fixed Assets,-100576.71
+2000,Accounts Payable,266487.15
+2200,Loans Payable,-208320.04
+3000,Share Capital,-65114.66
+4000,Sales Revenue,-216594.49
+5100,Salaries Expense,213451.28
+5300,Utilities Expense,56452.99
+5400,Office Expenses,86373.39
+5500,Marketing Expense,96490.76

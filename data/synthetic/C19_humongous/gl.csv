@@ -1,0 +1,89 @@
+voucher,posted,gl_account,ledger_name,amount,details
+JE19-0001,01/24/2026,1500,Fixed Assets,59826.23,Asset purchase
+JE19-0001,01/24/2026,1000,Cash,(59826.23),Asset purchase
+JE19-0002,05/07/2026,4100,Service Revenue,45794.63,Depreciation charge
+JE19-0002,05/07/2026,1500,Fixed Assets,(45794.63),Depreciation charge
+JE19-0003,06/01/2026,1000,Cash,60181.42,Loan drawdown
+JE19-0003,06/01/2026,2000,Accounts Payable,(60181.42),Loan drawdown
+JE19-0004,04/01/2026,2000,Accounts Payable,37692.42,Supplier payment
+JE19-0004,04/01/2026,1000,Cash,(37692.42),Supplier payment
+JE19-0005,10/05/2026,1100,Accounts Receivable,45229.42,Sales invoice
+JE19-0005,10/05/2026,4200,Other Income,(45229.42),Sales invoice
+JE19-0006,,1000,Cash,15107.70,Loan drawdown
+JE19-0006,02/22/2026,5400,Office Expenses,(15107.70),Loan drawdown
+JE19-0007,03/23/2026,1000,Cash,33870.85,Loan drawdown
+JE19-0007,03/23/2026,5400,Office Expenses,(33870.85),Loan drawdown
+JE19-0008,06/18/2026,5400,Office Expenses,46421.90,Depreciation charge
+JE19-0008,06/18/2026,1500,Fixed Assets,(46421.90),Depreciation charge
+JE19-0009,07/12/2026,1010,,2175.32,Loan drawdown
+JE19-0009,07/12/2026,5400,Office Expenses,(2175.32),Loan drawdown
+JE19-0010,08/18/2026,2000,Accounts Payable,46180.91,Supplier payment
+JE19-0010,08/18/2026,1000,Cash,(46180.91),Supplier payment
+JE19-0011,09/12/2026,1500,Fixed Assets,53901.66,Asset purchase
+JE19-0011,09/12/2026,1000,Cash,(53901.66),Asset purchase
+JE19-0012,10/28/2026,1010,Bank Current Account,82447.73,Loan drawdown
+JE19-0012,10/28/2026,5200,Rent Expense,(82447.73),Loan drawdown
+JE19-0013,05/18/2026,1100,Accounts Receivable,42774.09,Depreciation charge
+JE19-0013,05/18/2026,1500,Fixed Assets,(42774.09),Depreciation charge
+JE19-0014,01/20/2026,1000,Cash,69737.44,Loan drawdown
+JE19-0014,01/20/2026,4000,Sales Revenue,(69737.44),Loan drawdown
+JE19-0015,11/18/2026,1000,Cash,68537.19,Loan drawdown
+JE19-0015,11/18/2026,5400,Office Expenses,(68537.19),Loan drawdown
+JE19-0016,03/20/2026,1000,Cash,72779.88,Capital contribution
+JE19-0016,03/20/2026,3000,Share Capital,(72779.88),Capital contribution
+JE19-0017,02/04/2026,1500,Fixed Assets,60939.74,Asset purchase
+JE19-0017,02/04/2026,1010,Bank Current Account,(60939.74),Asset purchase
+JE19-0018,03/06/2026,5100,Salaries Expense,79368.09,Depreciation charge
+JE19-0018,03/06/2026,1500,Fixed Assets,(79368.09),Depreciation charge
+JE19-0019,02/02/2026,1000,Cash,46187.37,Sales invoice
+JE19-0019,02/02/2026,4000,Sales Revenue,(46187.37),
+JE19-0020,04/20/2026,1010,Bank Current Account,4805.77,Capital contribution
+JE19-0020,04/20/2026,3000,Share Capital,(4805.77),Capital contribution
+JE19-0021,02/15/2026,5100,Salaries Expense,62347.83,Operating expense
+JE19-0021,02/15/2026,1000,Cash,(62347.83),Operating expense
+JE19-0022,07/27/2026,1010,Bank Current Account,70668.84,Sales invoice
+JE19-0022,07/27/2026,4200,Other Income,(70668.84),Sales invoice
+JE19-0023,12/03/2026,1000,Cash,50327.63,Loan drawdown
+JE19-0023,12/03/2026,5400,Office Expenses,(50327.63),Loan drawdown
+JE19-0024,02/04/2026,1500,Fixed Assets,91261.65,Asset purchase
+JE19-0024,02/04/2026,1000,Cash,(91261.65),Asset purchase
+JE19-0025,11/08/2026,1010,Bank Current Account,18467.38,Customer receipt
+JE19-0025,11/08/2026,1100,Accounts Receivable,(18467.38),Customer receipt
+JE19-0026,10/12/2026,2000,Accounts Payable,72831.98,
+JE19-0026,10/12/2026,1000,Cash,(72831.98),Supplier payment
+JE19-0027,03/18/2026,5100,Salaries Expense,15971.86,Payroll run
+JE19-0027,03/18/2026,1000,Cash,(15971.86),Payroll run
+JE19-0028,10/15/2026,1010,Bank Current Account,50790.46,Capital contribution
+JE19-0028,10/15/2026,3000,Share Capital,(50790.46),Capital contribution
+JE19-0029,11/14/2026,1010,Bank Current Account,39260.76,Loan drawdown
+JE19-0029,11/14/2026,2100,Accrued Liabilities,(39260.76),Loan drawdown
+JE19-0030,09/24/2026,1000,Cash,35724.73,Loan drawdown
+JE19-0030,09/24/2026,4200,Other Income,(35724.73),Loan drawdown
+JE19-0031,,1500,Fixed Assets,42595.35,Asset purchase
+JE19-0031,07/01/2026,1010,Bank Current Account,(42595.35),Asset purchase
+JE19-0032,03/10/2026,1010,Bank Current Account,1696.29,Sales invoice
+JE19-0032,03/10/2026,4200,Other Income,(1696.29),Sales invoice
+JE19-0033,06/01/2026,1010,Bank Current Account,20525.94,Sales invoice
+JE19-0033,06/01/2026,4000,Sales Revenue,(20525.94),Sales invoice
+JE19-0034,06/05/2026,1500,Fixed Assets,3729.29,Asset purchase
+JE19-0034,06/05/2026,1000,Cash,(3729.29),Asset purchase
+JE19-0035,04/08/2026,2000,Accounts Payable,84530.96,Supplier payment
+JE19-0035,04/08/2026,1010,Bank Current Account,(84530.96),Supplier payment
+JE19-0036,10/07/2026,1500,Fixed Assets,54260.71,Asset purchase
+JE19-0036,10/07/2026,1000,Cash,(54260.71),Asset purchase
+JE19-0037,12/23/2026,5400,Office Expenses,16549.80,Operating expense
+JE19-0037,12/23/2026,1010,Bank Current Account,(16549.80),Operating expense
+JE19-0038,10/13/2026,5400,Office Expenses,69465.37,Operating expense
+JE19-0038,10/13/2026,1000,Cash,(69465.37),Operating expense
+JE19-0039,07/14/2026,5100,Salaries Expense,33151.18,Operating expense
+JE19-0039,07/14/2026,1010,Bank Current Account,(33151.18),Operating expense
+JE19-0040,10/01/2026,5200,Rent Expense,62066.11,Operating expense
+JE19-0040,10/01/2026,2000,Accounts Payable,(62066.11),Operating expense
+JE19-0041,06/18/2026,1000,Cash,49887.76,Capital contribution
+JE19-0041,06/18/2026,3000,Share Capital,(49887.76),Capital contribution
+JE19-0042,11/24/2026,2000,Accounts Payable,14680.78,Supplier payment
+JE19-0042,11/24/2026,1000,Cash,(14680.78),Supplier payment
+JE19-0039-COPY,07/14/2026,5100,Salaries Expense,33151.18,Operating expense (copy)
+JE19-0039-COPY,07/14/2026,1010,Bank Current Account,(33151.18),Operating expense (copy)
+JE19-0015,11/18/2026,1000,Cash,68537.19,Loan drawdown
+JE19-0015,11/18/2026,5400,Office Expenses,(68537.19),Loan drawdown

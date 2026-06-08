@@ -1,0 +1,14 @@
+account_number,nominal_name,closing_bal
+1000,Cash,312581.39
+1010,Bank Current Account,278778.68
+1100,Accounts Receivable,-16677.25
+1510,Equipment,-26950.33
+2000,Accounts Payable,-59394.07
+2100,Accrued Liabilities,-54603.39
+3000,Share Capital,-320195.40
+4000,Sales Revenue,-252984.70
+5000,Cost of Goods Sold,8992.88
+5100,Salaries Expense,101435.04
+5200,Rent Expense,-131133.74
+5400,Office Expenses,-116306.43
+5600,Depreciation Expense,276457.32

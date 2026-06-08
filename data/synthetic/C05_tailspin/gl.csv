@@ -1,0 +1,65 @@
+voucher,date,acctno,account_name,dc_indicator,amount,particulars
+JE05-0001,2026-03-26,5600,Depreciation Expense,DR,31313.87,Depreciation charge
+JE05-0001,2026-03-26,1510,Equipment,CR,31313.87,Depreciation charge
+JE05-0002,2026-09-09,1010,Bank Current Account,DR,93816.96,Sales invoice
+JE05-0002,2026-09-09,4000,Sales Revenue,CR,93816.96,Sales invoice
+JE05-0003,2026-06-26,2000,Accounts Payable,DR,12651.54,Supplier payment
+JE05-0003,2026-06-26,1000,Cash,CR,12651.54,Supplier payment
+JE05-0004,2026-01-05,1010,Bank Current Account,DR,16677.25,Customer receipt
+JE05-0004,2026-01-05,1100,Accounts Receivable,CR,16677.25,Customer receipt
+JE05-0005,2026-06-17,1000,Cash,DR,45321.93,Capital contribution
+JE05-0005,2026-06-17,3000,Share Capital,CR,45321.93,Capital contribution
+JE05-0006,2026-10-02,5400,Office Expenses,DR,21163.99,Operating expense
+JE05-0006,2026-10-02,2000,Accounts Payable,CR,21163.99,Operating expense
+JE05-0007,2026-08-28,5600,Depreciation Expense,DR,5919.29,Depreciation charge
+JE05-0007,2026-08-28,2000,Accounts Payable,CR,5919.29,Depreciation charge
+JE05-0008,2026-08-03,1010,Bank Current Account,DR,46652.00,Capital contribution
+JE05-0008,2026-08-03,3000,Share Capital,CR,46652.00,Capital contribution
+JE05-0009,2026-03-09,5200,Rent Expense,DR,14219.46,Operating expense
+JE05-0009,2026-03-09,2000,Accounts Payable,CR,14219.46,Operating expense
+JE05-0010,2026-09-10,5600,Depreciation Expense,DR,94490.44,Depreciation charge
+JE05-0010,2026-09-10,5400,Office Expenses,CR,94490.44,Depreciation charge
+JE05-0011,2026-02-28,5100,Salaries Expense,DR,75375.16,Payroll run
+JE05-0011,2026-02-28,1000,Cash,CR,75375.16,Payroll run
+JE05-0012,2026-04-14,5600,Depreciation Expense,DR,42979.98,Depreciation charge
+JE05-0012,2026-04-14,5400,Office Expenses,CR,42979.98,Depreciation charge
+JE05-0013,2026-06-14,1010,Bank Current Account,DR,69353.75,Loan drawdown
+JE05-0013,2026-06-14,4000,Sales Revenue,CR,69353.75,Loan drawdown
+JE05-0014,2026-11-16,1010,Bank Current Account,DR,90598.25,Loan drawdown
+JE05-0014,2026-11-16,5200,Rent Expense,CR,90598.25,Loan drawdown
+JE05-0015,2026-02-24,5000,Cost of Goods Sold,DR,8992.88,Operating expense
+JE05-0015,2026-02-24,1000,Cash,CR,8992.88,Operating expense
+JE05-0016,2026-09-18,1000,Cash,DR,55776.21,Loan drawdown
+JE05-0016,2026-09-18,5600,Depreciation Expense,CR,55776.21,Loan drawdown
+JE05-0017,2026-11-25,1000,Cash,DR,33688.78,Loan drawdown
+JE05-0017,2026-11-25,5200,Rent Expense,CR,33688.78,Loan drawdown
+JE05-0018,2026-06-04,1000,Cash,DR,57098.90,Capital contribution
+JE05-0018,2026-06-04,3000,Share Capital,CR,57098.90,Capital contribution
+JE05-0019,2026-02-12,5600,Depreciation Expense,DR,21419.63,Depreciation charge
+JE05-0019,2026-02-12,1510,Equipment,CR,21419.63,Depreciation charge
+JE05-0020,2026-07-28,5600,Depreciation Expense,DR,54603.39,Depreciation charge
+JE05-0020,2026-07-28,2100,Accrued Liabilities,CR,54603.39,Depreciation charge
+JE05-0021,2026-12-25,5600,Depreciation Expense,DR,17262.46,Depreciation charge
+JE05-0021,2026-12-25,1000,Cash,CR,17262.46,Depreciation charge
+JE05-0022,2026-03-19,1510,Equipment,DR,729.13,Asset purchase
+JE05-0022,2026-03-19,1010,Bank Current Account,CR,729.13,Asset purchase
+JE05-0023,2026-01-03,1000,Cash,DR,70430.92,Capital contribution
+JE05-0023,2026-01-03,3000,Share Capital,CR,70430.92,Capital contribution
+JE05-0024,2026-03-12,5600,Depreciation Expense,DR,43178.30,Depreciation charge
+JE05-0024,2026-03-12,1510,Equipment,CR,43178.30,Depreciation charge
+JE05-0025,2026-01-05,1510,Equipment,DR,56701.82,Asset purchase
+JE05-0025,2026-01-05,2000,Accounts Payable,CR,56701.82,Asset purchase
+JE05-0026,2026-11-14,2000,Accounts Payable,DR,25958.95,Supplier payment
+JE05-0026,2026-11-14,1000,Cash,CR,25958.95,Supplier payment
+JE05-0027,2026-09-04,5100,Salaries Expense,DR,26059.88,Payroll run
+JE05-0027,2026-09-04,1010,Bank Current Account,CR,26059.88,Payroll run
+JE05-0028,2026-10-16,1000,Cash,DR,64478.97,Loan drawdown
+JE05-0028,2026-10-16,3000,Share Capital,CR,64478.97,Loan drawdown
+JE05-0029,2026-10-02,5600,Depreciation Expense,DR,21066.17,Depreciation charge
+JE05-0029,2026-10-02,5200,Rent Expense,CR,21066.17,Depreciation charge
+JE05-0030,2026-03-25,1000,Cash,DR,89813.99,Sales invoice
+JE05-0030,2026-03-25,4000,Sales Revenue,CR,89813.99,Sales invoice
+JE05-0031,2026-08-24,1510,Equipment,DR,11530.52,Asset purchase
+JE05-0031,2026-08-24,1010,Bank Current Account,CR,11530.52,Asset purchase
+JE05-0032,2026-12-08,1000,Cash,DR,36212.68,Capital contribution
+JE05-0032,2026-12-08,3000,Share Capital,CR,36212.68,Capital contribution

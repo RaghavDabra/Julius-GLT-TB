@@ -1,0 +1,15 @@
+account_id,account_description,ending_balance
+1000,Cash,279094.18
+1010,Bank Current Account,111667.36
+1100,Accounts Receivable,-261541.88
+2000,Accounts Payable,166792.15
+2300,Tax Payable,-22692.49
+3000,Share Capital,-429765.93
+4000,Sales Revenue,-74961.04
+4100,Service Revenue,-110453.70
+4200,Other Income,-81299.63
+5100,Salaries Expense,218807.37
+5200,Rent Expense,28650.57
+5400,Office Expenses,59439.88
+5500,Marketing Expense,-7898.53
+5600,Depreciation Expense,124161.69

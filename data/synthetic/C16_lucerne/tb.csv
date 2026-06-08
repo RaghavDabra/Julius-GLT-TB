@@ -1,0 +1,12 @@
+account_no,gl_name,ending_balance
+1000,Cash,-30867.21
+1010,Bank Current Account,295214.49
+1100,Accounts Receivable,25209.56
+1200,Inventory,181614.25
+1500,Fixed Assets,-275384.86
+2000,Accounts Payable,-20042.95
+3000,Share Capital,-186869.88
+4000,Sales Revenue,-137249.63
+5100,Salaries Expense,-23623.94
+5200,Rent Expense,14151.91
+5400,Office Expenses,136192.40

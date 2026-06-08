@@ -1,0 +1,14 @@
+gl_code,account_name,ending_balance
+1000,Cash,-75169.51
+1100,Accounts Receivable,-157605.56
+1510,Equipment,146611.79
+2000,Accounts Payable,92067.61
+2200,Loans Payable,-210566.89
+2300,Tax Payable,4496.25
+3000,Share Capital,-241773.61
+4000,Sales Revenue,-75232.84
+4100,Service Revenue,-53150.71
+4200,Other Income,-22404.39
+5100,Salaries Expense,389656.82
+5200,Rent Expense,6236.31
+5400,Office Expenses,114404.32

@@ -1,0 +1,12 @@
+gl_code,account_title,amount
+1000,Cash,421545.11
+1010,Bank Current Account,82870.84
+1100,Accounts Receivable,-333197.31
+1500,Fixed Assets,-22820.08
+2000,Accounts Payable,234166.78
+3000,Share Capital,-301262.91
+3100,Retained Earnings,-81050.34
+4000,Sales Revenue,-264977.68
+5000,Cost of Goods Sold,-80406.21
+5100,Salaries Expense,141375.41
+5600,Depreciation Expense,248911.16

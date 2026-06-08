@@ -1,0 +1,87 @@
+voucher,date,account_id,ledger_name,posting_amount,memo
+JE18-0001,07/16/2026,1000,Cash,50016.01,Customer receipt
+JE18-0001,07/16/2026,1100,Accounts Receivable,-50016.01,
+JE18-0002,03/15/2026,1000,Cash,81758.95,Depreciation charge
+JE18-0002,03/15/2026,4100,Service Revenue,-81758.95,Depreciation charge
+JE18-0003,12/01/2026,5400,Office Expenses,43787.70,Operating expense
+JE18-0003,12/01/2026,2000,Accounts Payable,-43787.70,Operating expense
+JE18-0004,02/11/2026,1100,Accounts Receivable,36138.75,Sales invoice
+JE18-0004,02/11/2026,4000,Sales Revenue,-36138.75,Sales invoice
+JE18-0005,04/09/2026,1010,Bank Current Account,52181.24,Loan drawdown
+JE18-0005,04/09/2026,2200,Loans Payable,-52181.24,Loan drawdown
+JE18-0006,07/07/2026,5100,Salaries Expense,17594.21,Payroll run
+JE18-0006,07/07/2026,1010,Bank Current Account,-17594.21,Payroll run
+JE18-0007,05/15/2026,1010,Bank Current Account,81182.83,Capital contribution
+JE18-0007,05/15/2026,3000,Share Capital,-81182.83,Capital contribution
+JE18-0008,12/09/2026,2000,Accounts Payable,77375.98,Supplier payment
+JE18-0008,12/09/2026,1000,Cash,-77375.98,Supplier payment
+JE18-0009,12/05/2026,1010,Bank Current Account,18746.60,Customer receipt
+JE18-0009,12/05/2026,1100,Accounts Receivable,-18746.60,Customer receipt
+JE18-0010,03/28/2026,5100,Salaries Expense,40131.24,Payroll run
+JE18-0010,03/28/2026,1000,Cash,-40131.24,Payroll run
+JE18-0011,09/28/2026,4100,Service Revenue,28608.24,Depreciation charge
+JE18-0011,09/28/2026,5200,Rent Expense,-28608.24,Depreciation charge
+JE18-0012,01/07/2026,1010,Bank Current Account,65648.02,Sales invoice
+JE18-0012,01/07/2026,4000,Sales Revenue,-65648.02,Sales invoice
+JE18-0013,12/11/2026,1510,Equipment,9284.23,Asset purchase
+JE18-0013,12/11/2026,2000,Accounts Payable,-9284.23,Asset purchase
+JE18-0014,05/12/2026,1510,Equipment,53299.20,Asset purchase
+JE18-0014,05/12/2026,1010,,-53299.20,Asset purchase
+JE18-0015,11/20/2026,1010,Bank Current Account,33450.93,Sales invoice
+JE18-0015,11/20/2026,4000,Sales Revenue,-33450.93,Sales invoice
+JE18-0016,11/17/2026,1000,Cash,33832.09,Customer receipt
+JE18-0016,11/17/2026,1100,Accounts Receivable,-33832.09,Customer receipt
+JE18-0017,05/15/2026,5100,Salaries Expense,36294.58,Payroll run
+JE18-0017,05/15/2026,1000,Cash,-36294.58,Payroll run
+JE18-0018,10/19/2026,2000,Accounts Payable,40159.29,Supplier payment
+JE18-0018,10/19/2026,1010,Bank Current Account,-40159.29,Supplier payment
+JE18-0019,04/11/2026,1000,Cash,15515.65,Capital contribution
+JE18-0019,04/11/2026,3000,Share Capital,-15515.65,Capital contribution
+JE18-0020,07/09/2026,1010,Bank Current Account,57570.76,Loan drawdown
+JE18-0020,,2200,Loans Payable,-57570.76,Loan drawdown
+JE18-0021,03/28/2026,5100,Salaries Expense,39416.86,Payroll run
+JE18-0021,03/28/2026,1010,Bank Current Account,-39416.86,Payroll run
+JE18-0022,05/24/2026,1000,Cash,22404.39,Sales invoice
+JE18-0022,05/24/2026,4200,,-22404.39,Sales invoice
+JE18-0023,02/03/2026,5100,Salaries Expense,37809.77,Operating expense
+JE18-0023,02/03/2026,1000,Cash,-37809.77,Operating expense
+JE18-0024,09/25/2026,5100,Salaries Expense,73273.06,Payroll run
+JE18-0024,09/25/2026,1000,Cash,-73273.06,Payroll run
+JE18-0025,02/21/2026,5100,Salaries Expense,58776.99,Operating expense
+JE18-0025,02/21/2026,1010,Bank Current Account,-58776.99,Operating expense
+JE18-0026,05/15/2026,1010,Bank Current Account,23615.56,Capital contribution
+JE18-0026,05/15/2026,3000,Share Capital,-23615.56,Capital contribution
+JE18-0027,11/12/2026,2000,Accounts Payable,2859.99,Supplier payment
+JE18-0027,11/12/2026,1000,Cash,-2859.99,Supplier payment
+JE18-0028,09/09/2026,1010,Bank Current Account,92627.00,Loan drawdown
+JE18-0028,09/09/2026,2200,Loans Payable,-92627.00,Loan drawdown
+JE18-0029,11/19/2026,4000,Sales Revenue,60004.86,Depreciation charge
+JE18-0029,11/19/2026,1100,Accounts Receivable,-60004.86,Depreciation charge
+JE18-0030,04/26/2026,1010,Bank Current Account,45834.66,Capital contribution
+JE18-0030,04/26/2026,3000,Share Capital,-45834.66,Capital contribution
+JE18-0031,05/05/2026,5200,Rent Expense,34844.55,Operating expense
+JE18-0031,05/05/2026,1010,Bank Current Account,-34844.55,Operating expense
+JE18-0032,03/12/2026,1510,Equipment,49786.55,Asset purchase
+JE18-0032,,1000,Cash,-49786.55,Asset purchase
+JE18-0033,08/25/2026,1510,Equipment,938.88,Asset purchase
+JE18-0033,08/25/2026,2000,Accounts Payable,-938.88,Asset purchase
+JE18-0034,05/20/2026,5100,Salaries Expense,72792.69,Payroll run
+JE18-0034,05/20/2026,1000,Cash,-72792.69,Payroll run
+JE18-0035,09/14/2026,1000,Cash,18035.96,Customer receipt
+JE18-0035,09/14/2026,1100,Accounts Receivable,-18035.96,Customer receipt
+JE18-0036,11/13/2026,1000,Cash,67961.87,Capital contribution
+JE18-0036,11/13/2026,3000,Share Capital,-67961.87,Capital contribution
+JE18-0037,11/08/2026,1000,Cash,7663.04,Capital contribution
+JE18-0037,11/08/2026,3000,Share Capital,-7663.04,Capital contribution
+JE18-0038,05/14/2026,5400,Office Expenses,70616.62,Depreciation charge
+JE18-0038,05/14/2026,5100,Salaries Expense,-70616.62,Depreciation charge
+JE18-0039,02/21/2026,1000,Cash,13108.79,Customer receipt
+JE18-0039,02/21/2026,1100,Accounts Receivable,-13108.79,Customer receipt
+JE18-0040,08/07/2026,5100,Salaries Expense,66589.83,Payroll run
+JE18-0040,08/07/2026,1010,Bank Current Account,-66589.83,Payroll run
+JE18-0041,09/01/2026,1000,Cash,4857.60,Loan drawdown
+JE18-0041,09/01/2026,2200,Loans Payable,-4857.60,Loan drawdown
+JE18-0042,12/15/2026,2000,Accounts Payable,25683.16,Supplier payment
+JE18-0042,12/15/2026,1010,Bank Current Account,-25683.16,Supplier payment
+JE18-0006,07/07/2026,5100,Salaries Expense,17594.21,Payroll run
+JE18-0006,07/07/2026,1010,Bank Current Account,-17594.21,Payroll run

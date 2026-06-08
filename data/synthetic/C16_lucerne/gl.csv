@@ -1,0 +1,73 @@
+document_number,entry_date,account_id,ledger_name,dc_indicator,line_amount,comment
+JE16-0001,14-May-2026,1200,Inventory,DR,78080.59,Asset purchase
+JE16-0001,14-May-2026,2000,Accounts Payable,CR,78080.59,Asset purchase
+JE16-0002,13-Jan-2026,1010,,DR,41222.42,Capital contribution
+JE16-0002,13-Jan-2026,3000,Share Capital,CR,41222.42,Capital contribution
+JE16-0003,03-Oct-2026,5400,Office Expenses,DR,60988.95,Operating expense
+JE16-0003,03-Oct-2026,1000,Cash,CR,60988.95,Operating expense
+JE16-0004,04-Sep-2026,1100,Accounts Receivable,DR,34077.86,Sales invoice
+JE16-0004,04-Sep-2026,4000,Sales Revenue,CR,34077.86,Sales invoice
+JE16-0005,13-Aug-2026,1500,Fixed Assets,DR,8355.02,Asset purchase
+JE16-0005,13-Aug-2026,2000,Accounts Payable,CR,8355.02,Asset purchase
+JE16-0006,05-Apr-2026,1000,Cash,DR,14977.28,Capital contribution
+JE16-0006,05-Apr-2026,3000,Share Capital,CR,14977.28,Capital contribution
+JE16-0007,21-Dec-2026,1010,Bank Current Account,DR,28420.66,Capital contribution
+JE16-0007,21-Dec-2026,3000,Share Capital,CR,28420.66,Capital contribution
+JE16-0008,13-Oct-2026,1000,Cash,DR,627.08,Loan drawdown
+JE16-0008,13-Oct-2026,1010,Bank Current Account,CR,627.08,Loan drawdown
+JE16-0009,,5100,Salaries Expense,DR,20073.52,Depreciation charge
+JE16-0009,24-Dec-2026,1500,Fixed Assets,CR,20073.52,Depreciation charge
+JE16-0010,20-Apr-2026,1010,Bank Current Account,DR,15416.52,Loan drawdown
+JE16-0010,20-Apr-2026,1200,Inventory,CR,15416.52,Loan drawdown
+JE16-0011,28-Oct-2026,1200,Inventory,DR,17351.80,
+JE16-0011,28-Oct-2026,1000,Cash,CR,17351.80,Asset purchase
+JE16-0012,10-Feb-2026,1100,Accounts Receivable,DR,61297.38,Sales invoice
+JE16-0012,10-Feb-2026,4000,Sales Revenue,CR,61297.38,Sales invoice
+JE16-0013,16-Oct-2026,5200,Rent Expense,DR,18875.06,Operating expense
+JE16-0013,16-Oct-2026,1000,Cash,CR,18875.06,Operating expense
+JE16-0014,03-Oct-2026,1000,Cash,DR,9639.27,
+JE16-0014,03-Oct-2026,2000,Accounts Payable,CR,9639.27,Loan drawdown
+JE16-0015,22-Oct-2026,1010,Bank Current Account,DR,42893.77,Customer receipt
+JE16-0015,22-Oct-2026,1100,Accounts Receivable,CR,42893.77,Customer receipt
+JE16-0016,14-Jun-2026,1200,Inventory,DR,53916.85,Asset purchase
+JE16-0016,14-Jun-2026,2000,,CR,53916.85,Asset purchase
+JE16-0017,23-Apr-2026,2000,Accounts Payable,DR,23499.71,Supplier payment
+JE16-0017,23-Apr-2026,1010,Bank Current Account,CR,23499.71,Supplier payment
+JE16-0018,11-Dec-2026,1010,Bank Current Account,DR,12888.91,Capital contribution
+JE16-0018,11-Dec-2026,3000,Share Capital,CR,12888.91,Capital contribution
+JE16-0019,16-May-2026,5100,Salaries Expense,DR,34176.64,Payroll run
+JE16-0019,16-May-2026,1010,Bank Current Account,CR,34176.64,Payroll run
+JE16-0020,18-Mar-2026,1010,Bank Current Account,DR,79994.07,Depreciation charge
+JE16-0020,18-Mar-2026,1500,Fixed Assets,CR,79994.07,Depreciation charge
+JE16-0021,28-Jan-2026,1010,Bank Current Account,DR,69146.30,Customer receipt
+JE16-0021,28-Jan-2026,1100,Accounts Receivable,CR,69146.30,Customer receipt
+JE16-0022,02-Apr-2026,5400,Office Expenses,DR,73108.64,Depreciation charge
+JE16-0022,02-Apr-2026,1500,Fixed Assets,CR,73108.64,Depreciation charge
+JE16-0023,24-Oct-2026,1500,Fixed Assets,DR,37378.47,Depreciation charge
+JE16-0023,24-Oct-2026,3000,Share Capital,CR,37378.47,Depreciation charge
+JE16-0024,13-Feb-2026,1200,Inventory,DR,47681.53,Asset purchase
+JE16-0024,13-Feb-2026,1010,Bank Current Account,CR,47681.53,Asset purchase
+JE16-0025,22-Oct-2026,1000,Cash,DR,80581.08,Loan drawdown
+JE16-0025,22-Oct-2026,5100,Salaries Expense,CR,80581.08,Loan drawdown
+JE16-0026,19-Oct-2026,2000,Accounts Payable,DR,15252.25,Supplier payment
+JE16-0026,19-Oct-2026,1010,Bank Current Account,CR,15252.25,Supplier payment
+JE16-0027,08-Aug-2026,2000,Accounts Payable,DR,3983.82,Supplier payment
+JE16-0027,08-Aug-2026,1010,Bank Current Account,CR,3983.82,Supplier payment
+JE16-0028,07-Nov-2026,5200,Rent Expense,DR,22346.67,Operating expense
+JE16-0028,07-Nov-2026,1010,Bank Current Account,CR,22346.67,Operating expense
+JE16-0029,02-Jan-2026,2000,Accounts Payable,DR,87213.00,Depreciation charge
+JE16-0029,02-Jan-2026,1500,Fixed Assets,CR,87213.00,Depreciation charge
+JE16-0030,13-Mar-2026,1010,Bank Current Account,DR,51781.60,Loan drawdown
+JE16-0030,13-Mar-2026,5400,Office Expenses,CR,51781.60,Loan drawdown
+JE16-0031,08-Jul-2026,1010,Bank Current Account,DR,49155.48,Capital contribution
+JE16-0031,08-Jul-2026,3000,Share Capital,CR,49155.48,Capital contribution
+JE16-0032,20-Aug-2026,3000,Share Capital,DR,46328.82,Depreciation charge
+JE16-0032,20-Aug-2026,1500,Fixed Assets,CR,46328.82,Depreciation charge
+JE16-0033,03-Apr-2026,1100,Accounts Receivable,DR,41874.39,Sales invoice
+JE16-0033,03-Apr-2026,4000,Sales Revenue,CR,41874.39,Sales invoice
+JE16-0034,12-Mar-2026,5400,Office Expenses,DR,14400.30,Depreciation charge
+JE16-0034,12-Mar-2026,1500,Fixed Assets,CR,14400.30,Depreciation charge
+JE16-0035,24-Jun-2026,5400,Office Expenses,DR,39476.11,Operating expense
+JE16-0035,24-Jun-2026,1000,Cash,CR,39476.11,Operating expense
+JE16-0031-COPY,08-Jul-2026,1010,Bank Current Account,DR,49155.48,Capital contribution (copy)
+JE16-0031-COPY,08-Jul-2026,3000,Share Capital,CR,49155.48,Capital contribution (copy)

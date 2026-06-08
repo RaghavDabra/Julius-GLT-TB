@@ -1,0 +1,83 @@
+je_id,effective_date,gl_account,account_title,posting_type,trans_amt,details
+JE08-0001,03/27/2026,1010,Bank Current Account,DR,91460.75,Capital contribution
+JE08-0001,,3000,Share Capital,CR,91460.75,Capital contribution
+JE08-0002,08/17/2026,1010,Bank Current Account,DR,72532.06,Loan drawdown
+JE08-0002,08/17/2026,5100,Salaries Expense,CR,72532.06,Loan drawdown
+JE08-0003,02/13/2026,5100,Salaries Expense,DR,47325.57,Payroll run
+JE08-0003,02/13/2026,1010,Bank Current Account,CR,47325.57,Payroll run
+JE08-0004,01/02/2026,3000,Share Capital,DR,55480.19,Depreciation charge
+JE08-0004,01/02/2026,1500,Fixed Assets,CR,55480.19,Depreciation charge
+JE08-0005,11/22/2026,1500,Fixed Assets,DR,83839.90,Asset purchase
+JE08-0005,11/22/2026,2000,Accounts Payable,CR,83839.90,Asset purchase
+JE08-0006,07/05/2026,5100,Salaries Expense,DR,80504.30,Payroll run
+JE08-0006,07/05/2026,1000,Cash,CR,80504.30,Payroll run
+JE08-0007,06/02/2026,1510,Equipment,DR,72601.81,Asset purchase
+JE08-0007,06/02/2026,1010,Bank Current Account,CR,72601.81,Asset purchase
+JE08-0008,05/03/2026,1000,Cash,DR,34535.38,
+JE08-0008,05/03/2026,3000,Share Capital,CR,34535.38,Capital contribution
+JE08-0009,10/22/2026,1010,Bank Current Account,DR,78430.78,Capital contribution
+JE08-0009,10/22/2026,3000,Share Capital,CR,78430.78,Capital contribution
+JE08-0010,06/18/2026,5100,Salaries Expense,DR,37511.77,Operating expense
+JE08-0010,06/18/2026,1000,Cash,CR,37511.77,Operating expense
+JE08-0011,01/02/2026,1000,,DR,47582.39,Loan drawdown
+JE08-0011,01/02/2026,1100,Accounts Receivable,CR,47582.39,Loan drawdown
+JE08-0012,03/20/2026,2000,Accounts Payable,DR,49408.71,Supplier payment
+JE08-0012,,1010,Bank Current Account,CR,49408.71,Supplier payment
+JE08-0013,10/24/2026,1100,Accounts Receivable,DR,15563.32,Depreciation charge
+JE08-0013,10/24/2026,1500,Fixed Assets,CR,15563.32,Depreciation charge
+JE08-0014,09/18/2026,1510,Equipment,DR,48268.83,Asset purchase
+JE08-0014,09/18/2026,1010,Bank Current Account,CR,48268.83,Asset purchase
+JE08-0015,06/11/2026,5100,Salaries Expense,DR,77523.78,Payroll run
+JE08-0015,06/11/2026,1010,Bank Current Account,CR,77523.78,Payroll run
+JE08-0016,12/28/2026,5200,Rent Expense,DR,29333.24,Operating expense
+JE08-0016,12/28/2026,2000,Accounts Payable,CR,29333.24,Operating expense
+JE08-0017,,1100,Accounts Receivable,DR,25335.56,Sales invoice
+JE08-0017,11/26/2026,4000,Sales Revenue,CR,25335.56,Sales invoice
+JE08-0018,11/24/2026,1000,Cash,DR,16323.07,Customer receipt
+JE08-0018,11/24/2026,1100,Accounts Receivable,CR,16323.07,Customer receipt
+JE08-0019,12/04/2026,1000,Cash,DR,3144.46,Capital contribution
+JE08-0019,12/04/2026,3000,Share Capital,CR,3144.46,Capital contribution
+JE08-0020,03/14/2026,1000,Cash,DR,29903.73,Customer receipt
+JE08-0020,03/14/2026,1100,Accounts Receivable,CR,29903.73,Customer receipt
+JE08-0021,12/24/2026,1010,Bank Current Account,DR,82936.76,Customer receipt
+JE08-0021,12/24/2026,1100,Accounts Receivable,CR,82936.76,Customer receipt
+JE08-0022,09/11/2026,1100,Accounts Receivable,DR,49347.10,Sales invoice
+JE08-0022,09/11/2026,4000,Sales Revenue,CR,49347.10,Sales invoice
+JE08-0023,08/18/2026,5100,Salaries Expense,DR,90891.62,Payroll run
+JE08-0023,08/18/2026,1010,Bank Current Account,CR,90891.62,Payroll run
+JE08-0024,04/08/2026,1010,Bank Current Account,DR,58015.76,Loan drawdown
+JE08-0024,04/08/2026,4000,Sales Revenue,CR,58015.76,Loan drawdown
+JE08-0025,05/25/2026,1510,Equipment,DR,21478.64,Asset purchase
+JE08-0025,05/25/2026,1010,Bank Current Account,CR,21478.64,Asset purchase
+JE08-0026,08/11/2026,1510,Equipment,DR,65619.26,Asset purchase
+JE08-0026,08/11/2026,1000,Cash,CR,65619.26,Asset purchase
+JE08-0027,10/22/2026,5100,Salaries Expense,DR,27446.82,Payroll run
+JE08-0027,10/22/2026,1010,Bank Current Account,CR,27446.82,Payroll run
+JE08-0028,03/10/2026,2000,Accounts Payable,DR,90694.65,Depreciation charge
+JE08-0028,03/10/2026,1500,Fixed Assets,CR,90694.65,Depreciation charge
+JE08-0029,08/21/2026,1010,Bank Current Account,DR,33002.58,Sales invoice
+JE08-0029,08/21/2026,4000,Sales Revenue,CR,33002.58,Sales invoice
+JE08-0030,09/09/2026,1510,,DR,20446.65,Asset purchase
+JE08-0030,09/09/2026,1010,Bank Current Account,CR,20446.65,Asset purchase
+JE08-0031,12/19/2026,5400,Office Expenses,DR,10510.14,Depreciation charge
+JE08-0031,12/19/2026,1500,Fixed Assets,CR,10510.14,Depreciation charge
+JE08-0032,09/08/2026,1000,Cash,DR,63683.75,Customer receipt
+JE08-0032,09/08/2026,1100,Accounts Receivable,CR,63683.75,Customer receipt
+JE08-0033,12/16/2026,1000,Cash,DR,39351.63,Customer receipt
+JE08-0033,12/16/2026,1100,Accounts Receivable,CR,39351.63,Customer receipt
+JE08-0034,09/06/2026,5400,Office Expenses,DR,641.46,Operating expense
+JE08-0034,09/06/2026,1000,Cash,CR,641.46,Operating expense
+JE08-0035,05/11/2026,1010,Bank Current Account,DR,61853.59,Capital contribution
+JE08-0035,05/11/2026,3000,Share Capital,CR,61853.59,Capital contribution
+JE08-0036,02/21/2026,1510,Equipment,DR,86267.82,Asset purchase
+JE08-0036,02/21/2026,1000,Cash,CR,86267.82,Asset purchase
+JE08-0037,03/02/2026,1000,Cash,DR,39786.39,Customer receipt
+JE08-0037,03/02/2026,1100,Accounts Receivable,CR,39786.39,Customer receipt
+JE08-0038,05/02/2026,1010,Bank Current Account,DR,88987.34,Capital contribution
+JE08-0038,05/02/2026,3000,Share Capital,CR,88987.34,Capital contribution
+JE08-0039,06/10/2026,1010,Bank Current Account,DR,88213.94,Sales invoice
+JE08-0039,06/10/2026,4000,Sales Revenue,CR,88213.94,Sales invoice
+JE08-0009-COPY,10/22/2026,1010,Bank Current Account,DR,78430.78,Capital contribution (copy)
+JE08-0009-COPY,10/22/2026,3000,Share Capital,CR,78430.78,Capital contribution (copy)
+JE08-0018-COPY,11/24/2026,1000,Cash,DR,16323.07,Customer receipt (copy)
+JE08-0018-COPY,11/24/2026,1100,Accounts Receivable,CR,16323.07,Customer receipt (copy)

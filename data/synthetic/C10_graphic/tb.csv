@@ -1,0 +1,13 @@
+account,acct_name,closing_bal
+1000,Cash,187286.51
+1010,Bank Current Account,333643.11
+1100,Accounts Receivable,-350476.01
+1200,Inventory,277202.11
+2000,Accounts Payable,-315460.42
+2100,Accrued Liabilities,-149335.87
+3000,Share Capital,-491565.88
+4000,Sales Revenue,-61725.45
+4200,Other Income,-487.95
+5100,Salaries Expense,177490.35
+5200,Rent Expense,70382.93
+5400,Office Expenses,226347.76

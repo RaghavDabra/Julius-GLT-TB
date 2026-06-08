@@ -1,0 +1,12 @@
+ledger_account,account_title,balance
+1000,Cash,119331.81
+1010,Bank Current Account,98798.11
+1100,Accounts Receivable,-71710.67
+1200,Inventory,168489.35
+2000,Accounts Payable,-264491.27
+3000,Share Capital,-165886.45
+4000,Sales Revenue,-365966.52
+5100,Salaries Expense,67724.24
+5200,Rent Expense,87498.99
+5400,Office Expenses,192974.15
+5500,Marketing Expense,133238.26

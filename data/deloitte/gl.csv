@@ -1,0 +1,98 @@
+Journal_ID,Posting_Date,GL_Account,Account_Name,DR_CR,Amount,Narrative
+JE-0001,19/02/2026,5200,Office Rent,DR,61425.49,Office rent - Sydney
+JE-0001,19/02/2026,1000,Cash at Bank,CR,61425.49,Office rent - Sydney
+JE-0002,05/02/2026,5200,Office Rent,DR,53672.91,
+JE-0002,05/02/2026,1000,,CR,53672.91,Office rent - Sydney
+JE-0003,19/04/2026,1000,Cash at Bank,DR,7580.67,Client receipt - Blue Yonder
+JE-0003,19/04/2026,1100,Accounts Receivable,CR,7580.67,Client receipt - Blue Yonder
+JE-0004,05/03/2026,2000,Accounts Payable,DR,4723.56,Supplier payment
+JE-0004,05/03/2026,1000,Cash at Bank,CR,4723.56,Supplier payment
+JE-0005,26/11/2026,5000,Salaries & Wages,DR,223187.46,Monthly payroll
+JE-0005,26/11/2026,1000,Cash at Bank,CR,223187.46,Monthly payroll
+JE-0006,05/02/2026,1100,Accounts Receivable,DR,321007.56,Corporate tax compliance - Contoso
+JE-0006,05/02/2026,4200,Tax Advisory Revenue,CR,321007.56,Corporate tax compliance - Contoso
+JE-0007,05/06/2026,5700,Business Development,DR,18820.92,Industry conference
+JE-0007,05/06/2026,1000,Cash at Bank,CR,18820.92,Industry conference
+JE-0008,05/12/2026,5400,Travel & Entertainment,DR,32392.04,Engagement travel & meals
+JE-0008,05/12/2026,1000,Cash at Bank,CR,32392.04,Engagement travel & meals
+JE-0009,12/06/2026,5500,Professional Indemnity Insurance,DR,21319.31,PI insurance premium
+JE-0009,12/06/2026,1000,Cash at Bank,CR,21319.31,PI insurance premium
+JE-0010,19/03/2026,1500,Office Equipment,DR,21941.51,Laptop fleet refresh
+JE-0010,19/03/2026,2000,Accounts Payable,CR,21941.51,Laptop fleet refresh
+JE-0011,19/11/2026,5500,Professional Indemnity Insurance,DR,4450.67,PI insurance premium
+JE-0011,19/11/2026,1000,Cash at Bank,CR,4450.67,PI insurance premium
+JE-0012,12/08/2026,1100,Accounts Receivable,DR,298536.91,Assurance services - Blue Yonder
+JE-0012,12/08/2026,4100,Audit & Assurance Revenue,CR,298536.91,Assurance services - Blue Yonder
+JE-0013,05/12/2026,1100,Accounts Receivable,DR,106694.55,Assurance services - Contoso
+JE-0013,05/12/2026,4100,Audit & Assurance Revenue,CR,106694.55,Assurance services - Contoso
+JE-0014,12/08/2026,5000,Salaries & Wages,DR,183158.81,Salaries - consulting staff
+JE-0014,12/08/2026,1000,Cash at Bank,CR,183158.81,Salaries - consulting staff
+JE-0015,19/05/2026,5200,Office Rent,DR,49364.16,Office rent - Melbourne
+JE-0015,19/05/2026,1000,Cash at Bank,CR,49364.16,Office rent - Melbourne
+JE-0016,05/08/2026,1100,Accounts Receivable,DR,115455.77,Corporate tax compliance - Humongous Insurance
+JE-0016,05/08/2026,4200,Tax Advisory Revenue,CR,115455.77,Corporate tax compliance - Humongous Insurance
+JE-0017,19/07/2026,5300,Software & Technology,DR,13301.58,Data analytics licences
+JE-0017,19/07/2026,2000,Accounts Payable,CR,13301.58,Data analytics licences
+JE-0018,19/04/2026,5200,Office Rent,DR,48524.35,Office rent - Sydney
+JE-0018,19/04/2026,1000,Cash at Bank,CR,48524.35,Office rent - Sydney
+JE-0019,19/05/2026,2000,Accounts Payable,DR,9746.69,Vendor settlement
+JE-0019,19/05/2026,1000,Cash at Bank,CR,9746.69,Vendor settlement
+JE-0020,05/03/2026,1100,Accounts Receivable,DR,329190.14,Advisory engagement - Blue Yonder
+JE-0020,05/03/2026,4000,Consulting Revenue,CR,329190.14,Advisory engagement - Blue Yonder
+JE-0021,19/02/2026,1500,Office Equipment,DR,17762.22,Monitors & peripherals
+JE-0021,19/02/2026,2000,Accounts Payable,CR,17762.22,Monitors & peripherals
+JE-0022,05/08/2026,5400,Travel & Entertainment,DR,39432.70,Client travel - Contoso
+JE-0022,05/08/2026,1000,Cash at Bank,CR,39432.70,Client travel - Contoso
+JE-0023,12/03/2026,1100,Accounts Receivable,DR,80102.64,Tax advisory - Contoso
+JE-0023,12/03/2026,4200,Tax Advisory Revenue,CR,80102.64,Tax advisory - Contoso
+JE-0024,26/10/2026,5600,Training & Development,DR,35350.30,CPD training
+JE-0024,26/10/2026,1000,Cash at Bank,CR,35350.30,CPD training
+JE-0025,26/02/2026,5300,Software & Technology,DR,16474.05,Data analytics licences
+JE-0025,26/02/2026,2000,Accounts Payable,CR,16474.05,Data analytics licences
+JE-0026,12/03/2026,1100,Accounts Receivable,DR,217215.02,Assurance services - Humongous Insurance
+JE-0026,12/03/2026,4100,Audit & Assurance Revenue,CR,217215.02,Assurance services - Humongous Insurance
+JE-0027,12/04/2026,1100,Accounts Receivable,DR,307187.19,Assurance services - Fabrikam
+JE-0027,12/04/2026,4100,Audit & Assurance Revenue,CR,307187.19,Assurance services - Fabrikam
+JE-0028,12/11/2026,5600,Training & Development,DR,14029.32,CPD training
+JE-0028,12/11/2026,1000,Cash at Bank,CR,14029.32,CPD training
+JE-0029,19/09/2026,1100,Accounts Receivable,DR,419652.68,
+JE-0029,19/09/2026,4100,Audit & Assurance Revenue,CR,419652.68,Statutory audit fee - Tailspin
+JE-0030,26/12/2026,5600,Training & Development,DR,33278.32,CPD training
+JE-0030,26/12/2026,1000,Cash at Bank,CR,33278.32,CPD training
+JE-0031,12/01/2026,5500,Professional Indemnity Insurance,DR,30047.15,PI insurance premium
+JE-0031,12/01/2026,1000,Cash at Bank,CR,30047.15,PI insurance premium
+JE-0032,19/06/2026,5500,Professional Indemnity Insurance,DR,28623.31,PI insurance premium
+JE-0032,19/06/2026,1000,Cash at Bank,CR,28623.31,PI insurance premium
+JE-0033,19/08/2026,5400,Travel & Entertainment,DR,6779.81,Client travel - Litware
+JE-0033,19/08/2026,1000,Cash at Bank,CR,6779.81,Client travel - Litware
+JE-0034,26/10/2026,1000,Cash at Bank,DR,39454.21,Invoice settlement - Blue Yonder
+JE-0034,26/10/2026,1100,Accounts Receivable,CR,39454.21,Invoice settlement - Blue Yonder
+JE-0035,12/12/2026,1100,Accounts Receivable,DR,480301.94,Consulting fees - Contoso
+JE-0035,12/12/2026,4000,Consulting Revenue,CR,480301.94,Consulting fees - Contoso
+JE-0036,12/06/2026,5500,Professional Indemnity Insurance,DR,32198.01,
+JE-0036,12/06/2026,1000,Cash at Bank,CR,32198.01,PI insurance premium
+JE-0037,19/03/2026,1100,Accounts Receivable,DR,398911.41,Assurance services - Contoso
+JE-0037,19/03/2026,4100,Audit & Assurance Revenue,CR,398911.41,Assurance services - Contoso
+JE-0038,19/10/2026,1100,Accounts Receivable,DR,349092.27,Corporate tax compliance - Fabrikam
+JE-0038,19/10/2026,4200,Tax Advisory Revenue,CR,349092.27,Corporate tax compliance - Fabrikam
+JE-0039,19/12/2026,5400,Travel & Entertainment,DR,3526.99,Client travel - Northwind
+JE-0039,19/12/2026,1000,Cash at Bank,CR,3526.99,Client travel - Northwind
+JE-0040,12/04/2026,2000,Accounts Payable,DR,33567.74,Vendor settlement
+JE-0040,12/04/2026,1000,Cash at Bank,CR,33567.74,Vendor settlement
+JE-0041,12/10/2026,1100,Accounts Receivable,DR,185837.33,Advisory engagement - Alpine
+JE-0041,12/10/2026,4000,Consulting Revenue,CR,185837.33,Advisory engagement - Alpine
+JE-0042,19/06/2026,5200,Office Rent,DR,63200.34,Office rent - Sydney
+JE-0042,19/06/2026,1000,Cash at Bank,CR,63200.34,Office rent - Sydney
+JE-0043,05/08/2026,5400,Travel & Entertainment,DR,21890.24,Client travel - Alpine
+JE-0043,05/08/2026,1000,Cash at Bank,CR,21890.24,Client travel - Alpine
+JE-0044,26/10/2026,5500,Professional Indemnity Insurance,DR,8237.68,PI insurance premium
+JE-0044,26/10/2026,1000,Cash at Bank,CR,8237.68,PI insurance premium
+JE-0045,19/08/2026,1500,Office Equipment,DR,22636.88,Monitors & peripherals
+JE-0045,19/08/2026,2000,Accounts Payable,CR,22636.88,Monitors & peripherals
+JE-0046,19/02/2026,5500,Professional Indemnity Insurance,DR,13245.93,PI insurance premium
+JE-0046,19/02/2026,1000,Cash at Bank,CR,13245.93,PI insurance premium
+JE-0001,19/02/2026,5200,Office Rent,DR,61425.49,Office rent - Sydney
+JE-0001,19/02/2026,1000,Cash at Bank,CR,61425.49,Office rent - Sydney
+JE-0017-RB,19/07/2026,5300,Software & Technology,DR,13301.58,Data analytics licences (rebooked)
+JE-0017-RB,19/07/2026,2000,Accounts Payable,CR,13301.58,Data analytics licences (rebooked)
+JE-0047,05/09/2026,5400,Travel & Entertainment,DR,18450.00,

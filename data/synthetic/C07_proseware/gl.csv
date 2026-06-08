@@ -1,0 +1,67 @@
+journalentry,gl_date,account_no,acct_name,indicator,amount_lcy,comment
+JE07-0001,10-Jun-2026,2000,Accounts Payable,DR,"$84,167.22",Asset purchase
+JE07-0001,10-Jun-2026,1000,Cash,CR,"$84,167.22",Asset purchase
+JE07-0002,07-Nov-2026,4100,Service Revenue,DR,"$3,623.48",Depreciation charge
+JE07-0002,07-Nov-2026,5200,Rent Expense,CR,"$3,623.48",Depreciation charge
+JE07-0003,26-Feb-2026,4000,Sales Revenue,DR,"$31,633.06",Asset purchase
+JE07-0003,26-Feb-2026,2000,Accounts Payable,CR,"$31,633.06",Asset purchase
+JE07-0004,11-Jul-2026,1010,Bank Current Account,DR,"$85,006.37",Loan drawdown
+JE07-0004,11-Jul-2026,4100,Service Revenue,CR,"$85,006.37",Loan drawdown
+JE07-0005,09-Sep-2026,2000,Accounts Payable,DR,"$34,992.86",Supplier payment
+JE07-0005,09-Sep-2026,1010,Bank Current Account,CR,"$34,992.86",
+JE07-0006,18-Mar-2026,5500,Marketing Expense,DR,"$40,993.09",Operating expense
+JE07-0006,18-Mar-2026,1000,Cash,CR,"$40,993.09",Operating expense
+JE07-0007,10-May-2026,4000,Sales Revenue,DR,"$31,253.20",Asset purchase
+JE07-0007,10-May-2026,1000,Cash,CR,"$31,253.20",Asset purchase
+JE07-0008,15-Jun-2026,5100,Salaries Expense,DR,"$65,574.19",Payroll run
+JE07-0008,15-Jun-2026,1000,Cash,CR,"$65,574.19",Payroll run
+JE07-0009,09-Jul-2026,1100,Accounts Receivable,DR,"$58,468.66",Sales invoice
+JE07-0009,09-Jul-2026,4100,Service Revenue,CR,"$58,468.66",Sales invoice
+JE07-0010,22-Dec-2026,1000,Cash,DR,"$34,610.06",Sales invoice
+JE07-0010,22-Dec-2026,4100,Service Revenue,CR,"$34,610.06",Sales invoice
+JE07-0011,26-Nov-2026,2000,,DR,"$80,646.28",Supplier payment
+JE07-0011,26-Nov-2026,1000,Cash,CR,"$80,646.28",Supplier payment
+JE07-0012,12-Nov-2026,5100,Salaries Expense,DR,"$6,527.08",Payroll run
+JE07-0012,12-Nov-2026,1000,Cash,CR,"$6,527.08",Payroll run
+JE07-0013,12-Jun-2026,1000,Cash,DR,"$64,559.04",Loan drawdown
+JE07-0013,12-Jun-2026,4100,Service Revenue,CR,"$64,559.04",Loan drawdown
+JE07-0014,11-Jul-2026,5100,Salaries Expense,DR,"$50,369.27",Payroll run
+JE07-0014,11-Jul-2026,1000,Cash,CR,"$50,369.27",Payroll run
+JE07-0015,17-Aug-2026,2000,Accounts Payable,DR,"$69,928.76",Asset purchase
+JE07-0015,17-Aug-2026,1000,Cash,CR,"$69,928.76",Asset purchase
+JE07-0016,15-Dec-2026,1000,Cash,DR,"$73,655.38",Capital contribution
+JE07-0016,15-Dec-2026,3000,Share Capital,CR,"$73,655.38",Capital contribution
+JE07-0017,28-Mar-2026,1010,Bank Current Account,DR,"$19,136.92",Customer receipt
+JE07-0017,28-Mar-2026,1100,Accounts Receivable,CR,"$19,136.92",Customer receipt
+JE07-0018,03-Aug-2026,5500,Marketing Expense,DR,"$85,389.71",Operating expense
+JE07-0018,03-Aug-2026,1000,Cash,CR,"$85,389.71",Operating expense
+JE07-0019,10-May-2026,1010,Bank Current Account,DR,"$52,317.23",Loan drawdown
+JE07-0019,10-May-2026,5500,Marketing Expense,CR,"$52,317.23",Loan drawdown
+JE07-0020,07-Feb-2026,2000,Accounts Payable,DR,"$48,405.48",Supplier payment
+JE07-0020,07-Feb-2026,1010,Bank Current Account,CR,"$48,405.48",Supplier payment
+JE07-0021,19-Sep-2026,2000,Accounts Payable,DR,"$2,643.04",Supplier payment
+JE07-0021,19-Sep-2026,1010,Bank Current Account,CR,"$2,643.04",Supplier payment
+JE07-0022,23-Jul-2026,1000,Cash,DR,"$6,386.21",Loan drawdown
+JE07-0022,23-Jul-2026,5100,Salaries Expense,CR,"$6,386.21",Loan drawdown
+JE07-0023,05-Feb-2026,5100,Salaries Expense,DR,"$78,243.74",Payroll run
+JE07-0023,05-Feb-2026,1010,Bank Current Account,CR,"$78,243.74",Payroll run
+JE07-0024,12-Sep-2026,1000,Cash,DR,"$44,334.28",Loan drawdown
+JE07-0024,12-Sep-2026,5500,Marketing Expense,CR,"$44,334.28",Loan drawdown
+JE07-0025,27-Jan-2026,2000,Accounts Payable,DR,"$41,183.84",Supplier payment
+JE07-0025,27-Jan-2026,1000,Cash,CR,"$41,183.84",Supplier payment
+JE07-0026,23-Jun-2026,5200,Rent Expense,DR,"$15,767.72",Operating expense
+JE07-0026,23-Jun-2026,1010,Bank Current Account,CR,"$15,767.72",Operating expense
+JE07-0027,07-May-2026,1010,Bank Current Account,DR,"$80,386.81",Customer receipt
+JE07-0027,,1100,Accounts Receivable,CR,"$80,386.81",Customer receipt
+JE07-0028,19-Mar-2026,3000,Share Capital,DR,"$47,819.06",Depreciation charge
+JE07-0028,19-Mar-2026,1100,Accounts Receivable,CR,"$47,819.06",Depreciation charge
+JE07-0029,02-Oct-2026,2000,Accounts Payable,DR,"$80,063.97",Supplier payment
+JE07-0029,02-Oct-2026,1010,Bank Current Account,CR,"$80,063.97",Supplier payment
+JE07-0030,09-Oct-2026,1000,Cash,DR,"$90,119.67",
+JE07-0030,09-Oct-2026,4000,Sales Revenue,CR,"$90,119.67",Sales invoice
+JE07-0031,18-Nov-2026,1010,Bank Current Account,DR,"$47,388.91",Customer receipt
+JE07-0031,,1100,Accounts Receivable,CR,"$47,388.91",Customer receipt
+JE07-0016-COPY,15-Dec-2026,1000,Cash,DR,"$73,655.38",Capital contribution (copy)
+JE07-0016-COPY,15-Dec-2026,3000,Share Capital,CR,"$73,655.38",Capital contribution (copy)
+JE07-0026,23-Jun-2026,5200,Rent Expense,DR,"$15,767.72",Operating expense
+JE07-0026,23-Jun-2026,1010,Bank Current Account,CR,"$15,767.72",Operating expense

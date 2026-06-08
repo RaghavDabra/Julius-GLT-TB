@@ -1,0 +1,77 @@
+trans_id,effective_date,gl_acct,account_title,transaction_amount,remarks
+JE01-0001,11/24/2026,1000,Cash,70004.29,Customer receipt
+JE01-0001,11/24/2026,1100,Accounts Receivable,(70004.29),Customer receipt
+JE01-0002,04/08/2026,1010,Bank Current Account,2976.27,Depreciation charge
+JE01-0002,04/08/2026,5400,Office Expenses,(2976.27),Depreciation charge
+JE01-0003,10/09/2026,5400,Office Expenses,21058.79,Depreciation charge
+JE01-0003,10/09/2026,1000,Cash,(21058.79),Depreciation charge
+JE01-0004,03/07/2026,1000,Cash,32422.76,Sales invoice
+JE01-0004,03/07/2026,4000,Sales Revenue,(32422.76),Sales invoice
+JE01-0005,06/20/2026,1000,Cash,9323.55,Loan drawdown
+JE01-0005,06/20/2026,1010,Bank Current Account,(9323.55),Loan drawdown
+JE01-0006,02/13/2026,1200,Inventory,43726.45,Asset purchase
+JE01-0006,02/13/2026,2000,Accounts Payable,(43726.45),Asset purchase
+JE01-0007,06/19/2026,5400,Office Expenses,58816.60,Operating expense
+JE01-0007,06/19/2026,2000,Accounts Payable,(58816.60),Operating expense
+JE01-0008,05/03/2026,1000,Cash,62870.83,Customer receipt
+JE01-0008,05/03/2026,1100,Accounts Receivable,(62870.83),Customer receipt
+JE01-0009,11/27/2026,1000,Cash,26515.80,Customer receipt
+JE01-0009,11/27/2026,1100,Accounts Receivable,(26515.80),Customer receipt
+JE01-0010,05/23/2026,1010,Bank Current Account,20021.74,Loan drawdown
+JE01-0010,05/23/2026,1100,Accounts Receivable,(20021.74),Loan drawdown
+JE01-0011,03/15/2026,5200,Rent Expense,69307.68,Operating expense
+JE01-0011,03/15/2026,2000,Accounts Payable,(69307.68),Operating expense
+JE01-0012,01/08/2026,1010,Bank Current Account,65085.66,Capital contribution
+JE01-0012,01/08/2026,3000,Share Capital,(65085.66),Capital contribution
+JE01-0013,04/19/2026,1010,Bank Current Account,25545.22,Sales invoice
+JE01-0013,04/19/2026,4000,Sales Revenue,(25545.22),Sales invoice
+JE01-0014,11/15/2026,1010,Bank Current Account,84062.20,Loan drawdown
+JE01-0014,11/15/2026,1200,Inventory,(84062.20),Loan drawdown
+JE01-0015,09/18/2026,2000,Accounts Payable,23542.62,Supplier payment
+JE01-0015,09/18/2026,1000,Cash,(23542.62),Supplier payment
+JE01-0016,04/05/2026,1200,Inventory,38033.14,Asset purchase
+JE01-0016,04/05/2026,2000,Accounts Payable,(38033.14),Asset purchase
+JE01-0017,03/26/2026,5100,Salaries Expense,14647.00,Depreciation charge
+JE01-0017,03/26/2026,1010,Bank Current Account,(14647.00),Depreciation charge
+JE01-0018,08/17/2026,1000,Cash,36346.59,Capital contribution
+JE01-0018,08/17/2026,3000,Share Capital,(36346.59),Capital contribution
+JE01-0019,11/18/2026,1200,Inventory,68510.46,Asset purchase
+JE01-0019,11/18/2026,2000,Accounts Payable,(68510.46),Asset purchase
+JE01-0020,03/15/2026,1200,Inventory,27988.49,Asset purchase
+JE01-0020,03/15/2026,1000,Cash,(27988.49),Asset purchase
+JE01-0021,03/17/2026,1100,Accounts Receivable,92333.59,Sales invoice
+JE01-0021,03/17/2026,4000,Sales Revenue,(92333.59),Sales invoice
+JE01-0022,04/05/2026,5400,Office Expenses,48301.82,Operating expense
+JE01-0022,04/05/2026,2000,Accounts Payable,(48301.82),Operating expense
+JE01-0023,02/12/2026,1000,Cash,46494.25,Loan drawdown
+JE01-0023,02/12/2026,1100,Accounts Receivable,(46494.25),Loan drawdown
+JE01-0024,10/03/2026,1200,Inventory,22996.67,Asset purchase
+JE01-0024,10/03/2026,1000,Cash,(22996.67),Asset purchase
+JE01-0025,09/25/2026,5500,Marketing Expense,92911.83,Operating expense
+JE01-0025,09/25/2026,1000,Cash,(92911.83),Operating expense
+JE01-0026,03/09/2026,2000,Accounts Payable,89958.60,Supplier payment
+JE01-0026,03/09/2026,1010,Bank Current Account,(89958.60),Supplier payment
+JE01-0027,07/22/2026,5400,Office Expenses,67773.21,Depreciation charge
+JE01-0027,07/22/2026,4000,Sales Revenue,(67773.21),Depreciation charge
+JE01-0028,02/11/2026,1010,Bank Current Account,23663.85,Loan drawdown
+JE01-0028,02/11/2026,5100,Salaries Expense,(23663.85),Loan drawdown
+JE01-0029,01/03/2026,1100,Accounts Receivable,55963.54,Sales invoice
+JE01-0029,01/03/2026,4000,Sales Revenue,(55963.54),Sales invoice
+JE01-0030,06/03/2026,1000,Cash,86029.09,Sales invoice
+JE01-0030,06/03/2026,4000,Sales Revenue,(86029.09),Sales invoice
+JE01-0031,12/19/2026,1200,Inventory,51296.34,Depreciation charge
+JE01-0031,12/19/2026,2000,Accounts Payable,(51296.34),Depreciation charge
+JE01-0032,04/04/2026,5100,Salaries Expense,76741.09,Payroll run
+JE01-0032,04/04/2026,1010,Bank Current Account,(76741.09),Payroll run
+JE01-0033,08/28/2026,5500,Marketing Expense,40326.43,Operating expense
+JE01-0033,08/28/2026,1010,Bank Current Account,(40326.43),Operating expense
+JE01-0034,12/11/2026,1100,Accounts Receivable,5899.11,Sales invoice
+JE01-0034,12/11/2026,4000,Sales Revenue,(5899.11),Sales invoice
+JE01-0035,08/05/2026,5200,Rent Expense,18191.31,Operating expense
+JE01-0035,08/05/2026,1000,Cash,(18191.31),Operating expense
+JE01-0036,02/15/2026,1000,Cash,44030.27,Capital contribution
+JE01-0036,02/15/2026,3000,Share Capital,(44030.27),Capital contribution
+JE01-0037,04/06/2026,1010,Bank Current Account,88015.91,Depreciation charge
+JE01-0037,04/06/2026,1000,Cash,(88015.91),Depreciation charge
+JE01-0038,07/02/2026,1010,Bank Current Account,20423.93,Capital contribution
+JE01-0038,07/02/2026,3000,Share Capital,(20423.93),Capital contribution

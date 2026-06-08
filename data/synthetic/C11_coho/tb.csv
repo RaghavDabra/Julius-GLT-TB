@@ -1,0 +1,13 @@
+gl_account,name,closing_bal
+1000,Cash,-29298.34
+1010,Bank Current Account,168911.21
+1100,Accounts Receivable,-50804.61
+2000,Accounts Payable,112525.93
+2300,Tax Payable,1353.95
+3000,Share Capital,-214621.56
+4000,Sales Revenue,-157770.59
+4200,Other Income,-208276.82
+5100,Salaries Expense,118677.34
+5200,Rent Expense,164643.84
+5400,Office Expenses,-45483.95
+5600,Depreciation Expense,170924.88

@@ -1,0 +1,14 @@
+accountnumber,account_description,period_balance
+1000,Cash,-180800.05
+1010,Bank Current Account,46212.48
+1100,Accounts Receivable,-388371.88
+1500,Fixed Assets,303615.03
+2000,Accounts Payable,-54212.48
+2300,Tax Payable,-65164.34
+3000,Share Capital,-77796.11
+4000,Sales Revenue,-55671.26
+4100,Service Revenue,-57494.79
+4200,Other Income,-82512.61
+5100,Salaries Expense,534708.58
+5200,Rent Expense,37697.60
+5400,Office Expenses,39789.83

@@ -1,0 +1,1147 @@
+{
+  "seed": 42,
+  "materiality_note": "backend uses max(1% of |TB|, 1000)",
+  "clients": {
+    "C01": {
+      "client_id": "C01",
+      "client_name": "Northwind Traders",
+      "clean": true,
+      "injected_dupes": [],
+      "injected_missing": {},
+      "injected_breaks": [],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%m/%d/%Y",
+      "amount_style": "paren_neg",
+      "header_map_gl": {
+        "transaction_id": "trans_id",
+        "date": "effective_date",
+        "account_code": "gl_acct",
+        "account_name": "account_title",
+        "amount": "transaction_amount",
+        "description": "remarks"
+      },
+      "header_map_tb": {
+        "account_code": "ledger_account",
+        "account_name": "account_title",
+        "balance": "balance"
+      },
+      "gl_rows": 76,
+      "tb_accounts": 11
+    },
+    "C02": {
+      "client_id": "C02",
+      "client_name": "Contoso Manufacturing",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "exact",
+          "trans_id": "JE02-0027"
+        }
+      ],
+      "injected_missing": {
+        "description": 2,
+        "account_name": 1,
+        "date": 3
+      },
+      "injected_breaks": [
+        {
+          "account_code": "4000",
+          "delta": -4442.46,
+          "material": false
+        },
+        {
+          "account_code": "2000",
+          "delta": 44424.62,
+          "material": true
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [
+        "2300"
+      ],
+      "date_format": "%d-%b-%Y",
+      "amount_style": "signed",
+      "header_map_gl": {
+        "transaction_id": "doc_no",
+        "date": "effective_date",
+        "account_code": "ledger_account",
+        "account_name": "gl_name",
+        "amount": "value",
+        "description": "text"
+      },
+      "header_map_tb": {
+        "account_code": "accountnumber",
+        "account_name": "account_name",
+        "balance": "net_balance"
+      },
+      "gl_rows": 98,
+      "tb_accounts": 13
+    },
+    "C03": {
+      "client_id": "C03",
+      "client_name": "Fabrikam Logistics",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "near",
+          "trans_id": "JE03-0037-COPY"
+        }
+      ],
+      "injected_missing": {
+        "description": 1,
+        "account_name": 2,
+        "date": 2
+      },
+      "injected_breaks": [
+        {
+          "account_code": "4000",
+          "delta": -4300.3,
+          "material": false
+        },
+        {
+          "account_code": "5200",
+          "delta": -43003.02,
+          "material": true
+        },
+        {
+          "account_code": "5400",
+          "delta": 43003.02,
+          "material": true
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%d-%b-%Y",
+      "amount_style": "signed",
+      "header_map_gl": {
+        "transaction_id": "doc_no",
+        "date": "effective_date",
+        "account_code": "nominal_code",
+        "account_name": "account_name",
+        "amount": "amount",
+        "description": "particulars"
+      },
+      "header_map_tb": {
+        "account_code": "account",
+        "account_name": "account_description",
+        "balance": "closing_balance"
+      },
+      "gl_rows": 90,
+      "tb_accounts": 13
+    },
+    "C04": {
+      "client_id": "C04",
+      "client_name": "Adventure Works",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "near",
+          "trans_id": "JE04-0024-COPY"
+        },
+        {
+          "kind": "near",
+          "trans_id": "JE04-0038-COPY"
+        }
+      ],
+      "injected_missing": {
+        "description": 3,
+        "account_name": 1,
+        "date": 3
+      },
+      "injected_breaks": [
+        {
+          "account_code": "2000",
+          "delta": 36215.09,
+          "material": true
+        },
+        {
+          "account_code": "1100",
+          "delta": 3621.51,
+          "material": false
+        },
+        {
+          "account_code": "5600",
+          "delta": -3621.51,
+          "material": false
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%Y-%m-%d",
+      "amount_style": "drcr_positive",
+      "header_map_gl": {
+        "transaction_id": "voucher",
+        "date": "entry_date",
+        "account_code": "gl_account",
+        "account_name": "acct_name",
+        "dr_cr": "dc_indicator",
+        "amount": "amount",
+        "description": "memo"
+      },
+      "header_map_tb": {
+        "account_code": "ledger_account",
+        "account_name": "account_name",
+        "balance": "final_balance"
+      },
+      "gl_rows": 90,
+      "tb_accounts": 13
+    },
+    "C05": {
+      "client_id": "C05",
+      "client_name": "Tailspin Toys",
+      "clean": true,
+      "injected_dupes": [],
+      "injected_missing": {},
+      "injected_breaks": [],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%Y-%m-%d",
+      "amount_style": "drcr_positive",
+      "header_map_gl": {
+        "transaction_id": "voucher",
+        "date": "date",
+        "account_code": "acctno",
+        "account_name": "account_name",
+        "dr_cr": "dc_indicator",
+        "amount": "amount",
+        "description": "particulars"
+      },
+      "header_map_tb": {
+        "account_code": "account_number",
+        "account_name": "nominal_name",
+        "balance": "closing_bal"
+      },
+      "gl_rows": 64,
+      "tb_accounts": 13
+    },
+    "C06": {
+      "client_id": "C06",
+      "client_name": "Wingtip Imports",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "exact",
+          "trans_id": "JE06-0037"
+        },
+        {
+          "kind": "near",
+          "trans_id": "JE06-0012-COPY"
+        }
+      ],
+      "injected_missing": {
+        "description": 3,
+        "account_name": 2,
+        "date": 3
+      },
+      "injected_breaks": [
+        {
+          "account_code": "2000",
+          "delta": -3051.38,
+          "material": false
+        },
+        {
+          "account_code": "1010",
+          "delta": 30513.81,
+          "material": true
+        }
+      ],
+      "injected_gl_only": [
+        "1000"
+      ],
+      "injected_tb_only": [],
+      "date_format": "%d/%m/%Y",
+      "amount_style": "signed",
+      "header_map_gl": {
+        "transaction_id": "transaction_id",
+        "date": "date",
+        "account_code": "account",
+        "account_name": "account_description",
+        "amount": "posting_amount",
+        "description": "comment"
+      },
+      "header_map_tb": {
+        "account_code": "ledger_account",
+        "account_name": "gl_name",
+        "balance": "balance"
+      },
+      "gl_rows": 88,
+      "tb_accounts": 11
+    },
+    "C07": {
+      "client_id": "C07",
+      "client_name": "Proseware Health",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "near",
+          "trans_id": "JE07-0016-COPY"
+        },
+        {
+          "kind": "exact",
+          "trans_id": "JE07-0026"
+        }
+      ],
+      "injected_missing": {
+        "description": 2,
+        "account_name": 1,
+        "date": 2
+      },
+      "injected_breaks": [
+        {
+          "account_code": "5200",
+          "delta": -2682.89,
+          "material": false
+        },
+        {
+          "account_code": "1010",
+          "delta": -2682.89,
+          "material": false
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%d-%b-%Y",
+      "amount_style": "currency_drcr",
+      "header_map_gl": {
+        "transaction_id": "journalentry",
+        "date": "gl_date",
+        "account_code": "account_no",
+        "account_name": "acct_name",
+        "dr_cr": "indicator",
+        "amount": "amount_lcy",
+        "description": "comment"
+      },
+      "header_map_tb": {
+        "account_code": "acct_code",
+        "account_name": "accountdesc",
+        "balance": "tb_balance"
+      },
+      "gl_rows": 66,
+      "tb_accounts": 10
+    },
+    "C08": {
+      "client_id": "C08",
+      "client_name": "Litware Energy",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "near",
+          "trans_id": "JE08-0009-COPY"
+        },
+        {
+          "kind": "near",
+          "trans_id": "JE08-0018-COPY"
+        }
+      ],
+      "injected_missing": {
+        "description": 1,
+        "account_name": 2,
+        "date": 3
+      },
+      "injected_breaks": [
+        {
+          "account_code": "1000",
+          "delta": -38773.24,
+          "material": true
+        },
+        {
+          "account_code": "2000",
+          "delta": -3877.32,
+          "material": false
+        },
+        {
+          "account_code": "1500",
+          "delta": 38773.24,
+          "material": true
+        }
+      ],
+      "injected_gl_only": [
+        "5100"
+      ],
+      "injected_tb_only": [],
+      "date_format": "%m/%d/%Y",
+      "amount_style": "drcr_positive",
+      "header_map_gl": {
+        "transaction_id": "je_id",
+        "date": "effective_date",
+        "account_code": "gl_account",
+        "account_name": "account_title",
+        "dr_cr": "posting_type",
+        "amount": "trans_amt",
+        "description": "details"
+      },
+      "header_map_tb": {
+        "account_code": "account_number",
+        "account_name": "account_name",
+        "balance": "amount"
+      },
+      "gl_rows": 82,
+      "tb_accounts": 10
+    },
+    "C09": {
+      "client_id": "C09",
+      "client_name": "Fourth Coffee",
+      "clean": true,
+      "injected_dupes": [],
+      "injected_missing": {},
+      "injected_breaks": [],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%m/%d/%Y",
+      "amount_style": "drcr_positive",
+      "header_map_gl": {
+        "transaction_id": "ref",
+        "date": "date",
+        "account_code": "nominal_code",
+        "account_name": "acct_name",
+        "dr_cr": "dr_cr",
+        "amount": "amt",
+        "description": "line_description"
+      },
+      "header_map_tb": {
+        "account_code": "account_code",
+        "account_name": "ledger_name",
+        "balance": "closing_balance"
+      },
+      "gl_rows": 88,
+      "tb_accounts": 12
+    },
+    "C10": {
+      "client_id": "C10",
+      "client_name": "Graphic Design Institute",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "near",
+          "trans_id": "JE10-0005-COPY"
+        },
+        {
+          "kind": "near",
+          "trans_id": "JE10-0003-COPY"
+        }
+      ],
+      "injected_missing": {
+        "description": 3,
+        "account_name": 3,
+        "date": 3
+      },
+      "injected_breaks": [
+        {
+          "account_code": "3000",
+          "delta": -50894.11,
+          "material": true
+        },
+        {
+          "account_code": "2100",
+          "delta": -50894.11,
+          "material": true
+        },
+        {
+          "account_code": "4000",
+          "delta": 5089.41,
+          "material": false
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%d/%m/%Y",
+      "amount_style": "currency_drcr",
+      "header_map_gl": {
+        "transaction_id": "voucher_no",
+        "date": "posted",
+        "account_code": "acctno",
+        "account_name": "nominal_name",
+        "dr_cr": "dr_cr",
+        "amount": "amount_lcy",
+        "description": "memo"
+      },
+      "header_map_tb": {
+        "account_code": "account",
+        "account_name": "acct_name",
+        "balance": "closing_bal"
+      },
+      "gl_rows": 92,
+      "tb_accounts": 12
+    },
+    "C11": {
+      "client_id": "C11",
+      "client_name": "Coho Vineyard",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "exact",
+          "trans_id": "JE11-0007"
+        },
+        {
+          "kind": "exact",
+          "trans_id": "JE11-0021"
+        }
+      ],
+      "injected_missing": {
+        "description": 2,
+        "account_name": 2,
+        "date": 1
+      },
+      "injected_breaks": [
+        {
+          "account_code": "1000",
+          "delta": 29427.33,
+          "material": true
+        },
+        {
+          "account_code": "5600",
+          "delta": 2942.73,
+          "material": false
+        },
+        {
+          "account_code": "5100",
+          "delta": -2942.73,
+          "material": false
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [
+        "2300"
+      ],
+      "date_format": "%d/%m/%Y",
+      "amount_style": "paren_neg",
+      "header_map_gl": {
+        "transaction_id": "entry_id",
+        "date": "effective_date",
+        "account_code": "account",
+        "account_name": "gl_name",
+        "amount": "local_amount",
+        "description": "description"
+      },
+      "header_map_tb": {
+        "account_code": "gl_account",
+        "account_name": "name",
+        "balance": "closing_bal"
+      },
+      "gl_rows": 74,
+      "tb_accounts": 12
+    },
+    "C12": {
+      "client_id": "C12",
+      "client_name": "Alpine Ski House",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "near",
+          "trans_id": "JE12-0002-COPY"
+        },
+        {
+          "kind": "near",
+          "trans_id": "JE12-0044-COPY"
+        }
+      ],
+      "injected_missing": {
+        "description": 2,
+        "account_name": 1,
+        "date": 2
+      },
+      "injected_breaks": [
+        {
+          "account_code": "1200",
+          "delta": 4934.48,
+          "material": false
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%d-%b-%Y",
+      "amount_style": "drcr_positive",
+      "header_map_gl": {
+        "transaction_id": "txn_id",
+        "date": "entry_date",
+        "account_code": "acctno",
+        "account_name": "gl_name",
+        "dr_cr": "dc",
+        "amount": "amount_lcy",
+        "description": "remarks"
+      },
+      "header_map_tb": {
+        "account_code": "gl_account",
+        "account_name": "name",
+        "balance": "final_balance"
+      },
+      "gl_rows": 96,
+      "tb_accounts": 14
+    },
+    "C13": {
+      "client_id": "C13",
+      "client_name": "Margie's Travel",
+      "clean": true,
+      "injected_dupes": [],
+      "injected_missing": {},
+      "injected_breaks": [],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%d/%m/%Y",
+      "amount_style": "currency_drcr",
+      "header_map_gl": {
+        "transaction_id": "journal_id",
+        "date": "transaction_date",
+        "account_code": "nominal_code",
+        "account_name": "account_name",
+        "dr_cr": "debit_credit",
+        "amount": "amt",
+        "description": "comment"
+      },
+      "header_map_tb": {
+        "account_code": "account_id",
+        "account_name": "account_description",
+        "balance": "ending_balance"
+      },
+      "gl_rows": 110,
+      "tb_accounts": 14
+    },
+    "C14": {
+      "client_id": "C14",
+      "client_name": "Blue Yonder Airlines",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "near",
+          "trans_id": "JE14-0027-COPY"
+        },
+        {
+          "kind": "exact",
+          "trans_id": "JE14-0008"
+        }
+      ],
+      "injected_missing": {
+        "description": 2,
+        "account_name": 1,
+        "date": 1
+      },
+      "injected_breaks": [
+        {
+          "account_code": "4100",
+          "delta": -49501.01,
+          "material": true
+        },
+        {
+          "account_code": "1100",
+          "delta": 4950.1,
+          "material": false
+        },
+        {
+          "account_code": "3100",
+          "delta": 4950.1,
+          "material": false
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%d-%b-%Y",
+      "amount_style": "paren_neg",
+      "header_map_gl": {
+        "transaction_id": "trans_id",
+        "date": "posting_date",
+        "account_code": "gl_acct",
+        "account_name": "account_description",
+        "amount": "gross_amount",
+        "description": "text"
+      },
+      "header_map_tb": {
+        "account_code": "gl_code",
+        "account_name": "ledger_name",
+        "balance": "end_balance"
+      },
+      "gl_rows": 104,
+      "tb_accounts": 13
+    },
+    "C15": {
+      "client_id": "C15",
+      "client_name": "Trey Research",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "near",
+          "trans_id": "JE15-0002-COPY"
+        },
+        {
+          "kind": "near",
+          "trans_id": "JE15-0033-COPY"
+        }
+      ],
+      "injected_missing": {
+        "description": 3,
+        "account_name": 2,
+        "date": 2
+      },
+      "injected_breaks": [
+        {
+          "account_code": "2000",
+          "delta": 4684.06,
+          "material": false
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [
+        "2300"
+      ],
+      "date_format": "%m/%d/%Y",
+      "amount_style": "paren_neg",
+      "header_map_gl": {
+        "transaction_id": "txn_id",
+        "date": "transaction_date",
+        "account_code": "account_no",
+        "account_name": "nominal_name",
+        "amount": "value",
+        "description": "desc"
+      },
+      "header_map_tb": {
+        "account_code": "account_no",
+        "account_name": "account_description",
+        "balance": "final_balance"
+      },
+      "gl_rows": 90,
+      "tb_accounts": 14
+    },
+    "C16": {
+      "client_id": "C16",
+      "client_name": "Lucerne Publishing",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "near",
+          "trans_id": "JE16-0031-COPY"
+        }
+      ],
+      "injected_missing": {
+        "description": 2,
+        "account_name": 2,
+        "date": 1
+      },
+      "injected_breaks": [
+        {
+          "account_code": "5100",
+          "delta": 2706.98,
+          "material": false
+        },
+        {
+          "account_code": "1010",
+          "delta": 2706.98,
+          "material": false
+        },
+        {
+          "account_code": "5200",
+          "delta": -27069.82,
+          "material": true
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%d-%b-%Y",
+      "amount_style": "drcr_positive",
+      "header_map_gl": {
+        "transaction_id": "document_number",
+        "date": "entry_date",
+        "account_code": "account_id",
+        "account_name": "ledger_name",
+        "dr_cr": "dc_indicator",
+        "amount": "line_amount",
+        "description": "comment"
+      },
+      "header_map_tb": {
+        "account_code": "account_no",
+        "account_name": "gl_name",
+        "balance": "ending_balance"
+      },
+      "gl_rows": 72,
+      "tb_accounts": 11
+    },
+    "C17": {
+      "client_id": "C17",
+      "client_name": "Wide World Importers",
+      "clean": true,
+      "injected_dupes": [],
+      "injected_missing": {},
+      "injected_breaks": [],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%d/%m/%Y",
+      "amount_style": "paren_neg",
+      "header_map_gl": {
+        "transaction_id": "reference",
+        "date": "date",
+        "account_code": "gl_code",
+        "account_name": "account_name",
+        "amount": "trans_amt",
+        "description": "text"
+      },
+      "header_map_tb": {
+        "account_code": "acctno",
+        "account_name": "account_title",
+        "balance": "closing_bal"
+      },
+      "gl_rows": 76,
+      "tb_accounts": 14
+    },
+    "C18": {
+      "client_id": "C18",
+      "client_name": "City Power & Light",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "exact",
+          "trans_id": "JE18-0006"
+        }
+      ],
+      "injected_missing": {
+        "description": 1,
+        "account_name": 2,
+        "date": 2
+      },
+      "injected_breaks": [
+        {
+          "account_code": "2200",
+          "delta": -3330.29,
+          "material": false
+        },
+        {
+          "account_code": "1510",
+          "delta": 33302.93,
+          "material": true
+        }
+      ],
+      "injected_gl_only": [
+        "1010"
+      ],
+      "injected_tb_only": [
+        "2300"
+      ],
+      "date_format": "%m/%d/%Y",
+      "amount_style": "signed",
+      "header_map_gl": {
+        "transaction_id": "voucher",
+        "date": "date",
+        "account_code": "account_id",
+        "account_name": "ledger_name",
+        "amount": "posting_amount",
+        "description": "memo"
+      },
+      "header_map_tb": {
+        "account_code": "gl_code",
+        "account_name": "account_name",
+        "balance": "ending_balance"
+      },
+      "gl_rows": 86,
+      "tb_accounts": 13
+    },
+    "C19": {
+      "client_id": "C19",
+      "client_name": "Humongous Insurance",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "near",
+          "trans_id": "JE19-0039-COPY"
+        },
+        {
+          "kind": "exact",
+          "trans_id": "JE19-0015"
+        }
+      ],
+      "injected_missing": {
+        "description": 2,
+        "account_name": 1,
+        "date": 2
+      },
+      "injected_breaks": [
+        {
+          "account_code": "5100",
+          "delta": 25802.66,
+          "material": true
+        },
+        {
+          "account_code": "1500",
+          "delta": -25802.66,
+          "material": true
+        },
+        {
+          "account_code": "5200",
+          "delta": 2580.27,
+          "material": false
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%m/%d/%Y",
+      "amount_style": "paren_neg",
+      "header_map_gl": {
+        "transaction_id": "voucher",
+        "date": "posted",
+        "account_code": "gl_account",
+        "account_name": "ledger_name",
+        "amount": "amount",
+        "description": "details"
+      },
+      "header_map_tb": {
+        "account_code": "nominal_code",
+        "account_name": "nominal_name",
+        "balance": "ytd_balance"
+      },
+      "gl_rows": 88,
+      "tb_accounts": 13
+    },
+    "C20": {
+      "client_id": "C20",
+      "client_name": "Woodgrove Bank",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "exact",
+          "trans_id": "JE20-0006"
+        }
+      ],
+      "injected_missing": {
+        "description": 1,
+        "account_name": 3,
+        "date": 3
+      },
+      "injected_breaks": [
+        {
+          "account_code": "4000",
+          "delta": 45154.77,
+          "material": true
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%m/%d/%Y",
+      "amount_style": "currency_drcr",
+      "header_map_gl": {
+        "transaction_id": "transaction_id",
+        "date": "trans_date",
+        "account_code": "gl_code",
+        "account_name": "account_name",
+        "dr_cr": "dc",
+        "amount": "local_amount",
+        "description": "details"
+      },
+      "header_map_tb": {
+        "account_code": "gl_code",
+        "account_name": "account_title",
+        "balance": "amount"
+      },
+      "gl_rows": 84,
+      "tb_accounts": 11
+    },
+    "C21": {
+      "client_id": "C21",
+      "client_name": "Consolidated Messenger",
+      "clean": true,
+      "injected_dupes": [],
+      "injected_missing": {},
+      "injected_breaks": [],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%Y-%m-%d",
+      "amount_style": "drcr_positive",
+      "header_map_gl": {
+        "transaction_id": "journalentry",
+        "date": "transaction_date",
+        "account_code": "account_id",
+        "account_name": "account_title",
+        "dr_cr": "side",
+        "amount": "amt",
+        "description": "comment"
+      },
+      "header_map_tb": {
+        "account_code": "accountnumber",
+        "account_name": "gl_name",
+        "balance": "ending_balance"
+      },
+      "gl_rows": 60,
+      "tb_accounts": 10
+    },
+    "C22": {
+      "client_id": "C22",
+      "client_name": "School of Fine Art",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "exact",
+          "trans_id": "JE22-0039"
+        }
+      ],
+      "injected_missing": {
+        "description": 2,
+        "account_name": 4,
+        "date": 4
+      },
+      "injected_breaks": [
+        {
+          "account_code": "5200",
+          "delta": 3681.01,
+          "material": false
+        },
+        {
+          "account_code": "1100",
+          "delta": -36810.07,
+          "material": true
+        },
+        {
+          "account_code": "1000",
+          "delta": -36810.07,
+          "material": true
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%m/%d/%Y",
+      "amount_style": "paren_neg",
+      "header_map_gl": {
+        "transaction_id": "doc_no",
+        "date": "effective_date",
+        "account_code": "acct_no",
+        "account_name": "accountdesc",
+        "amount": "gross_amount",
+        "description": "line_description"
+      },
+      "header_map_tb": {
+        "account_code": "account_id",
+        "account_name": "accountdesc",
+        "balance": "tb_balance"
+      },
+      "gl_rows": 110,
+      "tb_accounts": 13
+    },
+    "C23": {
+      "client_id": "C23",
+      "client_name": "Southridge Video",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "near",
+          "trans_id": "JE23-0012-COPY"
+        },
+        {
+          "kind": "exact",
+          "trans_id": "JE23-0043"
+        }
+      ],
+      "injected_missing": {
+        "description": 1,
+        "account_name": 3,
+        "date": 2
+      },
+      "injected_breaks": [
+        {
+          "account_code": "4000",
+          "delta": 43522.76,
+          "material": true
+        },
+        {
+          "account_code": "3000",
+          "delta": 4352.28,
+          "material": false
+        },
+        {
+          "account_code": "1010",
+          "delta": 43522.76,
+          "material": true
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [
+        "2300"
+      ],
+      "date_format": "%d-%b-%Y",
+      "amount_style": "signed",
+      "header_map_gl": {
+        "transaction_id": "voucher",
+        "date": "transaction_date",
+        "account_code": "ledger_account",
+        "account_name": "account_description",
+        "amount": "amount",
+        "description": "particulars"
+      },
+      "header_map_tb": {
+        "account_code": "gl_account",
+        "account_name": "acct_name",
+        "balance": "ending_balance"
+      },
+      "gl_rows": 98,
+      "tb_accounts": 14
+    },
+    "C24": {
+      "client_id": "C24",
+      "client_name": "Nod Publishers",
+      "clean": false,
+      "injected_dupes": [
+        {
+          "kind": "near",
+          "trans_id": "JE24-0026-COPY"
+        }
+      ],
+      "injected_missing": {
+        "description": 1,
+        "account_name": 2,
+        "date": 2
+      },
+      "injected_breaks": [
+        {
+          "account_code": "3000",
+          "delta": 3861.04,
+          "material": false
+        },
+        {
+          "account_code": "4000",
+          "delta": -38610.35,
+          "material": true
+        }
+      ],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%d-%b-%Y",
+      "amount_style": "signed",
+      "header_map_gl": {
+        "transaction_id": "transaction_id",
+        "date": "effective_date",
+        "account_code": "ledger_account",
+        "account_name": "nominal_name",
+        "amount": "line_amount",
+        "description": "text"
+      },
+      "header_map_tb": {
+        "account_code": "acct_code",
+        "account_name": "gl_name",
+        "balance": "ending_balance"
+      },
+      "gl_rows": 98,
+      "tb_accounts": 13
+    },
+    "C25": {
+      "client_id": "C25",
+      "client_name": "Bellows College",
+      "clean": true,
+      "injected_dupes": [],
+      "injected_missing": {},
+      "injected_breaks": [],
+      "injected_gl_only": [],
+      "injected_tb_only": [],
+      "date_format": "%d-%b-%Y",
+      "amount_style": "paren_neg",
+      "header_map_gl": {
+        "transaction_id": "journal_id",
+        "date": "entry_date",
+        "account_code": "account_number",
+        "account_name": "account_title",
+        "amount": "gross_amount",
+        "description": "details"
+      },
+      "header_map_tb": {
+        "account_code": "accountnumber",
+        "account_name": "account_description",
+        "balance": "period_balance"
+      },
+      "gl_rows": 96,
+      "tb_accounts": 13
+    }
+  }
+}

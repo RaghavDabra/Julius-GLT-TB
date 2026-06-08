@@ -1,0 +1,97 @@
+txn_id,entry_date,acctno,gl_name,dc,amount_lcy,remarks
+JE12-0001,16-Apr-2026,1200,Inventory,DR,61439.20,Depreciation charge
+JE12-0001,16-Apr-2026,5200,Rent Expense,CR,61439.20,Depreciation charge
+JE12-0002,03-Oct-2026,1000,Cash,DR,47535.40,Capital contribution
+JE12-0002,03-Oct-2026,3000,Share Capital,CR,47535.40,Capital contribution
+JE12-0003,14-Oct-2026,5500,Marketing Expense,DR,12668.58,Depreciation charge
+JE12-0003,14-Oct-2026,1000,Cash,CR,12668.58,Depreciation charge
+JE12-0004,01-Feb-2026,1000,Cash,DR,90679.87,Loan drawdown
+JE12-0004,01-Feb-2026,2200,Loans Payable,CR,90679.87,Loan drawdown
+JE12-0005,26-Jan-2026,5000,Cost of Goods Sold,DR,20613.22,Operating expense
+JE12-0005,26-Jan-2026,1010,Bank Current Account,CR,20613.22,Operating expense
+JE12-0006,03-Jul-2026,1010,Bank Current Account,DR,40326.11,Capital contribution
+JE12-0006,03-Jul-2026,3000,Share Capital,CR,40326.11,Capital contribution
+JE12-0007,17-Feb-2026,4000,Sales Revenue,DR,8079.18,Depreciation charge
+JE12-0007,17-Feb-2026,5000,Cost of Goods Sold,CR,8079.18,Depreciation charge
+JE12-0008,25-Nov-2026,1000,Cash,DR,37210.88,Customer receipt
+JE12-0008,25-Nov-2026,1100,Accounts Receivable,CR,37210.88,Customer receipt
+JE12-0009,02-Apr-2026,5200,Rent Expense,DR,41645.55,Operating expense
+JE12-0009,02-Apr-2026,2000,Accounts Payable,CR,41645.55,Operating expense
+JE12-0010,20-Oct-2026,1000,Cash,DR,11151.33,Customer receipt
+JE12-0010,20-Oct-2026,1100,Accounts Receivable,CR,11151.33,Customer receipt
+JE12-0011,05-Dec-2026,1010,Bank Current Account,DR,11479.17,Sales invoice
+JE12-0011,05-Dec-2026,4000,Sales Revenue,CR,11479.17,Sales invoice
+JE12-0012,17-Sep-2026,1000,Cash,DR,90543.59,
+JE12-0012,17-Sep-2026,4000,,CR,90543.59,Sales invoice
+JE12-0013,24-May-2026,1200,Inventory,DR,12189.37,Asset purchase
+JE12-0013,24-May-2026,1010,Bank Current Account,CR,12189.37,Asset purchase
+JE12-0014,17-May-2026,5000,Cost of Goods Sold,DR,76704.18,Operating expense
+JE12-0014,17-May-2026,1010,Bank Current Account,CR,76704.18,Operating expense
+JE12-0015,03-Nov-2026,5200,Rent Expense,DR,92633.55,Operating expense
+JE12-0015,03-Nov-2026,2000,Accounts Payable,CR,92633.55,Operating expense
+JE12-0016,06-Oct-2026,5100,Salaries Expense,DR,5408.40,Payroll run
+JE12-0016,06-Oct-2026,1010,Bank Current Account,CR,5408.40,Payroll run
+JE12-0017,22-Oct-2026,1000,Cash,DR,73500.25,Loan drawdown
+JE12-0017,22-Oct-2026,2200,Loans Payable,CR,73500.25,Loan drawdown
+JE12-0018,28-Jan-2026,5100,Salaries Expense,DR,48412.04,Operating expense
+JE12-0018,,2000,Accounts Payable,CR,48412.04,Operating expense
+JE12-0019,05-Jul-2026,1000,Cash,DR,44896.87,Sales invoice
+JE12-0019,05-Jul-2026,4000,Sales Revenue,CR,44896.87,Sales invoice
+JE12-0020,14-Apr-2026,2000,Accounts Payable,DR,21445.28,Supplier payment
+JE12-0020,14-Apr-2026,1010,Bank Current Account,CR,21445.28,Supplier payment
+JE12-0021,17-Feb-2026,1010,Bank Current Account,DR,54360.19,Loan drawdown
+JE12-0021,17-Feb-2026,2200,Loans Payable,CR,54360.19,Loan drawdown
+JE12-0022,13-Jan-2026,1000,Cash,DR,76441.46,Sales invoice
+JE12-0022,13-Jan-2026,4000,Sales Revenue,CR,76441.46,Sales invoice
+JE12-0023,11-May-2026,5300,Utilities Expense,DR,73519.08,Operating expense
+JE12-0023,11-May-2026,1010,Bank Current Account,CR,73519.08,
+JE12-0024,10-Apr-2026,5400,Office Expenses,DR,905.88,Operating expense
+JE12-0024,10-Apr-2026,1010,Bank Current Account,CR,905.88,Operating expense
+JE12-0025,25-Aug-2026,1200,Inventory,DR,35080.75,Asset purchase
+JE12-0025,25-Aug-2026,1010,Bank Current Account,CR,35080.75,Asset purchase
+JE12-0026,01-Jul-2026,1000,Cash,DR,754.94,Customer receipt
+JE12-0026,01-Jul-2026,1100,Accounts Receivable,CR,754.94,Customer receipt
+JE12-0027,25-Jan-2026,1010,Bank Current Account,DR,90351.43,Customer receipt
+JE12-0027,25-Jan-2026,1100,Accounts Receivable,CR,90351.43,Customer receipt
+JE12-0028,14-Apr-2026,1010,Bank Current Account,DR,19612.69,Capital contribution
+JE12-0028,14-Apr-2026,3000,Share Capital,CR,19612.69,Capital contribution
+JE12-0029,02-Feb-2026,5100,Salaries Expense,DR,67650.24,Payroll run
+JE12-0029,,1000,Cash,CR,67650.24,Payroll run
+JE12-0030,03-Dec-2026,1010,Bank Current Account,DR,43634.74,Customer receipt
+JE12-0030,03-Dec-2026,1100,Accounts Receivable,CR,43634.74,Customer receipt
+JE12-0031,03-Jul-2026,5400,Office Expenses,DR,60589.91,Operating expense
+JE12-0031,03-Jul-2026,1000,Cash,CR,60589.91,Operating expense
+JE12-0032,28-May-2026,1010,Bank Current Account,DR,22607.80,Sales invoice
+JE12-0032,28-May-2026,4000,Sales Revenue,CR,22607.80,Sales invoice
+JE12-0033,08-May-2026,1010,Bank Current Account,DR,30317.77,Loan drawdown
+JE12-0033,08-May-2026,2200,Loans Payable,CR,30317.77,Loan drawdown
+JE12-0034,04-Oct-2026,5100,Salaries Expense,DR,74127.02,Operating expense
+JE12-0034,04-Oct-2026,1000,Cash,CR,74127.02,Operating expense
+JE12-0035,14-Jun-2026,2000,Accounts Payable,DR,42791.41,Supplier payment
+JE12-0035,14-Jun-2026,1000,Cash,CR,42791.41,Supplier payment
+JE12-0036,15-Apr-2026,5400,Office Expenses,DR,91645.60,Operating expense
+JE12-0036,15-Apr-2026,1010,Bank Current Account,CR,91645.60,Operating expense
+JE12-0037,06-Feb-2026,1200,Inventory,DR,81007.94,Asset purchase
+JE12-0037,06-Feb-2026,1010,Bank Current Account,CR,81007.94,Asset purchase
+JE12-0038,05-Jun-2026,1200,Inventory,DR,79437.46,Asset purchase
+JE12-0038,05-Jun-2026,1000,Cash,CR,79437.46,Asset purchase
+JE12-0039,17-Jul-2026,5500,Marketing Expense,DR,92002.74,Operating expense
+JE12-0039,17-Jul-2026,1000,Cash,CR,92002.74,Operating expense
+JE12-0040,01-Mar-2026,1100,Accounts Receivable,DR,24826.82,Sales invoice
+JE12-0040,01-Mar-2026,4000,Sales Revenue,CR,24826.82,Sales invoice
+JE12-0041,26-Feb-2026,1010,Bank Current Account,DR,9134.69,Capital contribution
+JE12-0041,26-Feb-2026,3000,Share Capital,CR,9134.69,Capital contribution
+JE12-0042,05-Apr-2026,2000,Accounts Payable,DR,5999.32,Supplier payment
+JE12-0042,05-Apr-2026,1000,Cash,CR,5999.32,Supplier payment
+JE12-0043,03-Nov-2026,1010,Bank Current Account,DR,65244.16,Customer receipt
+JE12-0043,03-Nov-2026,1100,Accounts Receivable,CR,65244.16,Customer receipt
+JE12-0044,21-Apr-2026,1200,Inventory,DR,94730.76,Asset purchase
+JE12-0044,21-Apr-2026,1000,Cash,CR,94730.76,Asset purchase
+JE12-0045,04-Jun-2026,5100,Salaries Expense,DR,85996.65,Payroll run
+JE12-0045,04-Jun-2026,1000,Cash,CR,85996.65,Payroll run
+JE12-0046,14-Oct-2026,1010,Bank Current Account,DR,16083.78,Sales invoice
+JE12-0046,14-Oct-2026,4000,Sales Revenue,CR,16083.78,Sales invoice
+JE12-0002-COPY,03-Oct-2026,1000,Cash,DR,47535.40,Capital contribution (copy)
+JE12-0002-COPY,03-Oct-2026,3000,Share Capital,CR,47535.40,Capital contribution (copy)
+JE12-0044-COPY,21-Apr-2026,1200,Inventory,DR,94730.76,Asset purchase (copy)
+JE12-0044-COPY,21-Apr-2026,1000,Cash,CR,94730.76,Asset purchase (copy)

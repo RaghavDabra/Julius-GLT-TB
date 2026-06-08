@@ -1,0 +1,14 @@
+account,account_description,closing_balance
+1000,Cash,-164721.68
+1010,Bank Current Account,239088.59
+1100,Accounts Receivable,-380124.93
+1200,Inventory,74370.49
+1500,Fixed Assets,-5410.14
+1510,Equipment,119715.37
+2000,Accounts Payable,-271669.49
+3000,Share Capital,-44274.72
+4000,Sales Revenue,-213174.75
+5100,Salaries Expense,365429.85
+5200,Rent Expense,39084.95
+5300,Utilities Expense,71194.95
+5400,Office Expenses,166191.21

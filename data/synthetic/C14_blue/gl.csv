@@ -1,0 +1,105 @@
+trans_id,posting_date,gl_acct,account_description,gross_amount,text
+JE14-0001,20-Aug-2026,5400,Office Expenses,23097.83,Operating expense
+JE14-0001,20-Aug-2026,1000,Cash,(23097.83),Operating expense
+JE14-0002,12-Jun-2026,5100,Salaries Expense,55815.59,Payroll run
+JE14-0002,12-Jun-2026,1010,Bank Current Account,(55815.59),Payroll run
+JE14-0003,02-Jul-2026,2000,Accounts Payable,27188.83,Supplier payment
+JE14-0003,02-Jul-2026,1000,Cash,(27188.83),Supplier payment
+JE14-0004,07-Nov-2026,2000,Accounts Payable,61553.98,Supplier payment
+JE14-0004,07-Nov-2026,1000,Cash,(61553.98),Supplier payment
+JE14-0005,01-Nov-2026,5100,Salaries Expense,2051.97,Asset purchase
+JE14-0005,01-Nov-2026,2000,Accounts Payable,(2051.97),Asset purchase
+JE14-0006,08-Jan-2026,5100,Salaries Expense,57168.31,Payroll run
+JE14-0006,08-Jan-2026,1000,Cash,(57168.31),Payroll run
+JE14-0007,09-Nov-2026,4200,Other Income,91872.27,Asset purchase
+JE14-0007,09-Nov-2026,2000,Accounts Payable,(91872.27),Asset purchase
+JE14-0008,15-Apr-2026,1010,Bank Current Account,43685.96,Capital contribution
+JE14-0008,15-Apr-2026,3000,Share Capital,(43685.96),Capital contribution
+JE14-0009,22-Sep-2026,5100,Salaries Expense,9854.30,Asset purchase
+JE14-0009,22-Sep-2026,2000,Accounts Payable,(9854.30),Asset purchase
+JE14-0010,03-Aug-2026,1010,Bank Current Account,65066.59,Loan drawdown
+JE14-0010,03-Aug-2026,4100,Service Revenue,(65066.59),Loan drawdown
+JE14-0011,21-Dec-2026,1010,,24919.78,Loan drawdown
+JE14-0011,21-Dec-2026,2300,Tax Payable,(24919.78),Loan drawdown
+JE14-0012,13-Oct-2026,2000,Accounts Payable,85485.32,Asset purchase
+JE14-0012,13-Oct-2026,2300,Tax Payable,(85485.32),Asset purchase
+JE14-0013,09-May-2026,1000,Cash,62314.74,Loan drawdown
+JE14-0013,09-May-2026,5100,Salaries Expense,(62314.74),Loan drawdown
+JE14-0014,23-Oct-2026,1010,Bank Current Account,70029.04,Capital contribution
+JE14-0014,23-Oct-2026,3000,Share Capital,(70029.04),Capital contribution
+JE14-0015,26-Nov-2026,1010,Bank Current Account,65247.27,Customer receipt
+JE14-0015,26-Nov-2026,1100,Accounts Receivable,(65247.27),Customer receipt
+JE14-0016,18-Nov-2026,5100,Salaries Expense,80338.02,Payroll run
+JE14-0016,18-Nov-2026,1010,Bank Current Account,(80338.02),Payroll run
+JE14-0017,09-Dec-2026,2000,Accounts Payable,44803.57,Supplier payment
+JE14-0017,09-Dec-2026,1000,Cash,(44803.57),Supplier payment
+JE14-0018,24-Apr-2026,5400,Office Expenses,21230.75,Depreciation charge
+JE14-0018,24-Apr-2026,1100,Accounts Receivable,(21230.75),Depreciation charge
+JE14-0019,15-May-2026,3100,Retained Earnings,24864.04,Asset purchase
+JE14-0019,15-May-2026,1010,Bank Current Account,(24864.04),Asset purchase
+JE14-0020,19-Oct-2026,5200,Rent Expense,82327.41,Operating expense
+JE14-0020,19-Oct-2026,1000,Cash,(82327.41),Operating expense
+JE14-0021,13-Nov-2026,5200,Rent Expense,47620.28,Operating expense
+JE14-0021,13-Nov-2026,1000,Cash,(47620.28),Operating expense
+JE14-0022,11-Apr-2026,2300,Tax Payable,13179.09,Depreciation charge
+JE14-0022,11-Apr-2026,3100,Retained Earnings,(13179.09),Depreciation charge
+JE14-0023,06-Dec-2026,1010,Bank Current Account,30158.97,Capital contribution
+JE14-0023,06-Dec-2026,3000,Share Capital,(30158.97),Capital contribution
+JE14-0024,11-Mar-2026,5200,Rent Expense,60003.46,Operating expense
+JE14-0024,11-Mar-2026,1010,Bank Current Account,(60003.46),Operating expense
+JE14-0025,19-Mar-2026,1000,Cash,26094.12,Sales invoice
+JE14-0025,19-Mar-2026,4100,Service Revenue,(26094.12),Sales invoice
+JE14-0026,21-Jul-2026,2000,Accounts Payable,12424.16,Supplier payment
+JE14-0026,21-Jul-2026,1000,Cash,(12424.16),Supplier payment
+JE14-0027,01-Jul-2026,1010,Bank Current Account,91711.35,Capital contribution
+JE14-0027,,3000,Share Capital,(91711.35),Capital contribution
+JE14-0028,11-Jan-2026,1100,Accounts Receivable,69453.01,Sales invoice
+JE14-0028,11-Jan-2026,4000,Sales Revenue,(69453.01),Sales invoice
+JE14-0029,10-Jun-2026,2000,Accounts Payable,21611.30,Depreciation charge
+JE14-0029,10-Jun-2026,1000,Cash,(21611.30),Depreciation charge
+JE14-0030,06-May-2026,2000,Accounts Payable,47891.47,Supplier payment
+JE14-0030,06-May-2026,1010,Bank Current Account,(47891.47),Supplier payment
+JE14-0031,24-Aug-2026,5100,Salaries Expense,90111.75,Operating expense
+JE14-0031,24-Aug-2026,1010,Bank Current Account,(90111.75),Operating expense
+JE14-0032,11-Mar-2026,4200,Other Income,84374.34,Depreciation charge
+JE14-0032,11-Mar-2026,4100,Service Revenue,(84374.34),Depreciation charge
+JE14-0033,01-Jul-2026,5100,Salaries Expense,15789.20,Payroll run
+JE14-0033,01-Jul-2026,1000,Cash,(15789.20),Payroll run
+JE14-0034,19-Jan-2026,1000,Cash,20181.39,Customer receipt
+JE14-0034,19-Jan-2026,1100,Accounts Receivable,(20181.39),Customer receipt
+JE14-0035,09-Nov-2026,1100,Accounts Receivable,35737.00,Depreciation charge
+JE14-0035,09-Nov-2026,1010,Bank Current Account,(35737.00),Depreciation charge
+JE14-0036,02-Jan-2026,4200,Other Income,62140.89,Depreciation charge
+JE14-0036,02-Jan-2026,1000,Cash,(62140.89),Depreciation charge
+JE14-0037,09-Sep-2026,5200,Rent Expense,36217.07,Operating expense
+JE14-0037,09-Sep-2026,1010,Bank Current Account,(36217.07),Operating expense
+JE14-0038,01-Nov-2026,5100,Salaries Expense,66088.96,Payroll run
+JE14-0038,01-Nov-2026,1000,Cash,(66088.96),Payroll run
+JE14-0039,20-Oct-2026,3100,Retained Earnings,49501.33,Asset purchase
+JE14-0039,20-Oct-2026,2000,Accounts Payable,(49501.33),Asset purchase
+JE14-0040,04-Oct-2026,2000,Accounts Payable,48673.82,Supplier payment
+JE14-0040,04-Oct-2026,1000,Cash,(48673.82),Supplier payment
+JE14-0041,27-May-2026,1010,Bank Current Account,57913.82,Asset purchase
+JE14-0041,27-May-2026,2300,Tax Payable,(57913.82),Asset purchase
+JE14-0042,16-Sep-2026,2000,Accounts Payable,15361.44,Depreciation charge
+JE14-0042,16-Sep-2026,3000,Share Capital,(15361.44),Depreciation charge
+JE14-0043,22-Jan-2026,1010,Bank Current Account,22392.82,Customer receipt
+JE14-0043,22-Jan-2026,1100,Accounts Receivable,(22392.82),Customer receipt
+JE14-0044,03-Mar-2026,5100,Salaries Expense,63606.73,Operating expense
+JE14-0044,03-Mar-2026,2000,Accounts Payable,(63606.73),Operating expense
+JE14-0045,10-Aug-2026,1010,Bank Current Account,61265.34,Depreciation charge
+JE14-0045,10-Aug-2026,5200,Rent Expense,(61265.34),
+JE14-0046,28-Jan-2026,4000,Sales Revenue,77279.97,Asset purchase
+JE14-0046,28-Jan-2026,1000,Cash,(77279.97),Asset purchase
+JE14-0047,28-Feb-2026,3000,Share Capital,70200.54,
+JE14-0047,28-Feb-2026,1010,Bank Current Account,(70200.54),Asset purchase
+JE14-0048,11-Mar-2026,1000,Cash,63069.22,Sales invoice
+JE14-0048,11-Mar-2026,4000,Sales Revenue,(63069.22),Sales invoice
+JE14-0049,06-Jun-2026,1010,Bank Current Account,35493.21,Loan drawdown
+JE14-0049,06-Jun-2026,4000,Sales Revenue,(35493.21),Loan drawdown
+JE14-0050,27-May-2026,5200,Rent Expense,91425.10,Operating expense
+JE14-0050,27-May-2026,1010,Bank Current Account,(91425.10),Operating expense
+JE14-0027-COPY,01-Jul-2026,1010,Bank Current Account,91711.35,Capital contribution (copy)
+JE14-0027-COPY,01-Jul-2026,3000,Share Capital,(91711.35),Capital contribution (copy)
+JE14-0008,15-Apr-2026,1010,Bank Current Account,43685.96,Capital contribution
+JE14-0008,15-Apr-2026,3000,Share Capital,(43685.96),Capital contribution

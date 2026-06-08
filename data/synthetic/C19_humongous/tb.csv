@@ -1,0 +1,14 @@
+nominal_code,nominal_name,ytd_balance
+1000,Cash,-11271.53
+1010,Bank Current Account,19920.28
+1100,Accounts Receivable,69536.13
+1500,Fixed Assets,126353.26
+2000,Accounts Payable,133669.52
+2100,Accrued Liabilities,-39260.76
+3000,Share Capital,-178263.87
+4000,Sales Revenue,-136450.75
+4100,Service Revenue,45794.63
+4200,Other Income,-153319.28
+5100,Salaries Expense,249792.80
+5200,Rent Expense,-17801.35
+5400,Office Expenses,-106118.81

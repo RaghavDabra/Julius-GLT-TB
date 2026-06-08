@@ -1,0 +1,75 @@
+entry_id,effective_date,account,gl_name,local_amount,description
+JE11-0001,28/11/2026,1000,Cash,10958.63,Loan drawdown
+JE11-0001,28/11/2026,4000,Sales Revenue,(10958.63),Loan drawdown
+JE11-0002,04/10/2026,5100,Salaries Expense,58132.60,Payroll run
+JE11-0002,04/10/2026,1010,Bank Current Account,(58132.60),Payroll run
+JE11-0003,26/12/2026,1010,Bank Current Account,77333.07,Loan drawdown
+JE11-0003,26/12/2026,4000,Sales Revenue,(77333.07),Loan drawdown
+JE11-0004,08/02/2026,5400,Office Expenses,12854.95,Asset purchase
+JE11-0004,08/02/2026,2000,Accounts Payable,(12854.95),Asset purchase
+JE11-0005,20/07/2026,1010,Bank Current Account,48601.74,Asset purchase
+JE11-0005,20/07/2026,2000,Accounts Payable,(48601.74),Asset purchase
+JE11-0006,18/11/2026,2000,Accounts Payable,17768.74,Supplier payment
+JE11-0006,18/11/2026,1010,Bank Current Account,(17768.74),Supplier payment
+JE11-0007,11/03/2026,2000,Accounts Payable,27545.98,Supplier payment
+JE11-0007,11/03/2026,1010,Bank Current Account,(27545.98),Supplier payment
+JE11-0008,05/08/2026,5100,Salaries Expense,90432.21,Payroll run
+JE11-0008,05/08/2026,1010,Bank Current Account,(90432.21),Payroll run
+JE11-0009,14/08/2026,1010,Bank Current Account,38956.39,Customer receipt
+JE11-0009,14/08/2026,1100,,(38956.39),
+JE11-0010,26/01/2026,5100,,7991.31,Payroll run
+JE11-0010,26/01/2026,1000,Cash,(7991.31),Payroll run
+JE11-0011,10/09/2026,1010,Bank Current Account,26219.80,Customer receipt
+JE11-0011,10/09/2026,1100,Accounts Receivable,(26219.80),Customer receipt
+JE11-0012,19/02/2026,2000,Accounts Payable,52291.53,Supplier payment
+JE11-0012,19/02/2026,1010,Bank Current Account,(52291.53),Supplier payment
+JE11-0013,18/06/2026,5200,Rent Expense,78238.37,Operating expense
+JE11-0013,18/06/2026,2000,Accounts Payable,(78238.37),Operating expense
+JE11-0014,04/07/2026,1100,Accounts Receivable,51971.61,Sales invoice
+JE11-0014,04/07/2026,4200,Other Income,(51971.61),Sales invoice
+JE11-0015,28/06/2026,1010,Bank Current Account,42807.11,Customer receipt
+JE11-0015,28/06/2026,1100,Accounts Receivable,(42807.11),Customer receipt
+JE11-0016,07/04/2026,5200,Rent Expense,73718.66,Operating expense
+JE11-0016,07/04/2026,1000,Cash,(73718.66),Operating expense
+JE11-0017,27/04/2026,1010,Bank Current Account,58591.94,Loan drawdown
+JE11-0017,27/04/2026,5400,Office Expenses,(58591.94),Loan drawdown
+JE11-0018,18/10/2026,1000,Cash,50636.83,Customer receipt
+JE11-0018,18/10/2026,1100,Accounts Receivable,(50636.83),Customer receipt
+JE11-0019,28/05/2026,2000,Accounts Payable,27593.26,Supplier payment
+JE11-0019,28/05/2026,1010,Bank Current Account,(27593.26),Supplier payment
+JE11-0020,28/05/2026,5600,Depreciation Expense,87295.21,
+JE11-0020,28/05/2026,4200,Other Income,(87295.21),Depreciation charge
+JE11-0021,27/06/2026,2000,Accounts Payable,14021.19,Supplier payment
+JE11-0021,27/06/2026,1000,Cash,(14021.19),Supplier payment
+JE11-0022,09/11/2026,1010,Bank Current Account,13634.98,Customer receipt
+JE11-0022,09/11/2026,1100,Accounts Receivable,(13634.98),Customer receipt
+JE11-0023,13/02/2026,1010,Bank Current Account,7312.72,Capital contribution
+JE11-0023,13/02/2026,3000,Share Capital,(7312.72),Capital contribution
+JE11-0024,19/06/2026,5600,Depreciation Expense,90281.60,Depreciation charge
+JE11-0024,19/06/2026,3000,Share Capital,(90281.60),Depreciation charge
+JE11-0025,21/08/2026,1100,Accounts Receivable,69478.89,Sales invoice
+JE11-0025,21/08/2026,4000,Sales Revenue,(69478.89),Sales invoice
+JE11-0026,09/08/2026,1010,Bank Current Account,78386.80,Loan drawdown
+JE11-0026,09/08/2026,5100,Salaries Expense,(78386.80),Loan drawdown
+JE11-0027,26/08/2026,1010,Bank Current Account,53848.58,Loan drawdown
+JE11-0027,26/08/2026,3000,Share Capital,(53848.58),Loan drawdown
+JE11-0028,01/08/2026,1000,Cash,9594.66,Loan drawdown
+JE11-0028,01/08/2026,5600,Depreciation Expense,(9594.66),Loan drawdown
+JE11-0029,07/07/2026,5100,Salaries Expense,43450.75,Operating expense
+JE11-0029,07/07/2026,1010,Bank Current Account,(43450.75),Operating expense
+JE11-0030,03/05/2026,2000,Accounts Payable,83089.06,Supplier payment
+JE11-0030,03/05/2026,1000,Cash,(83089.06),Supplier payment
+JE11-0031,06/11/2026,1000,Cash,63178.66,Loan drawdown
+JE11-0031,06/11/2026,3000,Share Capital,(63178.66),Loan drawdown
+JE11-0032,14/04/2026,1010,Bank Current Account,69010.00,Sales invoice
+JE11-0032,14/04/2026,4200,Other Income,(69010.00),Sales invoice
+JE11-0033,03/08/2026,5400,Office Expenses,253.04,Operating expense
+JE11-0033,03/08/2026,1000,Cash,(253.04),Operating expense
+JE11-0034,11/12/2026,2000,Accounts Payable,1030.87,Supplier payment
+JE11-0034,,1010,Bank Current Account,(1030.87),Supplier payment
+JE11-0035,08/02/2026,5200,Rent Expense,12686.81,Operating expense
+JE11-0035,08/02/2026,2000,Accounts Payable,(12686.81),Operating expense
+JE11-0007,11/03/2026,2000,Accounts Payable,27545.98,Supplier payment
+JE11-0007,11/03/2026,1010,Bank Current Account,(27545.98),Supplier payment
+JE11-0021,27/06/2026,2000,Accounts Payable,14021.19,Supplier payment
+JE11-0021,27/06/2026,1000,Cash,(14021.19),Supplier payment

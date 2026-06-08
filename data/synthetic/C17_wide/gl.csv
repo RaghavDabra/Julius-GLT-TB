@@ -1,0 +1,77 @@
+reference,date,gl_code,account_name,trans_amt,text
+JE17-0001,08/02/2026,2000,Accounts Payable,56731.19,Supplier payment
+JE17-0001,08/02/2026,1010,Bank Current Account,(56731.19),Supplier payment
+JE17-0002,17/04/2026,1010,Bank Current Account,10447.88,Capital contribution
+JE17-0002,17/04/2026,3000,Share Capital,(10447.88),Capital contribution
+JE17-0003,16/03/2026,5600,Depreciation Expense,57582.72,Depreciation charge
+JE17-0003,16/03/2026,5200,Rent Expense,(57582.72),Depreciation charge
+JE17-0004,05/11/2026,1100,Accounts Receivable,8989.07,Sales invoice
+JE17-0004,05/11/2026,4000,Sales Revenue,(8989.07),Sales invoice
+JE17-0005,23/01/2026,5600,Depreciation Expense,40051.88,Depreciation charge
+JE17-0005,23/01/2026,5000,Cost of Goods Sold,(40051.88),Depreciation charge
+JE17-0006,12/07/2026,5600,Depreciation Expense,75039.35,Depreciation charge
+JE17-0006,12/07/2026,4000,Sales Revenue,(75039.35),Depreciation charge
+JE17-0007,28/04/2026,5400,Office Expenses,24291.03,Operating expense
+JE17-0007,28/04/2026,1000,Cash,(24291.03),Operating expense
+JE17-0008,09/07/2026,5200,Rent Expense,83311.28,Operating expense
+JE17-0008,09/07/2026,2000,Accounts Payable,(83311.28),Operating expense
+JE17-0009,17/02/2026,1000,Cash,54972.08,Customer receipt
+JE17-0009,17/02/2026,1100,Accounts Receivable,(54972.08),Customer receipt
+JE17-0010,14/06/2026,1010,Bank Current Account,65384.67,Sales invoice
+JE17-0010,14/06/2026,4000,Sales Revenue,(65384.67),Sales invoice
+JE17-0011,09/05/2026,1000,Cash,61951.98,Loan drawdown
+JE17-0011,09/05/2026,1010,Bank Current Account,(61951.98),Loan drawdown
+JE17-0012,25/07/2026,5600,Depreciation Expense,94222.10,Depreciation charge
+JE17-0012,25/07/2026,4000,Sales Revenue,(94222.10),Depreciation charge
+JE17-0013,18/09/2026,1010,Bank Current Account,17101.55,Customer receipt
+JE17-0013,18/09/2026,1100,Accounts Receivable,(17101.55),Customer receipt
+JE17-0014,13/12/2026,5100,Salaries Expense,54940.21,Payroll run
+JE17-0014,13/12/2026,1010,Bank Current Account,(54940.21),Payroll run
+JE17-0015,06/12/2026,2000,Accounts Payable,42509.52,Supplier payment
+JE17-0015,06/12/2026,1000,Cash,(42509.52),Supplier payment
+JE17-0016,26/06/2026,5100,Salaries Expense,38143.20,Operating expense
+JE17-0016,26/06/2026,2000,Accounts Payable,(38143.20),Operating expense
+JE17-0017,01/11/2026,5600,Depreciation Expense,37056.48,Depreciation charge
+JE17-0017,01/11/2026,5100,Salaries Expense,(37056.48),Depreciation charge
+JE17-0018,03/07/2026,5100,Salaries Expense,87967.99,Operating expense
+JE17-0018,03/07/2026,1010,Bank Current Account,(87967.99),Operating expense
+JE17-0019,02/10/2026,5200,Rent Expense,35323.71,Operating expense
+JE17-0019,02/10/2026,1000,Cash,(35323.71),Operating expense
+JE17-0020,02/10/2026,1010,Bank Current Account,67645.81,Capital contribution
+JE17-0020,02/10/2026,3000,Share Capital,(67645.81),Capital contribution
+JE17-0021,26/11/2026,2000,Accounts Payable,1165.88,Supplier payment
+JE17-0021,26/11/2026,1010,Bank Current Account,(1165.88),Supplier payment
+JE17-0022,17/09/2026,5600,Depreciation Expense,74508.55,Depreciation charge
+JE17-0022,17/09/2026,2000,Accounts Payable,(74508.55),Depreciation charge
+JE17-0023,01/11/2026,1000,Cash,34271.34,Customer receipt
+JE17-0023,01/11/2026,1100,Accounts Receivable,(34271.34),Customer receipt
+JE17-0024,22/06/2026,2000,Accounts Payable,74101.97,Supplier payment
+JE17-0024,22/06/2026,1010,Bank Current Account,(74101.97),Supplier payment
+JE17-0025,23/12/2026,1010,Bank Current Account,49257.90,Capital contribution
+JE17-0025,23/12/2026,3000,Share Capital,(49257.90),Capital contribution
+JE17-0026,19/09/2026,5000,Cost of Goods Sold,27134.24,Operating expense
+JE17-0026,19/09/2026,2000,Accounts Payable,(27134.24),Operating expense
+JE17-0027,15/04/2026,1010,Bank Current Account,57663.57,Loan drawdown
+JE17-0027,15/04/2026,3000,Share Capital,(57663.57),Loan drawdown
+JE17-0028,04/09/2026,1000,Cash,16752.05,Capital contribution
+JE17-0028,04/09/2026,3000,Share Capital,(16752.05),Capital contribution
+JE17-0029,09/09/2026,5600,Depreciation Expense,89974.42,Depreciation charge
+JE17-0029,09/09/2026,1010,Bank Current Account,(89974.42),Depreciation charge
+JE17-0030,25/04/2026,5600,Depreciation Expense,53566.54,Depreciation charge
+JE17-0030,25/04/2026,4000,Sales Revenue,(53566.54),Depreciation charge
+JE17-0031,16/01/2026,1010,Bank Current Account,85185.28,Loan drawdown
+JE17-0031,16/01/2026,5500,Marketing Expense,(85185.28),Loan drawdown
+JE17-0032,22/04/2026,5200,Rent Expense,36446.56,Operating expense
+JE17-0032,22/04/2026,1000,Cash,(36446.56),Operating expense
+JE17-0033,18/09/2026,1010,Bank Current Account,90774.02,Customer receipt
+JE17-0033,18/09/2026,1100,Accounts Receivable,(90774.02),Customer receipt
+JE17-0034,13/02/2026,1100,Accounts Receivable,23697.23,Sales invoice
+JE17-0034,13/02/2026,4200,Other Income,(23697.23),Sales invoice
+JE17-0035,19/04/2026,1000,Cash,29920.83,Loan drawdown
+JE17-0035,19/04/2026,1010,Bank Current Account,(29920.83),Loan drawdown
+JE17-0036,16/04/2026,1510,Equipment,64942.73,Asset purchase
+JE17-0036,16/04/2026,2000,Accounts Payable,(64942.73),Asset purchase
+JE17-0037,08/04/2026,1000,Cash,82929.63,Customer receipt
+JE17-0037,08/04/2026,1100,Accounts Receivable,(82929.63),Customer receipt
+JE17-0038,04/02/2026,1000,Cash,14946.18,Customer receipt
+JE17-0038,04/02/2026,1100,Accounts Receivable,(14946.18),Customer receipt

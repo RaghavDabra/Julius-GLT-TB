@@ -1,0 +1,61 @@
+journalentry,transaction_date,account_id,account_title,side,amt,comment
+JE21-0001,2026-08-18,1500,Fixed Assets,DR,47349.98,Asset purchase
+JE21-0001,2026-08-18,1010,Bank Current Account,CR,47349.98,Asset purchase
+JE21-0002,2026-10-22,1100,Accounts Receivable,DR,22712.76,Sales invoice
+JE21-0002,2026-10-22,4000,Sales Revenue,CR,22712.76,Sales invoice
+JE21-0003,2026-10-20,5100,Salaries Expense,DR,42061.88,Payroll run
+JE21-0003,2026-10-20,1010,Bank Current Account,CR,42061.88,Payroll run
+JE21-0004,2026-09-27,1000,Cash,DR,58934.81,Sales invoice
+JE21-0004,2026-09-27,4000,Sales Revenue,CR,58934.81,Sales invoice
+JE21-0005,2026-11-12,1000,Cash,DR,14212.10,Customer receipt
+JE21-0005,2026-11-12,1100,Accounts Receivable,CR,14212.10,Customer receipt
+JE21-0006,2026-10-10,1000,Cash,DR,63414.62,Sales invoice
+JE21-0006,2026-10-10,4000,Sales Revenue,CR,63414.62,Sales invoice
+JE21-0007,2026-03-06,1000,Cash,DR,39698.36,Loan drawdown
+JE21-0007,2026-03-06,1010,Bank Current Account,CR,39698.36,Loan drawdown
+JE21-0008,2026-06-02,1500,Fixed Assets,DR,71224.41,Asset purchase
+JE21-0008,2026-06-02,1010,Bank Current Account,CR,71224.41,Asset purchase
+JE21-0009,2026-07-27,5200,Rent Expense,DR,35108.81,Operating expense
+JE21-0009,2026-07-27,1010,Bank Current Account,CR,35108.81,Operating expense
+JE21-0010,2026-08-05,5200,Rent Expense,DR,6308.22,Operating expense
+JE21-0010,2026-08-05,2000,Accounts Payable,CR,6308.22,Operating expense
+JE21-0011,2026-07-17,5400,Office Expenses,DR,31375.43,Operating expense
+JE21-0011,2026-07-17,1010,Bank Current Account,CR,31375.43,Operating expense
+JE21-0012,2026-12-21,1000,Cash,DR,10517.32,Customer receipt
+JE21-0012,2026-12-21,1100,Accounts Receivable,CR,10517.32,Customer receipt
+JE21-0013,2026-06-09,1010,Bank Current Account,DR,40656.03,Depreciation charge
+JE21-0013,2026-06-09,1500,Fixed Assets,CR,40656.03,Depreciation charge
+JE21-0014,2026-08-17,5100,Salaries Expense,DR,58415.40,Depreciation charge
+JE21-0014,2026-08-17,1500,Fixed Assets,CR,58415.40,Depreciation charge
+JE21-0015,2026-04-23,5100,Salaries Expense,DR,83965.50,Payroll run
+JE21-0015,2026-04-23,1000,Cash,CR,83965.50,Payroll run
+JE21-0016,2026-08-21,1500,Fixed Assets,DR,11361.95,Asset purchase
+JE21-0016,2026-08-21,1000,Cash,CR,11361.95,Asset purchase
+JE21-0017,2026-07-14,5400,Office Expenses,DR,75988.68,Operating expense
+JE21-0017,2026-07-14,1000,Cash,CR,75988.68,Operating expense
+JE21-0018,2026-11-07,1010,Bank Current Account,DR,53305.41,Sales invoice
+JE21-0018,2026-11-07,4000,Sales Revenue,CR,53305.41,Sales invoice
+JE21-0019,2026-05-26,1100,Accounts Receivable,DR,65598.12,Sales invoice
+JE21-0019,2026-05-26,4000,Sales Revenue,CR,65598.12,Sales invoice
+JE21-0020,2026-06-25,5200,Rent Expense,DR,48209.51,Operating expense
+JE21-0020,2026-06-25,1010,Bank Current Account,CR,48209.51,Operating expense
+JE21-0021,2026-12-19,1000,Cash,DR,32528.15,Sales invoice
+JE21-0021,2026-12-19,4000,Sales Revenue,CR,32528.15,Sales invoice
+JE21-0022,2026-06-22,1000,Cash,DR,31499.33,Sales invoice
+JE21-0022,2026-06-22,4000,Sales Revenue,CR,31499.33,Sales invoice
+JE21-0023,2026-08-05,5100,Salaries Expense,DR,61390.11,Payroll run
+JE21-0023,2026-08-05,1000,Cash,CR,61390.11,Payroll run
+JE21-0024,2026-07-24,5100,Salaries Expense,DR,74511.36,Payroll run
+JE21-0024,2026-07-24,1010,Bank Current Account,CR,74511.36,Payroll run
+JE21-0025,2026-11-11,1100,Accounts Receivable,DR,53734.81,Sales invoice
+JE21-0025,2026-11-11,4000,Sales Revenue,CR,53734.81,Sales invoice
+JE21-0026,2026-06-26,4000,Sales Revenue,DR,54916.17,Depreciation charge
+JE21-0026,2026-06-26,1500,Fixed Assets,CR,54916.17,Depreciation charge
+JE21-0027,2026-06-13,1000,Cash,DR,79894.11,Loan drawdown
+JE21-0027,2026-06-13,1010,Bank Current Account,CR,79894.11,Loan drawdown
+JE21-0028,2026-05-23,1100,Accounts Receivable,DR,56603.95,Depreciation charge
+JE21-0028,2026-05-23,1500,Fixed Assets,CR,56603.95,Depreciation charge
+JE21-0029,2026-08-08,1000,Cash,DR,39405.53,Loan drawdown
+JE21-0029,2026-08-08,5400,Office Expenses,CR,39405.53,Loan drawdown
+JE21-0030,2026-03-04,1010,Bank Current Account,DR,49955.77,Loan drawdown
+JE21-0030,2026-03-04,3000,Share Capital,CR,49955.77,Loan drawdown

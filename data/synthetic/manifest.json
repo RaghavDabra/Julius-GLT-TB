@@ -1,0 +1,280 @@
+{
+  "seed": 42,
+  "clients": [
+    {
+      "client_id": "C01",
+      "client_name": "Northwind Traders",
+      "gl_path": "C01_northwind/gl.csv",
+      "tb_path": "C01_northwind/tb.csv",
+      "clean": true,
+      "date_format": "%m/%d/%Y",
+      "amount_style": "paren_neg",
+      "gl_rows": 76,
+      "tb_accounts": 11
+    },
+    {
+      "client_id": "C02",
+      "client_name": "Contoso Manufacturing",
+      "gl_path": "C02_contoso/gl.csv",
+      "tb_path": "C02_contoso/tb.csv",
+      "clean": false,
+      "date_format": "%d-%b-%Y",
+      "amount_style": "signed",
+      "gl_rows": 98,
+      "tb_accounts": 13
+    },
+    {
+      "client_id": "C03",
+      "client_name": "Fabrikam Logistics",
+      "gl_path": "C03_fabrikam/gl.csv",
+      "tb_path": "C03_fabrikam/tb.csv",
+      "clean": false,
+      "date_format": "%d-%b-%Y",
+      "amount_style": "signed",
+      "gl_rows": 90,
+      "tb_accounts": 13
+    },
+    {
+      "client_id": "C04",
+      "client_name": "Adventure Works",
+      "gl_path": "C04_adventure/gl.xlsx",
+      "tb_path": "C04_adventure/tb.csv",
+      "clean": false,
+      "date_format": "%Y-%m-%d",
+      "amount_style": "drcr_positive",
+      "gl_rows": 90,
+      "tb_accounts": 13
+    },
+    {
+      "client_id": "C05",
+      "client_name": "Tailspin Toys",
+      "gl_path": "C05_tailspin/gl.csv",
+      "tb_path": "C05_tailspin/tb.csv",
+      "clean": true,
+      "date_format": "%Y-%m-%d",
+      "amount_style": "drcr_positive",
+      "gl_rows": 64,
+      "tb_accounts": 13
+    },
+    {
+      "client_id": "C06",
+      "client_name": "Wingtip Imports",
+      "gl_path": "C06_wingtip/gl.csv",
+      "tb_path": "C06_wingtip/tb.csv",
+      "clean": false,
+      "date_format": "%d/%m/%Y",
+      "amount_style": "signed",
+      "gl_rows": 88,
+      "tb_accounts": 11
+    },
+    {
+      "client_id": "C07",
+      "client_name": "Proseware Health",
+      "gl_path": "C07_proseware/gl.csv",
+      "tb_path": "C07_proseware/tb.csv",
+      "clean": false,
+      "date_format": "%d-%b-%Y",
+      "amount_style": "currency_drcr",
+      "gl_rows": 66,
+      "tb_accounts": 10
+    },
+    {
+      "client_id": "C08",
+      "client_name": "Litware Energy",
+      "gl_path": "C08_litware/gl.csv",
+      "tb_path": "C08_litware/tb.csv",
+      "clean": false,
+      "date_format": "%m/%d/%Y",
+      "amount_style": "drcr_positive",
+      "gl_rows": 82,
+      "tb_accounts": 10
+    },
+    {
+      "client_id": "C09",
+      "client_name": "Fourth Coffee",
+      "gl_path": "C09_fourth/gl.csv",
+      "tb_path": "C09_fourth/tb.csv",
+      "clean": true,
+      "date_format": "%m/%d/%Y",
+      "amount_style": "drcr_positive",
+      "gl_rows": 88,
+      "tb_accounts": 12
+    },
+    {
+      "client_id": "C10",
+      "client_name": "Graphic Design Institute",
+      "gl_path": "C10_graphic/gl.csv",
+      "tb_path": "C10_graphic/tb.csv",
+      "clean": false,
+      "date_format": "%d/%m/%Y",
+      "amount_style": "currency_drcr",
+      "gl_rows": 92,
+      "tb_accounts": 12
+    },
+    {
+      "client_id": "C11",
+      "client_name": "Coho Vineyard",
+      "gl_path": "C11_coho/gl.csv",
+      "tb_path": "C11_coho/tb.csv",
+      "clean": false,
+      "date_format": "%d/%m/%Y",
+      "amount_style": "paren_neg",
+      "gl_rows": 74,
+      "tb_accounts": 12
+    },
+    {
+      "client_id": "C12",
+      "client_name": "Alpine Ski House",
+      "gl_path": "C12_alpine/gl.csv",
+      "tb_path": "C12_alpine/tb.csv",
+      "clean": false,
+      "date_format": "%d-%b-%Y",
+      "amount_style": "drcr_positive",
+      "gl_rows": 96,
+      "tb_accounts": 14
+    },
+    {
+      "client_id": "C13",
+      "client_name": "Margie's Travel",
+      "gl_path": "C13_margies/gl.xlsx",
+      "tb_path": "C13_margies/tb.csv",
+      "clean": true,
+      "date_format": "%d/%m/%Y",
+      "amount_style": "currency_drcr",
+      "gl_rows": 110,
+      "tb_accounts": 14
+    },
+    {
+      "client_id": "C14",
+      "client_name": "Blue Yonder Airlines",
+      "gl_path": "C14_blue/gl.csv",
+      "tb_path": "C14_blue/tb.csv",
+      "clean": false,
+      "date_format": "%d-%b-%Y",
+      "amount_style": "paren_neg",
+      "gl_rows": 104,
+      "tb_accounts": 13
+    },
+    {
+      "client_id": "C15",
+      "client_name": "Trey Research",
+      "gl_path": "C15_trey/gl.csv",
+      "tb_path": "C15_trey/tb.csv",
+      "clean": false,
+      "date_format": "%m/%d/%Y",
+      "amount_style": "paren_neg",
+      "gl_rows": 90,
+      "tb_accounts": 14
+    },
+    {
+      "client_id": "C16",
+      "client_name": "Lucerne Publishing",
+      "gl_path": "C16_lucerne/gl.csv",
+      "tb_path": "C16_lucerne/tb.csv",
+      "clean": false,
+      "date_format": "%d-%b-%Y",
+      "amount_style": "drcr_positive",
+      "gl_rows": 72,
+      "tb_accounts": 11
+    },
+    {
+      "client_id": "C17",
+      "client_name": "Wide World Importers",
+      "gl_path": "C17_wide/gl.csv",
+      "tb_path": "C17_wide/tb.csv",
+      "clean": true,
+      "date_format": "%d/%m/%Y",
+      "amount_style": "paren_neg",
+      "gl_rows": 76,
+      "tb_accounts": 14
+    },
+    {
+      "client_id": "C18",
+      "client_name": "City Power & Light",
+      "gl_path": "C18_city/gl.csv",
+      "tb_path": "C18_city/tb.csv",
+      "clean": false,
+      "date_format": "%m/%d/%Y",
+      "amount_style": "signed",
+      "gl_rows": 86,
+      "tb_accounts": 13
+    },
+    {
+      "client_id": "C19",
+      "client_name": "Humongous Insurance",
+      "gl_path": "C19_humongous/gl.csv",
+      "tb_path": "C19_humongous/tb.csv",
+      "clean": false,
+      "date_format": "%m/%d/%Y",
+      "amount_style": "paren_neg",
+      "gl_rows": 88,
+      "tb_accounts": 13
+    },
+    {
+      "client_id": "C20",
+      "client_name": "Woodgrove Bank",
+      "gl_path": "C20_woodgrove/gl.csv",
+      "tb_path": "C20_woodgrove/tb.csv",
+      "clean": false,
+      "date_format": "%m/%d/%Y",
+      "amount_style": "currency_drcr",
+      "gl_rows": 84,
+      "tb_accounts": 11
+    },
+    {
+      "client_id": "C21",
+      "client_name": "Consolidated Messenger",
+      "gl_path": "C21_consolidated/gl.csv",
+      "tb_path": "C21_consolidated/tb.csv",
+      "clean": true,
+      "date_format": "%Y-%m-%d",
+      "amount_style": "drcr_positive",
+      "gl_rows": 60,
+      "tb_accounts": 10
+    },
+    {
+      "client_id": "C22",
+      "client_name": "School of Fine Art",
+      "gl_path": "C22_school/gl.xlsx",
+      "tb_path": "C22_school/tb.csv",
+      "clean": false,
+      "date_format": "%m/%d/%Y",
+      "amount_style": "paren_neg",
+      "gl_rows": 110,
+      "tb_accounts": 13
+    },
+    {
+      "client_id": "C23",
+      "client_name": "Southridge Video",
+      "gl_path": "C23_southridge/gl.csv",
+      "tb_path": "C23_southridge/tb.csv",
+      "clean": false,
+      "date_format": "%d-%b-%Y",
+      "amount_style": "signed",
+      "gl_rows": 98,
+      "tb_accounts": 14
+    },
+    {
+      "client_id": "C24",
+      "client_name": "Nod Publishers",
+      "gl_path": "C24_nod/gl.csv",
+      "tb_path": "C24_nod/tb.csv",
+      "clean": false,
+      "date_format": "%d-%b-%Y",
+      "amount_style": "signed",
+      "gl_rows": 98,
+      "tb_accounts": 13
+    },
+    {
+      "client_id": "C25",
+      "client_name": "Bellows College",
+      "gl_path": "C25_bellows/gl.csv",
+      "tb_path": "C25_bellows/tb.csv",
+      "clean": true,
+      "date_format": "%d-%b-%Y",
+      "amount_style": "paren_neg",
+      "gl_rows": 96,
+      "tb_accounts": 13
+    }
+  ]
+}

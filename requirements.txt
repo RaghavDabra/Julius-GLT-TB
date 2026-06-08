@@ -1,0 +1,10 @@
+flask
+flask-cors
+pandas
+numpy
+openpyxl
+fpdf2
+pypdf
+google-generativeai
+openai==0.28
+python-dotenv

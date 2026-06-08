@@ -1,0 +1,15 @@
+account_no,account_description,final_balance
+1000,Cash,137396.89
+1010,Bank Current Account,215085.28
+1100,Accounts Receivable,-260706.94
+1500,Fixed Assets,70063.21
+2000,Accounts Payable,160198.33
+2300,Tax Payable,5850.87
+3000,Share Capital,-205349.01
+4000,Sales Revenue,-5183.22
+4200,Other Income,-355023.91
+5000,Cost of Goods Sold,-163742.75
+5100,Salaries Expense,577542.32
+5200,Rent Expense,-47944.29
+5400,Office Expenses,-133065.95
+5600,Depreciation Expense,15414.10

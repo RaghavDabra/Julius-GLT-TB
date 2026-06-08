@@ -1,0 +1,99 @@
+transaction_id,effective_date,ledger_account,nominal_name,line_amount,text
+JE24-0001,15-Oct-2026,5100,Salaries Expense,13897.68,Payroll run
+JE24-0001,,1010,Bank Current Account,-13897.68,Payroll run
+JE24-0002,07-Dec-2026,2000,Accounts Payable,13087.98,Supplier payment
+JE24-0002,07-Dec-2026,1010,Bank Current Account,-13087.98,Supplier payment
+JE24-0003,19-Dec-2026,1000,Cash,12216.04,Loan drawdown
+JE24-0003,19-Dec-2026,2000,Accounts Payable,-12216.04,Loan drawdown
+JE24-0004,15-Aug-2026,1010,Bank Current Account,10688.71,Sales invoice
+JE24-0004,15-Aug-2026,4000,Sales Revenue,-10688.71,Sales invoice
+JE24-0005,20-May-2026,1000,Cash,21003.11,Capital contribution
+JE24-0005,20-May-2026,3000,Share Capital,-21003.11,Capital contribution
+JE24-0006,16-Sep-2026,2000,Accounts Payable,8352.09,Supplier payment
+JE24-0006,16-Sep-2026,1000,Cash,-8352.09,Supplier payment
+JE24-0007,14-Dec-2026,1010,Bank Current Account,26629.36,Customer receipt
+JE24-0007,14-Dec-2026,1100,Accounts Receivable,-26629.36,Customer receipt
+JE24-0008,19-Apr-2026,1000,Cash,41338.49,Customer receipt
+JE24-0008,19-Apr-2026,1100,Accounts Receivable,-41338.49,Customer receipt
+JE24-0009,16-Jan-2026,2000,Accounts Payable,93120.46,Supplier payment
+JE24-0009,16-Jan-2026,1010,Bank Current Account,-93120.46,Supplier payment
+JE24-0010,26-Aug-2026,5600,Depreciation Expense,50526.90,Depreciation charge
+JE24-0010,26-Aug-2026,1500,Fixed Assets,-50526.90,Depreciation charge
+JE24-0011,25-Sep-2026,5200,Rent Expense,22962.52,Operating expense
+JE24-0011,25-Sep-2026,1010,Bank Current Account,-22962.52,Operating expense
+JE24-0012,12-Mar-2026,1100,Accounts Receivable,90251.23,Sales invoice
+JE24-0012,12-Mar-2026,4100,Service Revenue,-90251.23,Sales invoice
+JE24-0013,16-Jan-2026,1500,Fixed Assets,94900.56,Asset purchase
+JE24-0013,16-Jan-2026,2000,Accounts Payable,-94900.56,Asset purchase
+JE24-0014,24-Oct-2026,1500,Fixed Assets,43712.98,Asset purchase
+JE24-0014,24-Oct-2026,2000,Accounts Payable,-43712.98,Asset purchase
+JE24-0015,13-Dec-2026,1010,Bank Current Account,73358.55,Sales invoice
+JE24-0015,13-Dec-2026,4100,Service Revenue,-73358.55,Sales invoice
+JE24-0016,28-Jan-2026,2000,Accounts Payable,66915.11,Supplier payment
+JE24-0016,28-Jan-2026,1010,Bank Current Account,-66915.11,Supplier payment
+JE24-0017,10-Jan-2026,5200,Rent Expense,31726.15,Operating expense
+JE24-0017,10-Jan-2026,2000,Accounts Payable,-31726.15,Operating expense
+JE24-0018,20-Feb-2026,1010,Bank Current Account,74862.57,Capital contribution
+JE24-0018,20-Feb-2026,3000,Share Capital,-74862.57,Capital contribution
+JE24-0019,,1000,Cash,84374.70,Loan drawdown
+JE24-0019,13-Feb-2026,5200,Rent Expense,-84374.70,Loan drawdown
+JE24-0020,18-Nov-2026,1000,Cash,34906.17,Loan drawdown
+JE24-0020,18-Nov-2026,3100,Retained Earnings,-34906.17,Loan drawdown
+JE24-0021,11-Mar-2026,5400,Office Expenses,73523.64,Operating expense
+JE24-0021,11-Mar-2026,2000,Accounts Payable,-73523.64,Operating expense
+JE24-0022,28-Oct-2026,1000,Cash,70090.50,Customer receipt
+JE24-0022,28-Oct-2026,1100,Accounts Receivable,-70090.50,Customer receipt
+JE24-0023,17-May-2026,1000,Cash,33604.70,Customer receipt
+JE24-0023,17-May-2026,1100,Accounts Receivable,-33604.70,Customer receipt
+JE24-0024,15-Jun-2026,1010,Bank Current Account,6160.57,Capital contribution
+JE24-0024,15-Jun-2026,3000,,-6160.57,Capital contribution
+JE24-0025,27-Nov-2026,5100,Salaries Expense,67476.93,Payroll run
+JE24-0025,27-Nov-2026,1010,,-67476.93,Payroll run
+JE24-0026,23-Nov-2026,5600,Depreciation Expense,59047.23,Depreciation charge
+JE24-0026,23-Nov-2026,1500,Fixed Assets,-59047.23,Depreciation charge
+JE24-0027,06-Jul-2026,5100,Salaries Expense,8431.23,Operating expense
+JE24-0027,06-Jul-2026,1010,Bank Current Account,-8431.23,Operating expense
+JE24-0028,23-Feb-2026,1500,Fixed Assets,15778.08,Asset purchase
+JE24-0028,23-Feb-2026,1000,Cash,-15778.08,Asset purchase
+JE24-0029,21-Sep-2026,2000,Accounts Payable,83143.10,Supplier payment
+JE24-0029,21-Sep-2026,1000,Cash,-83143.10,Supplier payment
+JE24-0030,05-Sep-2026,1010,Bank Current Account,92114.15,Sales invoice
+JE24-0030,05-Sep-2026,4100,Service Revenue,-92114.15,Sales invoice
+JE24-0031,01-Nov-2026,5100,Salaries Expense,42250.13,Payroll run
+JE24-0031,01-Nov-2026,1010,Bank Current Account,-42250.13,Payroll run
+JE24-0032,27-Apr-2026,1500,Fixed Assets,2240.17,Asset purchase
+JE24-0032,27-Apr-2026,1000,Cash,-2240.17,Asset purchase
+JE24-0033,21-Nov-2026,5600,Depreciation Expense,55040.13,Depreciation charge
+JE24-0033,21-Nov-2026,1500,Fixed Assets,-55040.13,Depreciation charge
+JE24-0034,26-Mar-2026,1010,Bank Current Account,28992.21,Loan drawdown
+JE24-0034,26-Mar-2026,3100,Retained Earnings,-28992.21,Loan drawdown
+JE24-0035,10-Jun-2026,1500,Fixed Assets,21660.27,Asset purchase
+JE24-0035,10-Jun-2026,1010,Bank Current Account,-21660.27,Asset purchase
+JE24-0036,20-Mar-2026,1000,Cash,27123.64,Sales invoice
+JE24-0036,20-Mar-2026,4100,Service Revenue,-27123.64,Sales invoice
+JE24-0037,23-Dec-2026,2000,Accounts Payable,92458.60,Supplier payment
+JE24-0037,23-Dec-2026,1000,Cash,-92458.60,Supplier payment
+JE24-0038,19-Jun-2026,2000,Accounts Payable,11239.61,Supplier payment
+JE24-0038,19-Jun-2026,1000,Cash,-11239.61,Supplier payment
+JE24-0039,18-Apr-2026,2000,Accounts Payable,35213.40,Supplier payment
+JE24-0039,18-Apr-2026,1010,Bank Current Account,-35213.40,Supplier payment
+JE24-0040,12-Mar-2026,1100,Accounts Receivable,92915.44,Sales invoice
+JE24-0040,12-Mar-2026,4100,Service Revenue,-92915.44,Sales invoice
+JE24-0041,13-Jan-2026,5100,Salaries Expense,11673.33,Payroll run
+JE24-0041,13-Jan-2026,1010,Bank Current Account,-11673.33,Payroll run
+JE24-0042,01-Mar-2026,5100,Salaries Expense,88152.90,Payroll run
+JE24-0042,01-Mar-2026,1010,Bank Current Account,-88152.90,Payroll run
+JE24-0043,25-May-2026,5600,Depreciation Expense,45100.43,Depreciation charge
+JE24-0043,25-May-2026,1500,Fixed Assets,-45100.43,Depreciation charge
+JE24-0044,16-Dec-2026,2000,Accounts Payable,65515.59,Supplier payment
+JE24-0044,16-Dec-2026,1010,Bank Current Account,-65515.59,Supplier payment
+JE24-0045,20-Jul-2026,1000,Cash,29371.60,Sales invoice
+JE24-0045,20-Jul-2026,4000,Sales Revenue,-29371.60,Sales invoice
+JE24-0046,20-Jan-2026,1010,Bank Current Account,8921.84,Customer receipt
+JE24-0046,20-Jan-2026,1100,Accounts Receivable,-8921.84,
+JE24-0047,18-Feb-2026,1000,Cash,18713.63,Customer receipt
+JE24-0047,18-Feb-2026,1100,Accounts Receivable,-18713.63,Customer receipt
+JE24-0048,20-Jun-2026,5100,Salaries Expense,18593.59,Payroll run
+JE24-0048,20-Jun-2026,1010,Bank Current Account,-18593.59,Payroll run
+JE24-0026-COPY,23-Nov-2026,5600,Depreciation Expense,59047.23,Depreciation charge (copy)
+JE24-0026-COPY,23-Nov-2026,1500,Fixed Assets,-59047.23,Depreciation charge (copy)

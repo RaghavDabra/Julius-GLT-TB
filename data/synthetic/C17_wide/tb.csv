@@ -1,0 +1,15 @@
+acctno,account_title,closing_bal
+1000,Cash,157173.27
+1010,Bank Current Account,-13293.79
+1100,Accounts Receivable,-262308.50
+1510,Equipment,64942.73
+2000,Accounts Payable,-113531.44
+3000,Share Capital,-201767.21
+4000,Sales Revenue,-297201.73
+4200,Other Income,-23697.23
+5000,Cost of Goods Sold,-12917.64
+5100,Salaries Expense,143994.92
+5200,Rent Expense,97498.83
+5400,Office Expenses,24291.03
+5500,Marketing Expense,-85185.28
+5600,Depreciation Expense,522002.04

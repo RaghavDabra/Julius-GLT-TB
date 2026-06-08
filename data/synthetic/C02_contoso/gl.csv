@@ -1,0 +1,99 @@
+doc_no,effective_date,ledger_account,gl_name,value,text
+JE02-0001,,1000,Cash,4906.00,Depreciation charge
+JE02-0001,17-Aug-2026,5400,Office Expenses,-4906.00,Depreciation charge
+JE02-0002,22-Feb-2026,1100,Accounts Receivable,6649.25,Depreciation charge
+JE02-0002,22-Feb-2026,1000,Cash,-6649.25,Depreciation charge
+JE02-0003,08-Oct-2026,1010,Bank Current Account,89460.39,Customer receipt
+JE02-0003,08-Oct-2026,1100,Accounts Receivable,-89460.39,Customer receipt
+JE02-0004,19-Oct-2026,1100,Accounts Receivable,39913.48,Sales invoice
+JE02-0004,19-Oct-2026,4000,Sales Revenue,-39913.48,Sales invoice
+JE02-0005,05-Jul-2026,2100,Accrued Liabilities,22789.36,Depreciation charge
+JE02-0005,05-Jul-2026,2000,Accounts Payable,-22789.36,Depreciation charge
+JE02-0006,01-Feb-2026,1200,Inventory,88267.39,Asset purchase
+JE02-0006,01-Feb-2026,1010,Bank Current Account,-88267.39,Asset purchase
+JE02-0007,09-Sep-2026,5100,Salaries Expense,51144.62,Payroll run
+JE02-0007,09-Sep-2026,1000,Cash,-51144.62,Payroll run
+JE02-0008,10-Jun-2026,2000,Accounts Payable,83548.78,Supplier payment
+JE02-0008,10-Jun-2026,1000,Cash,-83548.78,Supplier payment
+JE02-0009,17-Nov-2026,2000,Accounts Payable,58167.64,Supplier payment
+JE02-0009,17-Nov-2026,1010,Bank Current Account,-58167.64,Supplier payment
+JE02-0010,05-Feb-2026,1100,Accounts Receivable,88527.06,Sales invoice
+JE02-0010,05-Feb-2026,4000,Sales Revenue,-88527.06,Sales invoice
+JE02-0011,09-Mar-2026,1200,Inventory,70568.22,Asset purchase
+JE02-0011,09-Mar-2026,1000,Cash,-70568.22,Asset purchase
+JE02-0012,21-Nov-2026,1200,Inventory,32672.20,Asset purchase
+JE02-0012,21-Nov-2026,2000,Accounts Payable,-32672.20,Asset purchase
+JE02-0013,03-Jan-2026,1200,Inventory,86021.17,Asset purchase
+JE02-0013,03-Jan-2026,1010,Bank Current Account,-86021.17,Asset purchase
+JE02-0014,21-Mar-2026,1010,Bank Current Account,486.31,Capital contribution
+JE02-0014,21-Mar-2026,3000,Share Capital,-486.31,Capital contribution
+JE02-0015,14-Dec-2026,1200,Inventory,42058.10,Asset purchase
+JE02-0015,14-Dec-2026,2000,Accounts Payable,-42058.10,Asset purchase
+JE02-0016,19-Jun-2026,1000,Cash,51899.24,Depreciation charge
+JE02-0016,19-Jun-2026,1010,Bank Current Account,-51899.24,Depreciation charge
+JE02-0017,12-Jan-2026,1100,Accounts Receivable,29388.30,Depreciation charge
+JE02-0017,12-Jan-2026,2200,Loans Payable,-29388.30,Depreciation charge
+JE02-0018,28-Sep-2026,1000,Cash,33696.42,Customer receipt
+JE02-0018,28-Sep-2026,1100,Accounts Receivable,-33696.42,Customer receipt
+JE02-0019,14-Mar-2026,1000,Cash,82157.85,Capital contribution
+JE02-0019,14-Mar-2026,3000,Share Capital,-82157.85,Capital contribution
+JE02-0020,26-Jul-2026,1000,Cash,74359.36,Sales invoice
+JE02-0020,26-Jul-2026,4000,Sales Revenue,-74359.36,Sales invoice
+JE02-0021,13-Feb-2026,1010,Bank Current Account,74832.47,Customer receipt
+JE02-0021,13-Feb-2026,1100,Accounts Receivable,-74832.47,Customer receipt
+JE02-0022,12-Aug-2026,1010,Bank Current Account,19079.48,Sales invoice
+JE02-0022,12-Aug-2026,4000,Sales Revenue,-19079.48,Sales invoice
+JE02-0023,13-Apr-2026,1200,Inventory,2394.57,Asset purchase
+JE02-0023,13-Apr-2026,1000,Cash,-2394.57,Asset purchase
+JE02-0024,12-May-2026,1010,Bank Current Account,91859.43,Loan drawdown
+JE02-0024,12-May-2026,2200,Loans Payable,-91859.43,Loan drawdown
+JE02-0025,,2200,Loans Payable,11090.17,Depreciation charge
+JE02-0025,06-May-2026,5200,Rent Expense,-11090.17,Depreciation charge
+JE02-0026,24-Jun-2026,1200,Inventory,56734.78,Asset purchase
+JE02-0026,24-Jun-2026,1000,Cash,-56734.78,Asset purchase
+JE02-0027,07-Oct-2026,1010,Bank Current Account,36685.79,Loan drawdown
+JE02-0027,07-Oct-2026,2200,Loans Payable,-36685.79,Loan drawdown
+JE02-0028,26-Sep-2026,1200,Inventory,41510.06,Asset purchase
+JE02-0028,26-Sep-2026,2000,Accounts Payable,-41510.06,Asset purchase
+JE02-0029,11-Nov-2026,5200,Rent Expense,41058.56,Depreciation charge
+JE02-0029,11-Nov-2026,5400,Office Expenses,-41058.56,Depreciation charge
+JE02-0030,14-Nov-2026,1000,Cash,48250.57,Loan drawdown
+JE02-0030,14-Nov-2026,2200,Loans Payable,-48250.57,Loan drawdown
+JE02-0031,14-Apr-2026,1010,Bank Current Account,52736.02,Loan drawdown
+JE02-0031,,2200,Loans Payable,-52736.02,Loan drawdown
+JE02-0032,10-Jan-2026,1000,Cash,38666.23,Capital contribution
+JE02-0032,10-Jan-2026,3000,Share Capital,-38666.23,Capital contribution
+JE02-0033,21-Oct-2026,1200,Inventory,74679.22,Asset purchase
+JE02-0033,21-Oct-2026,1010,Bank Current Account,-74679.22,Asset purchase
+JE02-0034,17-Apr-2026,1010,Bank Current Account,42088.86,Loan drawdown
+JE02-0034,17-Apr-2026,2200,Loans Payable,-42088.86,Loan drawdown
+JE02-0035,21-Nov-2026,5100,Salaries Expense,27067.14,Payroll run
+JE02-0035,21-Nov-2026,1000,Cash,-27067.14,Payroll run
+JE02-0036,26-Apr-2026,1000,Cash,63964.67,Loan drawdown
+JE02-0036,26-Apr-2026,2200,Loans Payable,-63964.67,Loan drawdown
+JE02-0037,20-Aug-2026,1000,Cash,4533.37,Customer receipt
+JE02-0037,20-Aug-2026,1100,Accounts Receivable,-4533.37,Customer receipt
+JE02-0038,07-Oct-2026,5200,Rent Expense,84200.09,
+JE02-0038,07-Oct-2026,1010,Bank Current Account,-84200.09,Operating expense
+JE02-0039,23-Nov-2026,1010,Bank Current Account,23291.92,Capital contribution
+JE02-0039,23-Nov-2026,3000,Share Capital,-23291.92,Capital contribution
+JE02-0040,17-Dec-2026,1000,Cash,20907.08,Sales invoice
+JE02-0040,17-Dec-2026,4000,Sales Revenue,-20907.08,Sales invoice
+JE02-0041,15-Feb-2026,5100,Salaries Expense,87172.03,Payroll run
+JE02-0041,15-Feb-2026,1000,Cash,-87172.03,Payroll run
+JE02-0042,20-Aug-2026,2000,Accounts Payable,90261.26,Supplier payment
+JE02-0042,20-Aug-2026,1010,Bank Current Account,-90261.26,Supplier payment
+JE02-0043,15-Aug-2026,2200,Loans Payable,70685.72,Depreciation charge
+JE02-0043,15-Aug-2026,4000,Sales Revenue,-70685.72,Depreciation charge
+JE02-0044,16-Sep-2026,1200,Inventory,26452.98,Asset purchase
+JE02-0044,16-Sep-2026,2000,Accounts Payable,-26452.98,Asset purchase
+JE02-0045,08-May-2026,1010,Bank Current Account,7499.30,Customer receipt
+JE02-0045,08-May-2026,1100,Accounts Receivable,-7499.30,
+JE02-0046,05-Feb-2026,1200,Inventory,84853.60,Asset purchase
+JE02-0046,05-Feb-2026,1010,Bank Current Account,-84853.60,Asset purchase
+JE02-0047,07-Dec-2026,2000,Accounts Payable,65971.14,Supplier payment
+JE02-0047,07-Dec-2026,1010,Bank Current Account,-65971.14,Supplier payment
+JE02-0048,14-Aug-2026,5200,Rent Expense,31534.10,Operating expense
+JE02-0048,14-Aug-2026,1010,Bank Current Account,-31534.10,Operating expense
+JE02-0027,07-Oct-2026,1010,Bank Current Account,36685.79,Loan drawdown
+JE02-0027,07-Oct-2026,2200,,-36685.79,Loan drawdown

@@ -1,0 +1,14 @@
+account_id,accountdesc,tb_balance
+1000,Cash,-264624.30
+1010,Bank Current Account,55633.27
+1100,Accounts Receivable,-14996.80
+2000,Accounts Payable,112435.22
+2200,Loans Payable,-262438.93
+3000,Share Capital,-163397.70
+4000,Sales Revenue,-37513.79
+4100,Service Revenue,-181472.30
+4200,Other Income,-47614.85
+5100,Salaries Expense,250535.04
+5200,Rent Expense,87987.77
+5400,Office Expenses,174049.55
+5500,Marketing Expense,221478.69

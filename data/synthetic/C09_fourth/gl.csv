@@ -1,0 +1,89 @@
+ref,date,nominal_code,acct_name,dr_cr,amt,line_description
+JE09-0001,12/25/2026,1200,Inventory,DR,65224.08,Asset purchase
+JE09-0001,12/25/2026,1010,Bank Current Account,CR,65224.08,Asset purchase
+JE09-0002,05/12/2026,1200,Inventory,DR,87044.97,Asset purchase
+JE09-0002,05/12/2026,2000,Accounts Payable,CR,87044.97,Asset purchase
+JE09-0003,08/24/2026,1000,Cash,DR,45505.55,Customer receipt
+JE09-0003,08/24/2026,1100,Accounts Receivable,CR,45505.55,Customer receipt
+JE09-0004,11/25/2026,1010,Bank Current Account,DR,72412.38,Loan drawdown
+JE09-0004,11/25/2026,2100,Accrued Liabilities,CR,72412.38,Loan drawdown
+JE09-0005,02/19/2026,5500,Marketing Expense,DR,66902.22,Operating expense
+JE09-0005,02/19/2026,2000,Accounts Payable,CR,66902.22,Operating expense
+JE09-0006,04/19/2026,5100,Salaries Expense,DR,85788.94,Operating expense
+JE09-0006,04/19/2026,2000,Accounts Payable,CR,85788.94,Operating expense
+JE09-0007,08/04/2026,1100,Accounts Receivable,DR,81198.00,Depreciation charge
+JE09-0007,08/04/2026,1500,Fixed Assets,CR,81198.00,Depreciation charge
+JE09-0008,08/26/2026,1010,Bank Current Account,DR,85409.66,Customer receipt
+JE09-0008,08/26/2026,1100,Accounts Receivable,CR,85409.66,Customer receipt
+JE09-0009,08/19/2026,1010,Bank Current Account,DR,48831.56,Sales invoice
+JE09-0009,08/19/2026,4000,Sales Revenue,CR,48831.56,Sales invoice
+JE09-0010,05/24/2026,1100,Accounts Receivable,DR,63962.02,Sales invoice
+JE09-0010,05/24/2026,4000,Sales Revenue,CR,63962.02,Sales invoice
+JE09-0011,12/07/2026,1010,Bank Current Account,DR,77590.59,Sales invoice
+JE09-0011,12/07/2026,4000,Sales Revenue,CR,77590.59,Sales invoice
+JE09-0012,02/18/2026,5100,Salaries Expense,DR,32828.56,Operating expense
+JE09-0012,02/18/2026,1010,Bank Current Account,CR,32828.56,Operating expense
+JE09-0013,07/06/2026,1000,Cash,DR,3160.05,Sales invoice
+JE09-0013,07/06/2026,4000,Sales Revenue,CR,3160.05,Sales invoice
+JE09-0014,07/15/2026,2000,Accounts Payable,DR,94322.45,Supplier payment
+JE09-0014,07/15/2026,1010,Bank Current Account,CR,94322.45,Supplier payment
+JE09-0015,11/28/2026,1010,Bank Current Account,DR,64906.97,Capital contribution
+JE09-0015,11/28/2026,3000,Share Capital,CR,64906.97,Capital contribution
+JE09-0016,09/13/2026,1100,Accounts Receivable,DR,17078.22,Depreciation charge
+JE09-0016,09/13/2026,1500,Fixed Assets,CR,17078.22,Depreciation charge
+JE09-0017,05/15/2026,1100,Accounts Receivable,DR,71873.62,Depreciation charge
+JE09-0017,05/15/2026,1500,Fixed Assets,CR,71873.62,Depreciation charge
+JE09-0018,06/05/2026,2100,Accrued Liabilities,DR,23626.52,Depreciation charge
+JE09-0018,06/05/2026,1500,Fixed Assets,CR,23626.52,Depreciation charge
+JE09-0019,01/26/2026,1200,Inventory,DR,72756.72,Asset purchase
+JE09-0019,01/26/2026,2000,Accounts Payable,CR,72756.72,Asset purchase
+JE09-0020,02/20/2026,1000,Cash,DR,19696.84,Capital contribution
+JE09-0020,02/20/2026,3000,Share Capital,CR,19696.84,Capital contribution
+JE09-0021,01/13/2026,1010,Bank Current Account,DR,23363.03,Sales invoice
+JE09-0021,01/13/2026,4000,Sales Revenue,CR,23363.03,Sales invoice
+JE09-0022,01/05/2026,5100,Salaries Expense,DR,71703.48,Payroll run
+JE09-0022,01/05/2026,1000,Cash,CR,71703.48,Payroll run
+JE09-0023,11/27/2026,1500,Fixed Assets,DR,56862.49,Depreciation charge
+JE09-0023,11/27/2026,5200,Rent Expense,CR,56862.49,Depreciation charge
+JE09-0024,09/08/2026,1010,Bank Current Account,DR,93643.22,Loan drawdown
+JE09-0024,09/08/2026,1200,Inventory,CR,93643.22,Loan drawdown
+JE09-0025,10/24/2026,1010,Bank Current Account,DR,5931.83,Capital contribution
+JE09-0025,10/24/2026,3000,Share Capital,CR,5931.83,Capital contribution
+JE09-0026,06/21/2026,2000,Accounts Payable,DR,4596.96,Supplier payment
+JE09-0026,06/21/2026,1010,Bank Current Account,CR,4596.96,Supplier payment
+JE09-0027,05/13/2026,1010,Bank Current Account,DR,38873.38,Capital contribution
+JE09-0027,05/13/2026,3000,Share Capital,CR,38873.38,Capital contribution
+JE09-0028,05/28/2026,2000,Accounts Payable,DR,80709.99,Supplier payment
+JE09-0028,05/28/2026,1000,Cash,CR,80709.99,Supplier payment
+JE09-0029,07/18/2026,2000,Accounts Payable,DR,53492.31,Supplier payment
+JE09-0029,07/18/2026,1000,Cash,CR,53492.31,Supplier payment
+JE09-0030,06/21/2026,1100,Accounts Receivable,DR,24336.34,Depreciation charge
+JE09-0030,06/21/2026,1500,Fixed Assets,CR,24336.34,Depreciation charge
+JE09-0031,12/27/2026,5500,Marketing Expense,DR,8920.21,Operating expense
+JE09-0031,12/27/2026,1010,Bank Current Account,CR,8920.21,Operating expense
+JE09-0032,10/20/2026,1000,Cash,DR,35924.38,Customer receipt
+JE09-0032,10/20/2026,1100,Accounts Receivable,CR,35924.38,Customer receipt
+JE09-0033,10/24/2026,1000,Cash,DR,76471.11,Sales invoice
+JE09-0033,10/24/2026,4000,Sales Revenue,CR,76471.11,Sales invoice
+JE09-0034,06/10/2026,1200,Inventory,DR,82619.59,Depreciation charge
+JE09-0034,06/10/2026,1500,Fixed Assets,CR,82619.59,Depreciation charge
+JE09-0035,02/24/2026,1000,Cash,DR,91403.06,Sales invoice
+JE09-0035,02/24/2026,4000,Sales Revenue,CR,91403.06,Sales invoice
+JE09-0036,04/18/2026,5100,Salaries Expense,DR,37770.55,Payroll run
+JE09-0036,04/18/2026,1000,Cash,CR,37770.55,Payroll run
+JE09-0037,11/12/2026,1010,Bank Current Account,DR,44373.86,Loan drawdown
+JE09-0037,11/12/2026,5500,Marketing Expense,CR,44373.86,Loan drawdown
+JE09-0038,08/15/2026,1500,Fixed Assets,DR,48790.65,Asset purchase
+JE09-0038,08/15/2026,1010,Bank Current Account,CR,48790.65,Asset purchase
+JE09-0039,06/11/2026,5500,Marketing Expense,DR,86874.25,Operating expense
+JE09-0039,06/11/2026,1010,Bank Current Account,CR,86874.25,Operating expense
+JE09-0040,01/09/2026,1000,Cash,DR,70457.79,Capital contribution
+JE09-0040,01/09/2026,3000,Share Capital,CR,70457.79,Capital contribution
+JE09-0041,06/08/2026,5100,Salaries Expense,DR,14606.22,Depreciation charge
+JE09-0041,06/08/2026,1500,Fixed Assets,CR,14606.22,Depreciation charge
+JE09-0042,11/11/2026,1000,Cash,DR,52378.44,Capital contribution
+JE09-0042,11/11/2026,3000,Share Capital,CR,52378.44,Capital contribution
+JE09-0043,08/15/2026,1500,Fixed Assets,DR,61014.72,Asset purchase
+JE09-0043,08/15/2026,2000,Accounts Payable,CR,61014.72,Asset purchase
+JE09-0044,09/16/2026,2000,Accounts Payable,DR,13425.07,Supplier payment
+JE09-0044,09/16/2026,1000,Cash,CR,13425.07,Supplier payment

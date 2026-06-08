@@ -1,0 +1,14 @@
+accountnumber,account_name,net_balance
+1000,Cash,38061.40
+1010,Bank Current Account,-241149.09
+1100,Accounts Receivable,-45543.86
+1200,Inventory,606212.29
+2000,Accounts Payable,176890.74
+2100,Accrued Liabilities,22789.36
+2200,Loans Payable,-319883.54
+2300,Tax Payable,4627.96
+3000,Share Capital,-144602.31
+4000,Sales Revenue,-317914.64
+5100,Salaries Expense,165383.79
+5200,Rent Expense,145702.58
+5400,Office Expenses,-45964.56

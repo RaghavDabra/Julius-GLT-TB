@@ -1,0 +1,99 @@
+voucher,transaction_date,ledger_account,account_description,amount,particulars
+JE23-0001,26-May-2026,1010,Bank Current Account,31921.66,Loan drawdown
+JE23-0001,26-May-2026,5400,Office Expenses,-31921.66,Loan drawdown
+JE23-0002,25-Aug-2026,5300,Utilities Expense,55559.17,Operating expense
+JE23-0002,25-Aug-2026,2000,Accounts Payable,-55559.17,Operating expense
+JE23-0003,11-Mar-2026,1000,Cash,64431.57,Customer receipt
+JE23-0003,11-Mar-2026,1100,Accounts Receivable,-64431.57,Customer receipt
+JE23-0004,17-Feb-2026,1000,Cash,1284.54,
+JE23-0004,17-Feb-2026,1500,Fixed Assets,-1284.54,Depreciation charge
+JE23-0005,09-May-2026,5400,Office Expenses,20961.64,Operating expense
+JE23-0005,09-May-2026,1010,Bank Current Account,-20961.64,Operating expense
+JE23-0006,20-Jan-2026,1000,Cash,58899.83,Customer receipt
+JE23-0006,20-Jan-2026,1100,Accounts Receivable,-58899.83,Customer receipt
+JE23-0007,05-Oct-2026,1000,Cash,8343.75,Customer receipt
+JE23-0007,05-Oct-2026,1100,Accounts Receivable,-8343.75,Customer receipt
+JE23-0008,10-May-2026,1000,Cash,66132.75,Capital contribution
+JE23-0008,10-May-2026,3000,Share Capital,-66132.75,Capital contribution
+JE23-0009,25-May-2026,5100,Salaries Expense,87667.66,Payroll run
+JE23-0009,25-May-2026,1010,Bank Current Account,-87667.66,Payroll run
+JE23-0010,09-Feb-2026,1010,Bank Current Account,15512.48,Capital contribution
+JE23-0010,09-Feb-2026,3000,Share Capital,-15512.48,Capital contribution
+JE23-0011,09-Jan-2026,1010,Bank Current Account,31702.30,Sales invoice
+JE23-0011,09-Jan-2026,4200,Other Income,-31702.30,Sales invoice
+JE23-0012,20-Apr-2026,1200,Inventory,6732.45,Asset purchase
+JE23-0012,20-Apr-2026,1010,Bank Current Account,-6732.45,Asset purchase
+JE23-0013,25-Sep-2026,1000,Cash,10434.63,Capital contribution
+JE23-0013,25-Sep-2026,3000,Share Capital,-10434.63,Capital contribution
+JE23-0014,09-Dec-2026,1000,,86710.98,Capital contribution
+JE23-0014,09-Dec-2026,3000,Share Capital,-86710.98,Capital contribution
+JE23-0015,09-Dec-2026,5100,Salaries Expense,6828.61,Operating expense
+JE23-0015,09-Dec-2026,1000,Cash,-6828.61,Operating expense
+JE23-0016,01-Nov-2026,5100,Salaries Expense,14268.83,Payroll run
+JE23-0016,01-Nov-2026,1010,Bank Current Account,-14268.83,Payroll run
+JE23-0017,,1100,Accounts Receivable,25421.50,Sales invoice
+JE23-0017,11-Dec-2026,4200,Other Income,-25421.50,Sales invoice
+JE23-0018,28-Jul-2026,1000,Cash,45501.52,Capital contribution
+JE23-0018,28-Jul-2026,3000,Share Capital,-45501.52,Capital contribution
+JE23-0019,27-Dec-2026,5200,,36612.60,Operating expense
+JE23-0019,27-Dec-2026,1000,Cash,-36612.60,Operating expense
+JE23-0020,13-May-2026,5100,Salaries Expense,31776.76,Payroll run
+JE23-0020,13-May-2026,1010,Bank Current Account,-31776.76,Payroll run
+JE23-0021,03-Jun-2026,1100,Accounts Receivable,34803.96,Sales invoice
+JE23-0021,03-Jun-2026,4000,Sales Revenue,-34803.96,Sales invoice
+JE23-0022,,5100,Salaries Expense,16902.25,Payroll run
+JE23-0022,13-Jan-2026,1000,Cash,-16902.25,Payroll run
+JE23-0023,23-Nov-2026,1010,Bank Current Account,85179.30,Customer receipt
+JE23-0023,23-Nov-2026,1100,Accounts Receivable,-85179.30,Customer receipt
+JE23-0024,02-Mar-2026,1000,,69895.50,Loan drawdown
+JE23-0024,02-Mar-2026,3000,Share Capital,-69895.50,Loan drawdown
+JE23-0025,26-Feb-2026,1000,Cash,46553.71,Customer receipt
+JE23-0025,26-Feb-2026,1100,Accounts Receivable,-46553.71,Customer receipt
+JE23-0026,01-Aug-2026,5100,Salaries Expense,50794.21,Depreciation charge
+JE23-0026,01-Aug-2026,1500,Fixed Assets,-50794.21,Depreciation charge
+JE23-0027,02-Dec-2026,1010,Bank Current Account,32182.61,Sales invoice
+JE23-0027,02-Dec-2026,4000,Sales Revenue,-32182.61,Sales invoice
+JE23-0028,17-Nov-2026,1000,Cash,76703.79,Capital contribution
+JE23-0028,17-Nov-2026,3000,Share Capital,-76703.79,Capital contribution
+JE23-0029,24-Jan-2026,5100,Salaries Expense,87868.78,Payroll run
+JE23-0029,24-Jan-2026,1000,Cash,-87868.78,Payroll run
+JE23-0030,02-Oct-2026,2000,Accounts Payable,44845.18,Supplier payment
+JE23-0030,02-Oct-2026,1000,Cash,-44845.18,Supplier payment
+JE23-0031,10-Jan-2026,1000,Cash,16487.82,Customer receipt
+JE23-0031,10-Jan-2026,1100,Accounts Receivable,-16487.82,Customer receipt
+JE23-0032,03-Oct-2026,5400,Office Expenses,16339.89,Operating expense
+JE23-0032,03-Oct-2026,2000,Accounts Payable,-16339.89,Operating expense
+JE23-0033,08-Oct-2026,5100,Salaries Expense,56583.61,Operating expense
+JE23-0033,08-Oct-2026,1010,Bank Current Account,-56583.61,Operating expense
+JE23-0034,22-Dec-2026,5200,Rent Expense,32146.99,Operating expense
+JE23-0034,22-Dec-2026,1010,Bank Current Account,-32146.99,Operating expense
+JE23-0035,18-Oct-2026,1010,Bank Current Account,92709.68,Capital contribution
+JE23-0035,18-Oct-2026,3000,Share Capital,-92709.68,Capital contribution
+JE23-0036,06-Oct-2026,2000,Accounts Payable,72637.01,Supplier payment
+JE23-0036,06-Oct-2026,1000,Cash,-72637.01,Supplier payment
+JE23-0037,06-Jul-2026,1000,Cash,13546.31,Loan drawdown
+JE23-0037,06-Jul-2026,1010,Bank Current Account,-13546.31,Loan drawdown
+JE23-0038,02-Oct-2026,1000,Cash,23259.69,Loan drawdown
+JE23-0038,02-Oct-2026,4000,Sales Revenue,-23259.69,Loan drawdown
+JE23-0039,16-Jan-2026,2000,Accounts Payable,73911.21,Supplier payment
+JE23-0039,16-Jan-2026,1010,Bank Current Account,-73911.21,Supplier payment
+JE23-0040,23-Feb-2026,5100,Salaries Expense,17167.31,Operating expense
+JE23-0040,23-Feb-2026,1000,Cash,-17167.31,Operating expense
+JE23-0041,23-Aug-2026,1500,Fixed Assets,76733.01,Asset purchase
+JE23-0041,23-Aug-2026,2000,Accounts Payable,-76733.01,Asset purchase
+JE23-0042,15-Sep-2026,2000,Accounts Payable,60837.47,Supplier payment
+JE23-0042,15-Sep-2026,1000,Cash,-60837.47,Supplier payment
+JE23-0043,20-Jan-2026,1000,Cash,58059.53,Capital contribution
+JE23-0043,20-Jan-2026,3000,Share Capital,-58059.53,Capital contribution
+JE23-0044,12-May-2026,2000,Accounts Payable,59639.13,Supplier payment
+JE23-0044,12-May-2026,1000,Cash,-59639.13,Supplier payment
+JE23-0045,04-Sep-2026,1000,Cash,18351.99,Capital contribution
+JE23-0045,04-Sep-2026,3000,Share Capital,-18351.99,Capital contribution
+JE23-0046,07-Nov-2026,1000,Cash,73215.92,Loan drawdown
+JE23-0046,07-Nov-2026,5400,Office Expenses,-73215.92,Loan drawdown
+JE23-0047,22-Mar-2026,1200,Inventory,10837.61,Asset purchase
+JE23-0047,22-Mar-2026,1000,Cash,-10837.61,Asset purchase
+JE23-0012-COPY,20-Apr-2026,1200,Inventory,6732.45,Asset purchase (copy)
+JE23-0012-COPY,20-Apr-2026,1010,Bank Current Account,-6732.45,Asset purchase (copy)
+JE23-0043,20-Jan-2026,1000,Cash,58059.53,Capital contribution
+JE23-0043,20-Jan-2026,3000,Share Capital,-58059.53,Capital contribution

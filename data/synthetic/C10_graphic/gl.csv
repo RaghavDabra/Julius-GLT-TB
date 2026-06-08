@@ -1,0 +1,93 @@
+voucher_no,posted,acctno,nominal_name,dr_cr,amount_lcy,memo
+JE10-0001,18/09/2026,1010,Bank Current Account,DR,"$1,642.16",Loan drawdown
+JE10-0001,18/09/2026,1000,Cash,CR,"$1,642.16",Loan drawdown
+JE10-0002,18/05/2026,1000,Cash,DR,"$50,365.26",
+JE10-0002,18/05/2026,3000,Share Capital,CR,"$50,365.26",Capital contribution
+JE10-0003,14/11/2026,1200,Inventory,DR,"$77,277.96",Asset purchase
+JE10-0003,14/11/2026,2000,Accounts Payable,CR,"$77,277.96",Asset purchase
+JE10-0004,07/04/2026,2000,Accounts Payable,DR,"$49,887.96",Supplier payment
+JE10-0004,07/04/2026,1000,Cash,CR,"$49,887.96",Supplier payment
+JE10-0005,15/07/2026,2000,Accounts Payable,DR,"$7,644.98",Depreciation charge
+JE10-0005,15/07/2026,2100,Accrued Liabilities,CR,"$7,644.98",Depreciation charge
+JE10-0006,21/02/2026,1000,Cash,DR,"$65,031.35",Customer receipt
+JE10-0006,21/02/2026,1100,Accounts Receivable,CR,"$65,031.35",Customer receipt
+JE10-0007,16/09/2026,1000,Cash,DR,"$36,123.19",Sales invoice
+JE10-0007,16/09/2026,4200,,CR,"$36,123.19",Sales invoice
+JE10-0008,16/02/2026,1100,Accounts Receivable,DR,"$66,814.86",
+JE10-0008,16/02/2026,4000,Sales Revenue,CR,"$66,814.86",Sales invoice
+JE10-0009,08/01/2026,1010,Bank Current Account,DR,"$85,020.95",Capital contribution
+JE10-0009,08/01/2026,3000,Share Capital,CR,"$85,020.95",Capital contribution
+JE10-0010,22/02/2026,1010,Bank Current Account,DR,"$4,566.40",Customer receipt
+JE10-0010,22/02/2026,1100,Accounts Receivable,CR,"$4,566.40",Customer receipt
+JE10-0011,01/06/2026,1200,Inventory,DR,"$88,243.49",Asset purchase
+JE10-0011,01/06/2026,1000,,CR,"$88,243.49",Asset purchase
+JE10-0012,,1000,Cash,DR,"$88,253.79",Customer receipt
+JE10-0012,06/05/2026,1100,Accounts Receivable,CR,"$88,253.79",Customer receipt
+JE10-0013,05/12/2026,1010,Bank Current Account,DR,"$36,557.81",Customer receipt
+JE10-0013,05/12/2026,1100,Accounts Receivable,CR,"$36,557.81",Customer receipt
+JE10-0014,04/01/2026,5400,Office Expenses,DR,"$92,564.57",Operating expense
+JE10-0014,04/01/2026,2000,Accounts Payable,CR,"$92,564.57",Operating expense
+JE10-0015,20/10/2026,1000,Cash,DR,"$32,455.22",Capital contribution
+JE10-0015,20/10/2026,3000,Share Capital,CR,"$32,455.22",Capital contribution
+JE10-0016,16/08/2026,1010,Bank Current Account,DR,"$60,296.56",Capital contribution
+JE10-0016,,3000,Share Capital,CR,"$60,296.56",Capital contribution
+JE10-0017,19/11/2026,1010,Bank Current Account,DR,"$41,110.78",Customer receipt
+JE10-0017,19/11/2026,1100,Accounts Receivable,CR,"$41,110.78",Customer receipt
+JE10-0018,03/12/2026,1000,Cash,DR,"$75,845.53",Capital contribution
+JE10-0018,03/12/2026,3000,Share Capital,CR,"$75,845.53",Capital contribution
+JE10-0019,05/11/2026,5200,Rent Expense,DR,"$36,193.00",Operating expense
+JE10-0019,05/11/2026,1000,Cash,CR,"$36,193.00",Operating expense
+JE10-0020,10/01/2026,1010,Bank Current Account,DR,"$10,256.35",Capital contribution
+JE10-0020,10/01/2026,3000,Share Capital,CR,"$10,256.35",Capital contribution
+JE10-0021,06/02/2026,5100,Salaries Expense,DR,"$9,846.65",Payroll run
+JE10-0021,06/02/2026,1010,Bank Current Account,CR,"$9,846.65",Payroll run
+JE10-0022,12/02/2026,1010,Bank Current Account,DR,"$9,947.33",Capital contribution
+JE10-0022,12/02/2026,3000,Share Capital,CR,"$9,947.33",
+JE10-0023,13/07/2026,1010,Bank Current Account,DR,"$1,320.51",Depreciation charge
+JE10-0023,13/07/2026,5100,Salaries Expense,CR,"$1,320.51",Depreciation charge
+JE10-0024,19/04/2026,5400,Office Expenses,DR,"$86,008.94",Operating expense
+JE10-0024,19/04/2026,2000,Accounts Payable,CR,"$86,008.94",Operating expense
+JE10-0025,09/05/2026,1100,Accounts Receivable,DR,"$13,318.98",Depreciation charge
+JE10-0025,09/05/2026,5200,Rent Expense,CR,"$13,318.98",Depreciation charge
+JE10-0026,14/05/2026,5100,Salaries Expense,DR,"$16,009.62",Payroll run
+JE10-0026,14/05/2026,1000,Cash,CR,"$16,009.62",Payroll run
+JE10-0027,24/04/2026,1200,Inventory,DR,"$34,402.70",Asset purchase
+JE10-0027,24/04/2026,1000,Cash,CR,"$34,402.70",Asset purchase
+JE10-0028,01/05/2026,5100,Salaries Expense,DR,"$10,296.33",Payroll run
+JE10-0028,01/05/2026,1010,Bank Current Account,CR,"$10,296.33",Payroll run
+JE10-0029,15/06/2026,1010,Bank Current Account,DR,"$76,416.65",Capital contribution
+JE10-0029,15/06/2026,3000,Share Capital,CR,"$76,416.65",Capital contribution
+JE10-0030,07/12/2026,1000,Cash,DR,"$30,565.09",Loan drawdown
+JE10-0030,07/12/2026,3000,Share Capital,CR,"$30,565.09",Loan drawdown
+JE10-0031,10/06/2026,5100,Salaries Expense,DR,"$91,639.90",Payroll run
+JE10-0031,10/06/2026,1000,Cash,CR,"$91,639.90",Payroll run
+JE10-0032,12/07/2026,5100,Salaries Expense,DR,"$35,818.85",Payroll run
+JE10-0032,12/07/2026,1010,Bank Current Account,CR,"$35,818.85",Payroll run
+JE10-0033,06/09/2026,5400,Office Expenses,DR,"$56,322.73",Operating expense
+JE10-0033,06/09/2026,1000,Cash,CR,"$56,322.73",Operating expense
+JE10-0034,,1000,Cash,DR,"$41,737.45",Depreciation charge
+JE10-0034,27/05/2026,5400,Office Expenses,CR,"$41,737.45",Depreciation charge
+JE10-0035,10/11/2026,5200,Rent Expense,DR,"$47,508.91",Operating expense
+JE10-0035,10/11/2026,2000,Accounts Payable,CR,"$47,508.91",Operating expense
+JE10-0036,03/07/2026,1010,Bank Current Account,DR,"$67,990.17",Customer receipt
+JE10-0036,03/07/2026,1100,Accounts Receivable,CR,"$67,990.17",Customer receipt
+JE10-0037,14/12/2026,5100,Salaries Expense,DR,"$50,834.75",Payroll run
+JE10-0037,14/12/2026,1010,Bank Current Account,CR,"$50,834.75",Payroll run
+JE10-0038,22/11/2026,1000,Cash,DR,"$73,085.29",Depreciation charge
+JE10-0038,22/11/2026,2100,Accrued Liabilities,CR,"$73,085.29",Depreciation charge
+JE10-0039,26/06/2026,1000,Cash,DR,"$91,852.04",Loan drawdown
+JE10-0039,26/06/2026,1100,Accounts Receivable,CR,"$91,852.04",Loan drawdown
+JE10-0040,17/04/2026,1000,Cash,DR,"$9,502.83",Capital contribution
+JE10-0040,17/04/2026,3000,Share Capital,CR,"$9,502.83",Capital contribution
+JE10-0041,25/08/2026,4200,Other Income,DR,"$35,635.24",Depreciation charge
+JE10-0041,25/08/2026,5100,Salaries Expense,CR,"$35,635.24",Depreciation charge
+JE10-0042,03/07/2026,1100,Accounts Receivable,DR,"$10,066.51",Depreciation charge
+JE10-0042,03/07/2026,2100,Accrued Liabilities,CR,"$10,066.51",Depreciation charge
+JE10-0043,15/06/2026,5400,Office Expenses,DR,"$33,188.97",Operating expense
+JE10-0043,15/06/2026,1000,Cash,CR,"$33,188.97",Operating expense
+JE10-0044,24/08/2026,1010,,DR,"$45,314.02",Customer receipt
+JE10-0044,24/08/2026,1100,Accounts Receivable,CR,"$45,314.02",Customer receipt
+JE10-0005-COPY,15/07/2026,2000,Accounts Payable,DR,"$7,644.98",Depreciation charge (copy)
+JE10-0005-COPY,15/07/2026,2100,Accrued Liabilities,CR,"$7,644.98",Depreciation charge (copy)
+JE10-0003-COPY,14/11/2026,1200,Inventory,DR,"$77,277.96",Asset purchase (copy)
+JE10-0003-COPY,14/11/2026,2000,Accounts Payable,CR,"$77,277.96",Asset purchase (copy)

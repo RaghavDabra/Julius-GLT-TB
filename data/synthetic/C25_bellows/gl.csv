@@ -1,0 +1,97 @@
+journal_id,entry_date,account_number,account_title,gross_amount,details
+JE25-0001,14-May-2026,1000,Cash,38987.34,Capital contribution
+JE25-0001,14-May-2026,3000,Share Capital,(38987.34),Capital contribution
+JE25-0002,10-Jul-2026,2000,Accounts Payable,19049.58,Supplier payment
+JE25-0002,10-Jul-2026,1000,Cash,(19049.58),Supplier payment
+JE25-0003,16-May-2026,4000,Sales Revenue,79310.41,Depreciation charge
+JE25-0003,16-May-2026,1500,Fixed Assets,(79310.41),Depreciation charge
+JE25-0004,05-Jan-2026,5200,Rent Expense,2695.78,Depreciation charge
+JE25-0004,05-Jan-2026,1500,Fixed Assets,(2695.78),Depreciation charge
+JE25-0005,04-Aug-2026,1500,Fixed Assets,79277.96,Asset purchase
+JE25-0005,04-Aug-2026,2000,Accounts Payable,(79277.96),Asset purchase
+JE25-0006,21-Dec-2026,1500,Fixed Assets,46805.43,Asset purchase
+JE25-0006,21-Dec-2026,1000,Cash,(46805.43),Asset purchase
+JE25-0007,03-Aug-2026,1000,Cash,72683.54,Customer receipt
+JE25-0007,03-Aug-2026,1100,Accounts Receivable,(72683.54),Customer receipt
+JE25-0008,22-Nov-2026,1010,Bank Current Account,82512.61,Loan drawdown
+JE25-0008,22-Nov-2026,4200,Other Income,(82512.61),Loan drawdown
+JE25-0009,01-Oct-2026,5100,Salaries Expense,48763.08,Payroll run
+JE25-0009,01-Oct-2026,1010,Bank Current Account,(48763.08),Payroll run
+JE25-0010,15-Jun-2026,1500,Fixed Assets,5699.71,Asset purchase
+JE25-0010,15-Jun-2026,2000,Accounts Payable,(5699.71),Asset purchase
+JE25-0011,14-Jun-2026,2000,Accounts Payable,5166.46,Supplier payment
+JE25-0011,14-Jun-2026,1000,Cash,(5166.46),Supplier payment
+JE25-0012,17-Feb-2026,1010,Bank Current Account,50383.73,Loan drawdown
+JE25-0012,17-Feb-2026,1000,Cash,(50383.73),Loan drawdown
+JE25-0013,18-Mar-2026,1000,Cash,56942.62,Customer receipt
+JE25-0013,18-Mar-2026,1100,Accounts Receivable,(56942.62),Customer receipt
+JE25-0014,12-Dec-2026,1010,Bank Current Account,65164.34,Loan drawdown
+JE25-0014,12-Dec-2026,2300,Tax Payable,(65164.34),Loan drawdown
+JE25-0015,01-Mar-2026,5400,Office Expenses,33502.05,Operating expense
+JE25-0015,01-Mar-2026,2000,Accounts Payable,(33502.05),Operating expense
+JE25-0016,11-Jul-2026,2000,Accounts Payable,74019.92,Supplier payment
+JE25-0016,11-Jul-2026,1010,Bank Current Account,(74019.92),Supplier payment
+JE25-0017,27-Apr-2026,2000,Accounts Payable,14809.53,Supplier payment
+JE25-0017,27-Apr-2026,1000,Cash,(14809.53),Supplier payment
+JE25-0018,04-Feb-2026,1000,Cash,43827.61,Customer receipt
+JE25-0018,04-Feb-2026,1100,Accounts Receivable,(43827.61),Customer receipt
+JE25-0019,12-Dec-2026,2000,Accounts Payable,33177.71,Supplier payment
+JE25-0019,12-Dec-2026,1010,Bank Current Account,(33177.71),Supplier payment
+JE25-0020,01-May-2026,2000,Accounts Payable,16483.85,Supplier payment
+JE25-0020,01-May-2026,1010,Bank Current Account,(16483.85),Supplier payment
+JE25-0021,23-Mar-2026,5100,Salaries Expense,81418.92,Operating expense
+JE25-0021,23-Mar-2026,1000,Cash,(81418.92),Operating expense
+JE25-0022,14-Feb-2026,1010,Bank Current Account,20053.42,Customer receipt
+JE25-0022,14-Feb-2026,1100,Accounts Receivable,(20053.42),Customer receipt
+JE25-0023,02-Jul-2026,5100,Salaries Expense,73629.57,Operating expense
+JE25-0023,02-Jul-2026,1000,Cash,(73629.57),Operating expense
+JE25-0024,19-Sep-2026,1000,Cash,75371.28,Customer receipt
+JE25-0024,19-Sep-2026,1100,Accounts Receivable,(75371.28),Customer receipt
+JE25-0025,03-Jan-2026,1010,Bank Current Account,86324.00,Sales invoice
+JE25-0025,03-Jan-2026,4000,Sales Revenue,(86324.00),Sales invoice
+JE25-0026,07-Oct-2026,1500,Fixed Assets,74357.87,Asset purchase
+JE25-0026,07-Oct-2026,1000,Cash,(74357.87),Asset purchase
+JE25-0027,28-Mar-2026,1000,Cash,2925.23,Customer receipt
+JE25-0027,28-Mar-2026,1100,Accounts Receivable,(2925.23),Customer receipt
+JE25-0028,25-Sep-2026,1500,Fixed Assets,15378.86,Asset purchase
+JE25-0028,25-Sep-2026,1010,Bank Current Account,(15378.86),Asset purchase
+JE25-0029,17-Jan-2026,1000,Cash,77887.78,Customer receipt
+JE25-0029,17-Jan-2026,1100,Accounts Receivable,(77887.78),Customer receipt
+JE25-0030,01-Sep-2026,1000,Cash,16442.71,Customer receipt
+JE25-0030,01-Sep-2026,1100,Accounts Receivable,(16442.71),Customer receipt
+JE25-0031,12-Aug-2026,5100,Salaries Expense,80895.50,Operating expense
+JE25-0031,12-Aug-2026,2000,Accounts Payable,(80895.50),Operating expense
+JE25-0032,13-Jun-2026,2000,Accounts Payable,17303.48,Supplier payment
+JE25-0032,13-Jun-2026,1000,Cash,(17303.48),Supplier payment
+JE25-0033,04-Jun-2026,1000,Cash,38808.77,Capital contribution
+JE25-0033,04-Jun-2026,3000,Share Capital,(38808.77),Capital contribution
+JE25-0034,23-Jun-2026,5100,Salaries Expense,47178.15,Payroll run
+JE25-0034,23-Jun-2026,1000,Cash,(47178.15),Payroll run
+JE25-0035,13-Feb-2026,1500,Fixed Assets,31271.75,Asset purchase
+JE25-0035,13-Feb-2026,1000,Cash,(31271.75),Asset purchase
+JE25-0036,27-Nov-2026,1500,Fixed Assets,69976.14,Asset purchase
+JE25-0036,27-Nov-2026,2000,Accounts Payable,(69976.14),Asset purchase
+JE25-0037,07-Jul-2026,5100,Salaries Expense,27712.40,Payroll run
+JE25-0037,07-Jul-2026,1010,Bank Current Account,(27712.40),Payroll run
+JE25-0038,22-Jan-2026,5200,Rent Expense,35001.82,Operating expense
+JE25-0038,22-Jan-2026,2000,Accounts Payable,(35001.82),Operating expense
+JE25-0039,22-Nov-2026,5100,Salaries Expense,41699.83,Payroll run
+JE25-0039,22-Nov-2026,1010,Bank Current Account,(41699.83),Payroll run
+JE25-0040,19-Dec-2026,5100,Salaries Expense,37597.87,Operating expense
+JE25-0040,19-Dec-2026,1000,Cash,(37597.87),Operating expense
+JE25-0041,11-Apr-2026,5400,Office Expenses,6287.78,Operating expense
+JE25-0041,11-Apr-2026,1000,Cash,(6287.78),Operating expense
+JE25-0042,24-Jul-2026,1010,Bank Current Account,22237.69,Customer receipt
+JE25-0042,24-Jul-2026,1100,Accounts Receivable,(22237.69),Customer receipt
+JE25-0043,13-Nov-2026,5100,Salaries Expense,71885.33,Payroll run
+JE25-0043,13-Nov-2026,1010,Bank Current Account,(71885.33),Payroll run
+JE25-0044,25-Mar-2026,1010,Bank Current Account,48657.67,Loan drawdown
+JE25-0044,25-Mar-2026,4000,Sales Revenue,(48657.67),Loan drawdown
+JE25-0045,08-Aug-2026,5100,Salaries Expense,23927.93,Payroll run
+JE25-0045,08-Aug-2026,1000,Cash,(23927.93),Payroll run
+JE25-0046,16-Feb-2026,2000,Accounts Payable,70130.17,Supplier payment
+JE25-0046,16-Feb-2026,1000,Cash,(70130.17),Supplier payment
+JE25-0047,05-Jun-2026,1000,Cash,57494.79,Sales invoice
+JE25-0047,05-Jun-2026,4100,Service Revenue,(57494.79),Sales invoice
+JE25-0048,25-Sep-2026,1500,Fixed Assets,62853.50,Asset purchase
+JE25-0048,25-Sep-2026,1000,Cash,(62853.50),Asset purchase

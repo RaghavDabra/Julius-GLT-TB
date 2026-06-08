@@ -1,0 +1,15 @@
+gl_account,name,final_balance
+1000,Cash,-190474.86
+1010,Bank Current Account,-15367.17
+1100,Accounts Receivable,-223520.66
+1200,Inventory,463550.72
+2000,Accounts Payable,-112455.13
+2200,Loans Payable,-248858.08
+3000,Share Capital,-164144.29
+4000,Sales Revenue,-278800.31
+5000,Cost of Goods Sold,89238.22
+5100,Salaries Expense,281594.35
+5200,Rent Expense,72839.90
+5300,Utilities Expense,73519.08
+5400,Office Expenses,153141.39
+5500,Marketing Expense,104671.32

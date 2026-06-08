@@ -1,0 +1,14 @@
+acct_code,gl_name,ending_balance
+1000,Cash,159530.93
+1010,Bank Current Account,-247223.16
+1100,Accounts Receivable,-16131.85
+1500,Fixed Assets,-90469.86
+2000,Accounts Payable,212966.57
+3000,Share Capital,-98165.21
+3100,Retained Earnings,-63898.38
+4000,Sales Revenue,-78670.66
+4100,Service Revenue,-375763.01
+5100,Salaries Expense,250475.79
+5200,Rent Expense,-29686.03
+5400,Office Expenses,73523.64
+5600,Depreciation Expense,268761.92

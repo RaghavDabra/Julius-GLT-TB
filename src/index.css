@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* brand */
+  --coral-black: #0F0B0B;
+  --coral-900: #1A1413;
+  --coral-800: #241C1B;
+  --coral-700: #322827;
+  --green: #86BC24;
+  --green-600: #74A41F;
+  --green-300: #B6DD6E;
+  --green-100: #EAF4D6;
+
+  /* surfaces */
+  --canvas: #FAFAF8;
+  --surface: #FFFFFF;
+  --ink: #0F0B0B;
+  --muted: #6B6664;
+  --faint: #9A9491;
+  --border: rgba(15, 11, 11, 0.09);
+  --sidebar-fg: #F4F2EF;
+  --sidebar-muted: #9C9491;
+
+  /* status */
+  --status-ok: #5FA23C;
+  --status-immaterial: #C99A1E;
+  --status-material: #C8473A;
+  --status-orphan: #B5743C;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--canvas);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* thin, brand-tinted scrollbars */
+::-webkit-scrollbar { width: 9px; height: 9px; }
+::-webkit-scrollbar-thumb { background: rgba(15, 11, 11, 0.16); border-radius: 8px; }
+.dark-scroll::-webkit-scrollbar-thumb { background: rgba(244, 242, 239, 0.16); }
+::-webkit-scrollbar-track { background: transparent; }
+
+@keyframes ll-fade-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.ll-fade-up { animation: ll-fade-up 0.28s ease both; }
+
+@keyframes ll-pulse {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+.ll-pulse > span { animation: ll-pulse 1.1s infinite; }
+.ll-pulse > span:nth-child(2) { animation-delay: 0.18s; }
+.ll-pulse > span:nth-child(3) { animation-delay: 0.36s; }
+
+/* markdown rendering inside chat bubbles */
+.md p { margin: 0 0 0.7em; line-height: 1.65; }
+.md p:last-child { margin-bottom: 0; }
+.md strong { font-weight: 600; }
+.md ul, .md ol { margin: 0 0 0.7em; padding-left: 1.2em; }
+.md li { margin: 0.15em 0; line-height: 1.6; }
+.md table { border-collapse: collapse; width: 100%; margin: 0.5em 0; font-size: 12.5px; }
+.md th, .md td { border: 1px solid var(--border); padding: 5px 9px; text-align: left; }
+.md th { background: var(--green-100); font-weight: 600; }
+.md code { background: rgba(15,11,11,0.06); padding: 1px 5px; border-radius: 4px; font-size: 12px; }

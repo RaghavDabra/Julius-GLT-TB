@@ -1,0 +1,13 @@
+account_code,ledger_name,closing_balance
+1000,Cash,137895.82
+1010,Bank Current Account,213779.32
+1100,Accounts Receivable,91608.61
+1200,Inventory,214002.14
+1500,Fixed Assets,-148670.65
+2000,Accounts Payable,-126960.79
+2100,Accrued Liabilities,-48785.86
+3000,Share Capital,-252245.25
+4000,Sales Revenue,-384781.42
+5100,Salaries Expense,242697.75
+5200,Rent Expense,-56862.49
+5500,Marketing Expense,118322.82

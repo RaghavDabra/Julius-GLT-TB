@@ -1,0 +1,91 @@
+txn_id,transaction_date,account_no,nominal_name,value,desc
+JE15-0001,11/13/2026,1010,Bank Current Account,63102.95,Customer receipt
+JE15-0001,11/13/2026,1100,Accounts Receivable,(63102.95),Customer receipt
+JE15-0002,03/17/2026,2000,Accounts Payable,61176.37,Supplier payment
+JE15-0002,03/17/2026,1000,Cash,(61176.37),Supplier payment
+JE15-0003,08/11/2026,5100,Salaries Expense,7250.97,Payroll run
+JE15-0003,08/11/2026,1000,Cash,(7250.97),
+JE15-0004,04/18/2026,1010,Bank Current Account,4925.77,Customer receipt
+JE15-0004,04/18/2026,1100,Accounts Receivable,(4925.77),Customer receipt
+JE15-0005,08/26/2026,1010,Bank Current Account,7627.08,Capital contribution
+JE15-0005,08/26/2026,3000,Share Capital,(7627.08),Capital contribution
+JE15-0006,,5100,Salaries Expense,42554.41,Payroll run
+JE15-0006,02/16/2026,1010,Bank Current Account,(42554.41),Payroll run
+JE15-0007,09/18/2026,1000,Cash,39260.31,Sales invoice
+JE15-0007,09/18/2026,4200,Other Income,(39260.31),Sales invoice
+JE15-0008,09/07/2026,1000,Cash,84577.02,Sales invoice
+JE15-0008,09/07/2026,4200,Other Income,(84577.02),Sales invoice
+JE15-0009,04/28/2026,5100,Salaries Expense,78430.75,Payroll run
+JE15-0009,04/28/2026,1010,Bank Current Account,(78430.75),Payroll run
+JE15-0010,06/23/2026,5100,Salaries Expense,68125.02,Payroll run
+JE15-0010,06/23/2026,1010,Bank Current Account,(68125.02),Payroll run
+JE15-0011,04/01/2026,5100,Salaries Expense,72171.50,Payroll run
+JE15-0011,04/01/2026,1000,Cash,(72171.50),Payroll run
+JE15-0012,01/06/2026,1010,Bank Current Account,66743.81,Loan drawdown
+JE15-0012,01/06/2026,3000,Share Capital,(66743.81),Loan drawdown
+JE15-0013,10/07/2026,5100,,10295.30,Payroll run
+JE15-0013,10/07/2026,1010,Bank Current Account,(10295.30),Payroll run
+JE15-0014,04/23/2026,1000,Cash,20598.66,Customer receipt
+JE15-0014,04/23/2026,1100,Accounts Receivable,(20598.66),Customer receipt
+JE15-0015,10/04/2026,1010,Bank Current Account,79583.67,Loan drawdown
+JE15-0015,10/04/2026,5400,Office Expenses,(79583.67),Loan drawdown
+JE15-0016,01/17/2026,5100,Salaries Expense,91571.62,Payroll run
+JE15-0016,01/17/2026,1000,Cash,(91571.62),Payroll run
+JE15-0017,08/17/2026,1100,Accounts Receivable,79711.71,Sales invoice
+JE15-0017,08/17/2026,4200,Other Income,(79711.71),Sales invoice
+JE15-0018,11/20/2026,2000,Accounts Payable,9972.09,Supplier payment
+JE15-0018,11/20/2026,1000,Cash,(9972.09),Supplier payment
+JE15-0019,12/25/2026,1010,Bank Current Account,93055.65,Loan drawdown
+JE15-0019,12/25/2026,5000,Cost of Goods Sold,(93055.65),Loan drawdown
+JE15-0020,05/15/2026,1010,Bank Current Account,91546.85,Customer receipt
+JE15-0020,05/15/2026,1100,Accounts Receivable,(91546.85),Customer receipt
+JE15-0021,12/17/2026,2000,Accounts Payable,57299.44,Supplier payment
+JE15-0021,12/17/2026,1010,Bank Current Account,(57299.44),Supplier payment
+JE15-0022,09/21/2026,1500,Fixed Assets,70037.25,Asset purchase
+JE15-0022,09/21/2026,2000,Accounts Payable,(70037.25),Asset purchase
+JE15-0023,05/22/2026,1000,Cash,59352.30,Customer receipt
+JE15-0023,05/22/2026,1100,Accounts Receivable,(59352.30),Customer receipt
+JE15-0024,12/21/2026,1000,Cash,47944.29,Loan drawdown
+JE15-0024,12/21/2026,5200,Rent Expense,(47944.29),Loan drawdown
+JE15-0025,10/19/2026,1000,Cash,53482.28,Loan drawdown
+JE15-0025,10/19/2026,5400,Office Expenses,(53482.28),Loan drawdown
+JE15-0026,09/04/2026,1010,Bank Current Account,76817.71,Capital contribution
+JE15-0026,09/04/2026,3000,Share Capital,(76817.71),Capital contribution
+JE15-0027,01/07/2026,1010,Bank Current Account,5183.22,Sales invoice
+JE15-0027,01/07/2026,4000,Sales Revenue,(5183.22),Sales invoice
+JE15-0028,03/27/2026,1500,Fixed Assets,64969.57,Asset purchase
+JE15-0028,03/27/2026,1010,Bank Current Account,(64969.57),Asset purchase
+JE15-0029,09/02/2026,1100,Accounts Receivable,19499.49,Sales invoice
+JE15-0029,09/02/2026,4200,Other Income,(19499.49),
+JE15-0030,09/13/2026,1000,Cash,70567.85,Loan drawdown
+JE15-0030,09/13/2026,4200,Other Income,(70567.85),Loan drawdown
+JE15-0031,07/14/2026,1010,Bank Current Account,88027.08,Customer receipt
+JE15-0031,07/14/2026,1100,Accounts Receivable,(88027.08),Customer receipt
+JE15-0032,04/20/2026,1000,Cash,70687.10,
+JE15-0032,04/20/2026,5000,Cost of Goods Sold,(70687.10),Loan drawdown
+JE15-0033,09/24/2026,5100,Salaries Expense,71771.97,Payroll run
+JE15-0033,,1010,Bank Current Account,(71771.97),Payroll run
+JE15-0034,11/03/2026,1000,Cash,42720.10,Customer receipt
+JE15-0034,11/03/2026,1100,Accounts Receivable,(42720.10),Customer receipt
+JE15-0035,07/09/2026,2000,Accounts Payable,35927.25,Supplier payment
+JE15-0035,07/09/2026,1000,Cash,(35927.25),Supplier payment
+JE15-0036,05/01/2026,5600,Depreciation Expense,15414.10,Depreciation charge
+JE15-0036,05/01/2026,1500,Fixed Assets,(15414.10),Depreciation charge
+JE15-0037,06/20/2026,1000,Cash,14728.77,Loan drawdown
+JE15-0037,06/20/2026,4200,Other Income,(14728.77),Loan drawdown
+JE15-0038,10/18/2026,1100,Accounts Receivable,46678.76,Sales invoice
+JE15-0038,10/18/2026,4200,Other Income,(46678.76),Sales invoice
+JE15-0039,09/06/2026,1010,Bank Current Account,49529.51,Loan drawdown
+JE15-0039,09/06/2026,1500,Fixed Assets,(49529.51),Loan drawdown
+JE15-0040,04/22/2026,1010,Bank Current Account,33290.87,Capital contribution
+JE15-0040,04/22/2026,3000,Share Capital,(33290.87),Capital contribution
+JE15-0041,10/17/2026,1010,Bank Current Account,20869.54,Loan drawdown
+JE15-0041,10/17/2026,3000,Share Capital,(20869.54),Loan drawdown
+JE15-0042,08/08/2026,5100,Salaries Expense,63598.81,Payroll run
+JE15-0042,08/08/2026,1000,,(63598.81),Payroll run
+JE15-0043,02/13/2026,1000,Cash,36323.19,Customer receipt
+JE15-0043,02/13/2026,1100,Accounts Receivable,(36323.19),Customer receipt
+JE15-0002-COPY,03/17/2026,2000,Accounts Payable,61176.37,Supplier payment (copy)
+JE15-0002-COPY,03/17/2026,1000,Cash,(61176.37),Supplier payment (copy)
+JE15-0033-COPY,09/24/2026,5100,Salaries Expense,71771.97,Payroll run (copy)
+JE15-0033-COPY,09/24/2026,1010,Bank Current Account,(71771.97),Payroll run (copy)
